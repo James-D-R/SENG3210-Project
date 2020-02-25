@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from calculate_skills import skillTotal
 import pymysql
 
 app = Flask(__name__)
@@ -64,7 +65,9 @@ def showTables():
     details4 = db.piece_detail("waist",waistName)
     details5 = db.piece_detail("legs",legName)
 
-    #print(details1.skill1)
+    #skillTotal(details1)
+    print(details1)
+
 
     return render_template("selectArmors.htm",head = result1,chest = result2,arm = result3,waist = result4,leg = result5,
     headpiece = details1,chestpiece = details2,armpiece = details3,waistpiece = details4,legpiece = details5)
