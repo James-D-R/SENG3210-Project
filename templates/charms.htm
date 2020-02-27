@@ -1,51 +1,27 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<style>
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    color:darkblue
-}
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    color:darkolivegreen;
-}
-</style>
+    
 <head>
     <meta charset="UTF-8">
+    <link href="{{ url_for('static', filename='css/tableview.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='css/header.css') }}" rel="stylesheet"/>
     <title>Charms</title>
 </head>
 <body>
+    <nav>
+        <ul class="navigation">
+            <li><a href="/">Home</a></li>
+            <li><a href="head-pieces">Head Pieces</a></li>
+            <li><a href="chest-pieces">Chest Pieces</a></li>
+            <li><a href="arm-pieces">Arm Pieces</a></li>
+            <li><a href="waist-pieces">Waist Pieces</a></li>
+            <li><a href="leg-pieces">Leg Pieces</a></li>
+            <li><a href="charms">Charms</a></li>
+            <li><a href="decorations">Decorations</a></li>
+        </ul>
+    </nav>
     <h2>Charms</h2>
-    <a href="/">Home</a>
-    <a href="head-pieces">Head Pieces</a>
-    <a href="chest-pieces">Chest Pieces</a>
-    <a href="arm-pieces">Arm Pieces</a>
-    <a href="waist-pieces">Waist Pieces</a>
-    <a href="leg-pieces">Leg Pieces</a>
-    <a href="charms">Charms</a>
-    <a href="decorations">Decorations</a>
 
     <p>Search: <input type="text" id="armorInput" onkeyup="charmSearch()" placeholder="Enter a skill..." title="Type in a skill"></p>
 

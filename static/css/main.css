@@ -1,0 +1,58 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkblue
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 14pt;
+    color: blueviolet;
+}
+
+ul{
+    list-style-type: none;
+    border: solid blue;
+    width: 90%;
+}
+
+.container{
+    width: 90%;
+    margin:auto;
+    text-align: left;
+}
+
+.subcontainer{
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    float: left;
+}
+
+
+
