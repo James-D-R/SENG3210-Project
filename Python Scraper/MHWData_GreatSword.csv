@@ -133,15 +133,15 @@ Berserker Sword,6,1008,210,Dragon,180,-30,0,High,None,None,None,None,350,70,120,
 Anguish,7,1104,230,Dragon,240,-30,0,High,None,None,None,None,350,60,120,80,60,30,0,0
 Consummate Blade,12,1344,280,Dragon,390,-30,0,High,None,None,None,None,350,160,30,30,60,50,20,0
 Empress Galea,7,864,180,Blast,210,0,0,None,2,1,None,None,350,110,30,60,80,40,30,0
-"Empress Galea ""Blaze""",8,864,180,Blast,270,20,0,None,2,1,None,Guts,350,110,30,60,80,40,30,0
-"Soulfire Edge ""Blaze""",12,1200,250,Blast,390,25,0,None,2,1,None,Guts,350,120,30,90,30,30,50,0
-"Wyvern Ignition ""Steel""",4,720,150,None,0,-15,0,None,None,None,None,None,300,180,70,20,20,10,0,0
-"Wyvern Ignition ""Impact""",7,1008,210,Hidden Fire,510,-15,0,None,1,1,None,None,350,250,20,20,20,30,10,0
-"Wyvern Impact ""Silver""",12,1296,270,Hidden Fire,690,-15,0,None,1,1,None,None,350,160,20,20,70,40,30,10
-"Empress Galea ""Ruin""",8,912,190,Blast,210,0,0,None,2,2,None,Hasten Recovery,350,110,30,60,80,40,30,0
-"Soulfire Edge ""Ruin""",12,1296,270,Blast,330,0,0,None,2,2,None,Hasten Recovery,350,120,30,90,30,30,50,0
-"Empress Galea ""Styx""",8,864,180,Blast,330,10,0,None,3,3,None,Razor Sharp/Spare Shot,350,110,30,60,80,40,30,0
-"Soulfire Edge ""Styx""",12,1200,250,Blast,480,15,0,None,3,3,None,Razor Sharp/Spare Shot,350,120,30,90,30,30,50,0
+Empress Galea Blaze,8,864,180,Blast,270,20,0,None,2,1,None,Guts,350,110,30,60,80,40,30,0
+Soulfire Edge Blaze,12,1200,250,Blast,390,25,0,None,2,1,None,Guts,350,120,30,90,30,30,50,0
+Wyvern Ignition Steel,4,720,150,None,0,-15,0,None,None,None,None,None,300,180,70,20,20,10,0,0
+Wyvern Ignition Impact,7,1008,210,Hidden Fire,510,-15,0,None,1,1,None,None,350,250,20,20,20,30,10,0
+Wyvern Impact Silver,12,1296,270,Hidden Fire,690,-15,0,None,1,1,None,None,350,160,20,20,70,40,30,10
+Empress Galea Ruin,8,912,190,Blast,210,0,0,None,2,2,None,Hasten Recovery,350,110,30,60,80,40,30,0
+Soulfire Edge Ruin,12,1296,270,Blast,330,0,0,None,2,2,None,Hasten Recovery,350,120,30,90,30,30,50,0
+Empress Galea Styx,8,864,180,Blast,330,10,0,None,3,3,None,Razor Sharp/Spare Shot,350,110,30,60,80,40,30,0
+Soulfire Edge Styx,12,1200,250,Blast,480,15,0,None,3,3,None,Razor Sharp/Spare Shot,350,120,30,90,30,30,50,0
 Defender Great Sword I,1,624,130,Blast,240,0,0,None,None,None,None,None,200,30,60,20,90,0,0,0
 Defender Great Sword II,3,816,170,Blast,270,0,0,None,None,None,None,None,250,30,60,20,140,0,0,0
 Defender Great Sword III,5,912,190,Blast,330,0,0,None,None,None,None,None,300,50,50,50,80,70,0,0
@@ -191,23 +191,23 @@ Decay Gold Fellsword,6,816,170,Dragon,150,10,+20,Average,None,None,None,None,350
 King Gold Fellsword,6,816,170,Fire,120,10,+20,None,None,None,None,None,350,60,50,60,120,60,0,0
 Erupter Gold Fellsword,6,768,160,Fire,150,0,+20,None,None,None,None,None,350,90,60,60,100,40,0,0
 Magma Gold Fellsword,6,768,160,Blast,210,-20,+30,None,None,None,None,None,350,110,120,40,50,30,0,0
-"Taroth Blaze ""Glutton""",7,960,200,Hidden Water,300,0,+20,None,3,None,None,None,350,110,120,40,50,30,0,0
-"Taroth Blaze ""Spew""",7,864,180,Poison,540,0,+20,None,1,None,None,None,350,110,120,40,50,30,0,0
-"Taroth Blaze ""Mud""",7,1008,210,Hidden Paralysis,390,-20,+25,None,1,None,None,None,350,110,120,40,50,30,0,0
-"Taroth Blaze ""Numb""",7,768,160,Paralysis,450,30,+20,None,None,None,None,None,350,80,60,60,100,50,0,0
-"Taroth Blaze ""Tar""",7,912,190,Sleep,270,10,+30,None,None,None,None,None,350,110,120,40,50,30,0,0
-"Taroth Blaze ""Decay""",7,960,200,Dragon,300,10,+20,Average,None,None,None,None,350,200,70,20,20,40,0,0
-"Taroth Blaze ""King""",7,912,190,Fire,240,10,+20,None,None,None,None,None,350,60,50,60,120,60,0,0
-"Taroth Blaze ""Erupter""",7,912,190,Fire,330,0,+20,None,None,None,None,None,350,90,60,60,100,40,0,0
-"Taroth Blaze ""Magma""",7,1008,210,Blast,420,-20,+30,None,None,None,None,None,350,110,120,40,50,30,0,0
-"Taroth Blaze ""Water""",8,912,190,Hidden Water,540,0,+20,None,3,None,None,None,350,150,100,30,30,40,0,0
-"Taroth Blaze ""Ice""",8,912,190,Hidden Ice,510,10,+20,None,3,None,None,None,350,60,50,60,120,60,0,0
-"Taroth Blaze ""Sleep""",8,912,190,Hidden Sleep,450,0,+30,None,3,None,None,None,350,80,50,60,120,40,0,0
-"Taroth Blaze ""Thunder""",8,1008,210,Hidden Thunder,600,0,+20,None,3,None,None,None,350,80,100,40,40,90,0,0
-"Kjárr Fellsword ""Numb""",8,840,175,Paralysis,480,20,0,None,1,None,None,Critical Status,350,70,60,60,100,60,0,0
-"Kjárr Fellsword ""Decay""",8,984,205,Dragon,360,20,0,Average,1,None,None,Critical Element,350,190,70,20,20,50,0,0
-"Kjárr Fellsword ""King""",8,936,195,Fire,300,20,0,None,1,None,None,Critical Element,350,50,50,60,120,70,0,0
-"Kjárr Fellsword ""Magma""",8,984,205,Blast,480,10,+15,None,1,None,None,Critical Status,350,110,50,50,80,60,0,0
-"Kjárr Fellsword ""Water""",8,912,190,Water,480,20,0,None,None,None,None,Critical Element,350,140,100,30,30,50,0,0
-"Kjárr Fellsword ""Ice""",8,912,190,Ice,450,20,0,None,None,None,None,Critical Element,350,50,50,60,120,70,0,0
-"Kjárr Fellsword ""Thunder""",8,1008,210,Thunder,480,10,0,None,None,None,None,Critical Element,350,70,100,40,40,100,0,0
+Taroth Blaze Glutton,7,960,200,Hidden Water,300,0,+20,None,3,None,None,None,350,110,120,40,50,30,0,0
+Taroth Blaze Spew,7,864,180,Poison,540,0,+20,None,1,None,None,None,350,110,120,40,50,30,0,0
+Taroth Blaze Mud,7,1008,210,Hidden Paralysis,390,-20,+25,None,1,None,None,None,350,110,120,40,50,30,0,0
+Taroth Blaze Numb,7,768,160,Paralysis,450,30,+20,None,None,None,None,None,350,80,60,60,100,50,0,0
+Taroth Blaze Tar,7,912,190,Sleep,270,10,+30,None,None,None,None,None,350,110,120,40,50,30,0,0
+Taroth Blaze Decay,7,960,200,Dragon,300,10,+20,Average,None,None,None,None,350,200,70,20,20,40,0,0
+Taroth Blaze King,7,912,190,Fire,240,10,+20,None,None,None,None,None,350,60,50,60,120,60,0,0
+Taroth Blaze Erupter,7,912,190,Fire,330,0,+20,None,None,None,None,None,350,90,60,60,100,40,0,0
+Taroth Blaze Magma,7,1008,210,Blast,420,-20,+30,None,None,None,None,None,350,110,120,40,50,30,0,0
+Taroth Blaze Water,8,912,190,Hidden Water,540,0,+20,None,3,None,None,None,350,150,100,30,30,40,0,0
+Taroth Blaze Ice,8,912,190,Hidden Ice,510,10,+20,None,3,None,None,None,350,60,50,60,120,60,0,0
+Taroth Blaze Sleep,8,912,190,Hidden Sleep,450,0,+30,None,3,None,None,None,350,80,50,60,120,40,0,0
+Taroth Blaze Thunder,8,1008,210,Hidden Thunder,600,0,+20,None,3,None,None,None,350,80,100,40,40,90,0,0
+Kjarr Fellsword Numb,8,840,175,Paralysis,480,20,0,None,1,None,None,Critical Status,350,70,60,60,100,60,0,0
+Kjarr Fellsword Decay,8,984,205,Dragon,360,20,0,Average,1,None,None,Critical Element,350,190,70,20,20,50,0,0
+Kjarr Fellsword King,8,936,195,Fire,300,20,0,None,1,None,None,Critical Element,350,50,50,60,120,70,0,0
+Kjarr Fellsword Magma,8,984,205,Blast,480,10,+15,None,1,None,None,Critical Status,350,110,50,50,80,60,0,0
+Kjarr Fellsword Water,8,912,190,Water,480,20,0,None,None,None,None,Critical Element,350,140,100,30,30,50,0,0
+Kjarr Fellsword Ice,8,912,190,Ice,450,20,0,None,None,None,None,Critical Element,350,50,50,60,120,70,0,0
+Kjarr Fellsword Thunder,8,1008,210,Thunder,480,10,0,None,None,None,None,Critical Element,350,70,100,40,40,100,0,0

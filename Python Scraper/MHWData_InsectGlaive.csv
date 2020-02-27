@@ -122,15 +122,15 @@ Bad Wing,6,620,200,Dragon,150,-25,0,High,None,None,None,Health Boost,None,350,60
 Grunge Storm,7,682,220,Dragon,210,-25,0,High,None,None,None,Health Boost,None,350,50,120,80,60,40,0,0
 Fate's Wing,12,868,280,Dragon,270,-25,0,High,None,None,None,Stamina Upgrade & Healing,None,350,150,30,30,60,50,30,0
 Empress Cane,7,589,190,Blast,120,0,0,None,1,None,None,Speed Boost,None,350,100,30,60,80,40,40,0
-"Empress Cane ""Blaze""",8,589,190,Blast,150,20,0,None,1,None,None,Speed Boost,Guts,350,100,30,60,80,40,40,0
-"Soulfire Reach ""Blaze""",12,775,250,Blast,180,20,0,None,2,1,None,Speed Boost,Guts,350,110,30,90,30,30,60,0
+Empress Cane Blaze,8,589,190,Blast,150,20,0,None,1,None,None,Speed Boost,Guts,350,100,30,60,80,40,40,0
+Soulfire Reach Blaze,12,775,250,Blast,180,20,0,None,2,1,None,Speed Boost,Guts,350,110,30,90,30,30,60,0
 Gae Bolg,7,558,180,Dragon,240,10,0,High,1,None,None,Element Boost,None,350,80,60,80,80,50,0,0
 True Gae Bolg,8,589,190,Dragon,300,20,0,High,2,None,None,Element Boost,None,350,60,60,20,150,60,0,0
 Nexus Gae Bolg,12,744,240,Dragon,450,20,0,High,4,None,None,Element Boost,None,350,80,30,90,30,30,90,0
-"Empress Cane ""Ruin""",8,620,200,Blast,120,0,0,None,2,None,None,Speed Boost,Hasten Recovery,350,100,30,60,80,40,40,0
-"Soulfire Reach ""Ruin""",12,837,270,Blast,150,0,0,None,2,2,None,Speed Boost,Hasten Recovery,350,110,30,90,30,30,60,0
-"Empress Cane ""Styx""",8,589,190,Blast,210,10,0,None,3,1,None,Speed Boost,Razor Sharp/Spare Shot,350,100,30,60,80,40,40,0
-"Soulfire Reach ""Styx""",12,775,250,Blast,240,10,0,None,3,3,None,Speed Boost,Razor Sharp/Spare Shot,350,110,30,90,30,30,60,0
+Empress Cane Ruin,8,620,200,Blast,120,0,0,None,2,None,None,Speed Boost,Hasten Recovery,350,100,30,60,80,40,40,0
+Soulfire Reach Ruin,12,837,270,Blast,150,0,0,None,2,2,None,Speed Boost,Hasten Recovery,350,110,30,90,30,30,60,0
+Empress Cane Styx,8,589,190,Blast,210,10,0,None,3,1,None,Speed Boost,Razor Sharp/Spare Shot,350,100,30,60,80,40,40,0
+Soulfire Reach Styx,12,775,250,Blast,240,10,0,None,3,3,None,Speed Boost,Razor Sharp/Spare Shot,350,110,30,90,30,30,60,0
 Defender Glaive I,1,403,130,Blast,150,0,0,None,None,None,None,Speed Boost,None,200,30,60,20,90,0,0,0
 Defender Glaive II,3,527,170,Blast,180,0,0,None,None,None,None,Speed Boost,None,250,30,60,20,140,0,0,0
 Defender Glaive III,5,589,190,Blast,210,0,0,None,None,None,None,Speed Boost,None,300,50,50,50,80,70,0,0
@@ -182,23 +182,23 @@ Decay Gold Naginata,6,465,150,Dragon,90,0,+20,Average,None,None,None,Blunt Boost
 King Gold Naginata,6,496,160,Fire,120,20,+20,None,None,None,None,Sever Boost,None,350,90,60,60,100,40,0,0
 Horn Gold Naginata,6,620,200,Hidden Ice,120,-30,+25,None,None,None,None,Stamina Boost,None,350,90,50,60,120,30,0,0
 Crusher Gold Naginata,6,465,150,Blast,90,0,+20,None,2,None,None,Stamina Boost,None,350,130,110,40,40,30,0,0
-"Taroth Glaive ""Thief""",7,527,170,Hidden Sleep,210,30,+20,None,None,None,None,Speed Boost,None,350,80,60,60,100,50,0,0
-"Taroth Glaive ""Spew""",7,558,180,Poison,390,0,+20,None,1,None,None,Health Boost,None,350,90,120,40,50,50,0,0
-"Taroth Glaive ""Spark""",7,558,180,Thunder,240,20,+20,None,None,None,None,Speed Boost,None,350,190,70,20,20,50,0,0
-"Taroth Glaive ""Flash""",7,589,190,Hidden Thunder,300,0,+20,None,None,None,None,Speed Boost,None,350,80,50,60,120,40,0,0
-"Taroth Glaive ""Claw""",7,558,180,Hidden Fire,90,20,+20,None,None,None,None,Speed Boost,None,350,50,120,80,60,40,0,0
-"Taroth Glaive ""Decay""",7,527,170,Dragon,180,0,+20,Average,None,None,None,Blunt Boost,None,350,250,20,20,20,30,10,0
-"Taroth Glaive ""King""",7,589,190,Fire,210,20,+20,None,None,None,None,Sever Boost,None,350,90,60,60,100,40,0,0
-"Taroth Glaive ""Horn""",7,713,230,Hidden Ice,240,-30,+25,None,None,None,None,Stamina Boost,None,350,90,50,60,120,30,0,0
-"Taroth Glaive ""Crusher""",7,558,180,Blast,150,0,+20,None,2,None,None,Stamina Boost,None,350,130,110,40,40,30,0,0
-"Taroth Glaive ""Water""",8,620,200,Hidden Water,360,0,+20,None,3,None,None,Element Boost,None,350,70,50,60,120,50,0,0
-"Taroth Glaive ""Ice""",8,527,170,Hidden Ice,390,0,+20,None,3,None,None,Element Boost,None,350,110,30,60,80,40,30,0
-"Taroth Glaive ""Paralysis""",8,620,200,Hidden Paralysis,300,0,+30,None,3,None,None,Blunt Boost,None,350,70,50,50,80,100,0,0
-"Taroth Glaive ""Sleep""",8,558,180,Hidden Sleep,270,0,+20,None,3,None,None,Sever Boost,None,350,220,20,20,20,30,40,0
-"Kjárr Glaive ""Spark""",8,589,190,Thunder,300,15,0,None,None,None,None,Speed Boost,Critical Element,350,170,70,20,20,70,0,0
-"Kjárr Glaive ""Decay""",8,527,170,Dragon,360,10,0,Average,None,None,None,Blunt Boost,Critical Element,350,230,20,20,20,30,30,0
-"Kjárr Glaive ""King""",8,589,190,Fire,270,20,+20,None,None,None,None,Sever Boost,Critical Element,350,70,60,60,100,60,0,0
-"Kjárr Glaive ""Crusher""",8,558,180,Blast,270,10,0,None,None,None,None,Stamina Boost,Critical Status,350,240,20,20,20,30,20,0
-"Kjárr Glaive ""Water""",8,620,200,Water,270,10,0,None,None,None,None,Element Boost,Critical Element,350,50,50,60,120,70,0,0
-"Kjárr Glaive ""Ice""",8,558,180,Ice,240,10,0,None,None,None,None,Element Boost,Critical Element,350,90,30,60,80,40,50,0
-"Kjárr Glaive ""Paralysis""",8,620,200,Paralysis,210,10,0,None,None,None,None,Blunt Boost,Critical Status,350,240,20,20,20,30,20,0
+Taroth Glaive Thief,7,527,170,Hidden Sleep,210,30,+20,None,None,None,None,Speed Boost,None,350,80,60,60,100,50,0,0
+Taroth Glaive Spew,7,558,180,Poison,390,0,+20,None,1,None,None,Health Boost,None,350,90,120,40,50,50,0,0
+Taroth Glaive Spark,7,558,180,Thunder,240,20,+20,None,None,None,None,Speed Boost,None,350,190,70,20,20,50,0,0
+Taroth Glaive Flash,7,589,190,Hidden Thunder,300,0,+20,None,None,None,None,Speed Boost,None,350,80,50,60,120,40,0,0
+Taroth Glaive Claw,7,558,180,Hidden Fire,90,20,+20,None,None,None,None,Speed Boost,None,350,50,120,80,60,40,0,0
+Taroth Glaive Decay,7,527,170,Dragon,180,0,+20,Average,None,None,None,Blunt Boost,None,350,250,20,20,20,30,10,0
+Taroth Glaive King,7,589,190,Fire,210,20,+20,None,None,None,None,Sever Boost,None,350,90,60,60,100,40,0,0
+Taroth Glaive Horn,7,713,230,Hidden Ice,240,-30,+25,None,None,None,None,Stamina Boost,None,350,90,50,60,120,30,0,0
+Taroth Glaive Crusher,7,558,180,Blast,150,0,+20,None,2,None,None,Stamina Boost,None,350,130,110,40,40,30,0,0
+Taroth Glaive Water,8,620,200,Hidden Water,360,0,+20,None,3,None,None,Element Boost,None,350,70,50,60,120,50,0,0
+Taroth Glaive Ice,8,527,170,Hidden Ice,390,0,+20,None,3,None,None,Element Boost,None,350,110,30,60,80,40,30,0
+Taroth Glaive Paralysis,8,620,200,Hidden Paralysis,300,0,+30,None,3,None,None,Blunt Boost,None,350,70,50,50,80,100,0,0
+Taroth Glaive Sleep,8,558,180,Hidden Sleep,270,0,+20,None,3,None,None,Sever Boost,None,350,220,20,20,20,30,40,0
+Kjarr Glaive Spark,8,589,190,Thunder,300,15,0,None,None,None,None,Speed Boost,Critical Element,350,170,70,20,20,70,0,0
+Kjarr Glaive Decay,8,527,170,Dragon,360,10,0,Average,None,None,None,Blunt Boost,Critical Element,350,230,20,20,20,30,30,0
+Kjarr Glaive King,8,589,190,Fire,270,20,+20,None,None,None,None,Sever Boost,Critical Element,350,70,60,60,100,60,0,0
+Kjarr Glaive Crusher,8,558,180,Blast,270,10,0,None,None,None,None,Stamina Boost,Critical Status,350,240,20,20,20,30,20,0
+Kjarr Glaive Water,8,620,200,Water,270,10,0,None,None,None,None,Element Boost,Critical Element,350,50,50,60,120,70,0,0
+Kjarr Glaive Ice,8,558,180,Ice,240,10,0,None,None,None,None,Element Boost,Critical Element,350,90,30,60,80,40,50,0
+Kjarr Glaive Paralysis,8,620,200,Paralysis,210,10,0,None,None,None,None,Blunt Boost,Critical Status,350,240,20,20,20,30,20,0

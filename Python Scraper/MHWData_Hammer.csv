@@ -130,12 +130,12 @@ Devil's Due,6,1092,210,Dragon,150,-30,0,High,None,None,None,None,350,60,120,80,6
 Devil's Crush,7,1196,230,Dragon,210,-30,0,High,None,None,None,None,350,50,120,80,60,40,0,0
 Consummate Hammer,12,1456,280,Dragon,360,-30,0,High,None,None,None,None,350,160,30,30,60,50,20,0
 Empress Mace,7,936,180,Blast,150,0,0,None,2,1,None,None,350,110,30,60,80,40,30,0
-"Empress Mace ""Blaze""",8,936,180,Blast,180,20,0,None,2,1,None,Guts,350,110,30,60,80,40,30,0
-"Soulfire Heel ""Blaze""",12,1300,250,Blast,270,20,0,None,2,1,None,Guts,350,120,30,90,30,30,50,0
-"Empress Mace ""Ruin""",8,988,190,Blast,150,0,0,None,2,2,None,Hasten Recovery,350,110,30,60,80,40,30,0
-"Soulfire Heel ""Ruin""",12,1404,270,Blast,210,0,0,None,2,2,None,Hasten Recovery,350,120,30,90,30,30,50,0
-"Empress Mace ""Styx""",8,936,180,Blast,240,10,0,None,3,3,None,Razor Sharp/Spare Shot,350,110,30,60,80,40,30,0
-"Soulfire Heel ""Styx""",12,1300,250,Blast,330,10,0,None,3,3,None,Razor Sharp/Spare Shot,350,120,30,90,30,30,50,0
+Empress Mace Blaze,8,936,180,Blast,180,20,0,None,2,1,None,Guts,350,110,30,60,80,40,30,0
+Soulfire Heel Blaze,12,1300,250,Blast,270,20,0,None,2,1,None,Guts,350,120,30,90,30,30,50,0
+Empress Mace Ruin,8,988,190,Blast,150,0,0,None,2,2,None,Hasten Recovery,350,110,30,60,80,40,30,0
+Soulfire Heel Ruin,12,1404,270,Blast,210,0,0,None,2,2,None,Hasten Recovery,350,120,30,90,30,30,50,0
+Empress Mace Styx,8,936,180,Blast,240,10,0,None,3,3,None,Razor Sharp/Spare Shot,350,110,30,60,80,40,30,0
+Soulfire Heel Styx,12,1300,250,Blast,330,10,0,None,3,3,None,Razor Sharp/Spare Shot,350,120,30,90,30,30,50,0
 Bristly Pincushion,3,676,130,Poison,150,0,0,None,None,None,None,None,250,60,50,80,60,0,0,0
 Bristly Grudge,7,1040,200,Poison,270,0,0,None,None,None,None,None,350,110,50,50,80,60,0,0
 Bristly Inferno,11,1352,260,Poison,360,0,0,None,None,None,None,None,350,60,30,30,110,40,80,0
@@ -189,23 +189,23 @@ Tar Gold Bludgeon,6,780,150,Sleep,120,10,+30,None,None,None,None,None,350,110,12
 Decay Gold Bludgeon,6,936,180,Dragon,120,0,+20,Average,None,None,None,None,350,70,120,80,60,20,0,0
 Horn Gold Bludgeon,6,988,190,Ice,60,-25,+20,None,None,None,None,None,350,90,50,60,120,30,0,0
 Gyre Gold Bludgeon,6,936,180,Fire,60,0,+30,None,None,None,None,None,350,90,120,40,50,50,0,0
-"Taroth Hammer ""Thief""",7,884,170,Hidden Sleep,360,35,+20,None,None,None,None,None,350,120,110,40,40,40,0,0
-"Taroth Hammer ""Spew""",7,988,190,Poison,540,0,+20,None,None,None,None,None,350,100,120,40,50,40,0,0
-"Taroth Hammer ""Mud""",7,1092,210,Hidden Paralysis,390,-10,+25,None,1,None,None,None,350,110,120,40,50,30,0,0
-"Taroth Hammer ""Rage""",7,1040,200,Fire,450,-20,+20,None,None,None,None,None,350,90,120,40,50,50,0,0
-"Taroth Hammer ""Numb""",7,832,160,Paralysis,390,30,+20,None,None,None,None,None,350,90,60,60,100,40,0,0
-"Taroth Hammer ""Tar""",7,988,190,Sleep,270,10,+30,None,None,None,None,None,350,110,120,40,50,30,0,0
-"Taroth Hammer ""Decay""",7,1040,200,Dragon,270,0,+20,Average,None,None,None,None,350,70,120,80,60,20,0,0
-"Taroth Hammer ""Horn""",7,1144,220,Ice,90,-25,+20,None,None,None,None,None,350,90,50,60,120,30,0,0
-"Taroth Hammer ""Gyre""",7,1092,210,Fire,120,0,+30,None,None,None,None,None,350,90,120,40,50,50,0,0
-"Taroth Hammer ""Water""",8,988,190,Hidden Water,360,0,+20,None,3,None,None,None,350,80,50,60,120,40,0,0
-"Taroth Hammer ""Ice""",8,988,190,Hidden Ice,510,0,+20,None,3,None,None,None,350,190,70,20,20,50,0,0
-"Taroth Hammer ""Thunder""",8,988,190,Hidden Thunder,480,0,+30,None,3,None,None,None,350,150,100,30,30,40,0,0
-"Taroth Hammer ""Sleep""",8,1040,200,Hidden Sleep,300,0,+30,None,3,None,None,None,350,220,20,20,20,30,40,0
-"Kjárr Hammer ""Numb""",8,936,180,Paralysis,300,20,0,None,1,None,None,Critical Status,350,80,60,60,100,50,0,0
-"Kjárr Hammer ""Decay""",8,1040,200,Dragon,330,10,0,Average,1,None,None,Critical Element,350,40,120,80,60,50,0,0
-"Kjárr Hammer ""Gyre""",8,1040,200,Fire,360,10,+15,None,1,None,None,Critical Element,350,80,100,40,40,90,0,0
-"Kjárr Hammer ""Water""",8,1040,200,Water,390,10,0,None,None,None,None,Critical Element,350,60,50,60,120,60,0,0
-"Kjárr Hammer ""Ice""",8,988,190,Ice,480,10,0,None,None,None,None,Critical Element,350,170,70,20,20,70,0,0
-"Kjárr Hammer ""Thunder""",8,988,190,Thunder,450,15,0,None,None,None,None,Critical Element,350,130,100,30,30,60,0,0
-"Kjárr Hammer ""Blast""",8,1118,215,Blast,270,15,0,None,None,None,None,Critical Status,350,110,50,50,80,60,0,0
+Taroth Hammer Thief,7,884,170,Hidden Sleep,360,35,+20,None,None,None,None,None,350,120,110,40,40,40,0,0
+Taroth Hammer Spew,7,988,190,Poison,540,0,+20,None,None,None,None,None,350,100,120,40,50,40,0,0
+Taroth Hammer Mud,7,1092,210,Hidden Paralysis,390,-10,+25,None,1,None,None,None,350,110,120,40,50,30,0,0
+Taroth Hammer Rage,7,1040,200,Fire,450,-20,+20,None,None,None,None,None,350,90,120,40,50,50,0,0
+Taroth Hammer Numb,7,832,160,Paralysis,390,30,+20,None,None,None,None,None,350,90,60,60,100,40,0,0
+Taroth Hammer Tar,7,988,190,Sleep,270,10,+30,None,None,None,None,None,350,110,120,40,50,30,0,0
+Taroth Hammer Decay,7,1040,200,Dragon,270,0,+20,Average,None,None,None,None,350,70,120,80,60,20,0,0
+Taroth Hammer Horn,7,1144,220,Ice,90,-25,+20,None,None,None,None,None,350,90,50,60,120,30,0,0
+Taroth Hammer Gyre,7,1092,210,Fire,120,0,+30,None,None,None,None,None,350,90,120,40,50,50,0,0
+Taroth Hammer Water,8,988,190,Hidden Water,360,0,+20,None,3,None,None,None,350,80,50,60,120,40,0,0
+Taroth Hammer Ice,8,988,190,Hidden Ice,510,0,+20,None,3,None,None,None,350,190,70,20,20,50,0,0
+Taroth Hammer Thunder,8,988,190,Hidden Thunder,480,0,+30,None,3,None,None,None,350,150,100,30,30,40,0,0
+Taroth Hammer Sleep,8,1040,200,Hidden Sleep,300,0,+30,None,3,None,None,None,350,220,20,20,20,30,40,0
+Kjarr Hammer Numb,8,936,180,Paralysis,300,20,0,None,1,None,None,Critical Status,350,80,60,60,100,50,0,0
+Kjarr Hammer Decay,8,1040,200,Dragon,330,10,0,Average,1,None,None,Critical Element,350,40,120,80,60,50,0,0
+Kjarr Hammer Gyre,8,1040,200,Fire,360,10,+15,None,1,None,None,Critical Element,350,80,100,40,40,90,0,0
+Kjarr Hammer Water,8,1040,200,Water,390,10,0,None,None,None,None,Critical Element,350,60,50,60,120,60,0,0
+Kjarr Hammer Ice,8,988,190,Ice,480,10,0,None,None,None,None,Critical Element,350,170,70,20,20,70,0,0
+Kjarr Hammer Thunder,8,988,190,Thunder,450,15,0,None,None,None,None,Critical Element,350,130,100,30,30,60,0,0
+Kjarr Hammer Blast,8,1118,215,Blast,270,15,0,None,None,None,None,Critical Status,350,110,50,50,80,60,0,0

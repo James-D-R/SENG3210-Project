@@ -127,12 +127,12 @@ Wrath & Rancor,6,280,200,Dragon,120,None,0,-20,0,High,None,None,None,None,350,50
 Wrathful Predation,7,308,220,Dragon,180,None,0,-20,0,High,None,None,None,None,350,40,120,80,60,50,0,0
 Consummate Pair,12,392,280,Dragon,210,None,0,-15,0,High,None,None,None,None,350,140,30,30,60,50,40,0
 Empress Daggers,7,252,180,Blast,60,None,0,0,0,None,2,1,None,None,350,90,30,60,80,40,50,0
-"Empress Daggers ""Blaze""",8,252,180,Blast,90,None,0,20,0,None,2,1,None,Guts,350,90,30,60,80,40,50,0
-"Soulfire Fangs ""Blaze""",12,350,250,Blast,120,None,0,20,0,None,2,1,None,Guts,350,110,30,30,60,50,70,0
-"Empress Daggers ""Ruin""",8,266,190,Blast,60,None,0,0,0,None,2,2,None,Hasten Recovery,350,90,30,60,80,40,50,0
-"Soulfire Fangs ""Ruin""",12,378,270,Blast,90,None,0,0,0,None,2,2,None,Hasten Recovery,350,110,30,30,60,50,70,0
-"Empress Daggers ""Styx""",8,252,180,Blast,120,None,0,10,0,None,3,3,None,Razor Sharp/Spare Shot,350,90,30,60,80,40,50,0
-"Soulfire Fangs ""Styx""",12,350,250,Blast,150,None,0,10,0,None,3,3,None,Razor Sharp/Spare Shot,350,110,30,30,60,50,70,0
+Empress Daggers Blaze,8,252,180,Blast,90,None,0,20,0,None,2,1,None,Guts,350,90,30,60,80,40,50,0
+Soulfire Fangs Blaze,12,350,250,Blast,120,None,0,20,0,None,2,1,None,Guts,350,110,30,30,60,50,70,0
+Empress Daggers Ruin,8,266,190,Blast,60,None,0,0,0,None,2,2,None,Hasten Recovery,350,90,30,60,80,40,50,0
+Soulfire Fangs Ruin,12,378,270,Blast,90,None,0,0,0,None,2,2,None,Hasten Recovery,350,110,30,30,60,50,70,0
+Empress Daggers Styx,8,252,180,Blast,120,None,0,10,0,None,3,3,None,Razor Sharp/Spare Shot,350,90,30,60,80,40,50,0
+Soulfire Fangs Styx,12,350,250,Blast,150,None,0,10,0,None,3,3,None,Razor Sharp/Spare Shot,350,110,30,30,60,50,70,0
 Downy Crake Brooms,3,154,110,Sleep,90,None,0,0,0,None,None,None,None,None,250,60,50,60,80,0,0,0
 Downy Crake Love,7,252,180,Sleep,120,None,0,0,0,None,None,None,None,None,350,90,50,50,80,80,0,0
 Downy Paradise,11,364,260,Sleep,180,None,0,0,0,None,None,None,None,None,350,40,80,30,30,80,90,0
@@ -190,24 +190,24 @@ Claw Gold Twinblades,6,196,140,Hidden Fire,60,None,0,20,+20,None,None,None,None,
 Horn Gold Twinblades,6,266,190,Hidden Ice,60,None,0,-10,+25,None,None,None,None,None,350,90,50,60,120,30,0,0
 Erupter Gold Twinblades,6,238,170,Fire,60,None,0,0,+20,None,1,None,None,None,350,200,70,20,20,40,0,0
 Magma Gold Twinblades,6,238,170,Blast,90,None,0,-20,+30,None,None,None,None,None,350,100,120,40,50,40,0,0
-"Taroth Daggers ""Thief""",7,238,170,Sleep,90,None,0,20,+20,None,None,None,None,None,350,80,60,60,100,50,0,0
-"Taroth Daggers ""Mire""",7,266,190,Water,210,None,0,10,+20,None,None,None,None,None,350,160,100,30,30,30,0,0
-"Taroth Daggers ""Spark""",7,252,180,Thunder,150,None,0,10,+20,None,None,None,None,None,350,220,20,20,50,20,20,0
-"Taroth Daggers ""Rage""",7,294,210,Fire,240,None,0,-20,+20,None,None,None,None,None,350,100,120,40,50,40,0,0
-"Taroth Daggers ""Lurk""",7,238,170,Hidden Paralysis,90,None,0,0,+20,None,None,None,None,None,350,110,30,60,80,40,30,0
-"Taroth Daggers ""Flash""",7,266,190,Hidden Thunder,210,None,0,0,+20,None,None,None,None,None,350,80,50,60,120,40,0,0
-"Taroth Daggers ""Claw""",7,252,180,Hidden Fire,90,None,0,20,+20,None,None,None,None,None,350,40,120,80,60,50,0,0
-"Taroth Daggers ""Horn""",7,322,230,Hidden Ice,150,None,0,-10,+25,None,None,None,None,None,350,90,50,60,120,30,0,0
-"Taroth Daggers ""Erupter""",7,266,190,Fire,150,None,0,0,+20,None,1,None,None,None,350,200,70,20,20,40,0,0
-"Taroth Daggers ""Magma""",7,280,200,Blast,210,None,0,-20,+30,None,None,None,None,None,350,100,120,40,50,40,0,0
-"Taroth Daggers ""Water""",8,266,190,Hidden Water,270,None,0,0,+20,None,3,None,None,None,350,190,70,20,20,50,0,0
-"Taroth Daggers ""Ice""",8,266,190,Hidden Ice,270,None,0,0,+20,None,3,None,None,None,350,50,50,60,120,70,0,0
-"Taroth Daggers ""Poison""",8,266,190,Hidden Poison,330,None,0,0,+20,None,3,None,None,None,350,40,50,60,120,80,0,0
-"Taroth Daggers ""Fire""",8,252,180,Hidden Fire,180,None,0,0,+20,None,3,None,None,None,350,220,20,20,20,30,40,0
-"Kjárr Daggers ""Spark""",8,252,180,Thunder,180,None,0,15,0,None,1,None,None,Critical Element,350,220,20,20,50,20,20,0
-"Kjárr Daggers ""Rage""",8,280,200,Fire,210,None,0,5,0,None,None,None,None,Critical Element,350,80,50,50,80,90,0,0
-"Kjárr Daggers ""Magma""",8,266,190,Blast,180,None,0,5,+15,None,1,None,None,Critical Status,350,90,120,40,50,50,0,0
-"Kjárr Daggers ""Lurk""",8,224,160,Paralysis,90,None,0,10,0,None,1,None,None,Critical Status,350,100,30,60,80,40,40,0
-"Kjárr Daggers ""Water""",8,252,180,Water,210,None,0,10,0,None,1,None,None,Critical Element,350,170,70,20,20,70,0,0
-"Kjárr Daggers ""Ice""",8,252,180,Ice,210,None,0,15,0,None,1,None,None,Critical Element,350,40,50,60,120,80,0,0
-"Kjárr Daggers ""Dragon""",8,252,180,Dragon,210,None,0,20,0,Average,1,None,None,Critical Element,350,40,50,60,120,80,0,0
+Taroth Daggers Thief,7,238,170,Sleep,90,None,0,20,+20,None,None,None,None,None,350,80,60,60,100,50,0,0
+Taroth Daggers Mire,7,266,190,Water,210,None,0,10,+20,None,None,None,None,None,350,160,100,30,30,30,0,0
+Taroth Daggers Spark,7,252,180,Thunder,150,None,0,10,+20,None,None,None,None,None,350,220,20,20,50,20,20,0
+Taroth Daggers Rage,7,294,210,Fire,240,None,0,-20,+20,None,None,None,None,None,350,100,120,40,50,40,0,0
+Taroth Daggers Lurk,7,238,170,Hidden Paralysis,90,None,0,0,+20,None,None,None,None,None,350,110,30,60,80,40,30,0
+Taroth Daggers Flash,7,266,190,Hidden Thunder,210,None,0,0,+20,None,None,None,None,None,350,80,50,60,120,40,0,0
+Taroth Daggers Claw,7,252,180,Hidden Fire,90,None,0,20,+20,None,None,None,None,None,350,40,120,80,60,50,0,0
+Taroth Daggers Horn,7,322,230,Hidden Ice,150,None,0,-10,+25,None,None,None,None,None,350,90,50,60,120,30,0,0
+Taroth Daggers Erupter,7,266,190,Fire,150,None,0,0,+20,None,1,None,None,None,350,200,70,20,20,40,0,0
+Taroth Daggers Magma,7,280,200,Blast,210,None,0,-20,+30,None,None,None,None,None,350,100,120,40,50,40,0,0
+Taroth Daggers Water,8,266,190,Hidden Water,270,None,0,0,+20,None,3,None,None,None,350,190,70,20,20,50,0,0
+Taroth Daggers Ice,8,266,190,Hidden Ice,270,None,0,0,+20,None,3,None,None,None,350,50,50,60,120,70,0,0
+Taroth Daggers Poison,8,266,190,Hidden Poison,330,None,0,0,+20,None,3,None,None,None,350,40,50,60,120,80,0,0
+Taroth Daggers Fire,8,252,180,Hidden Fire,180,None,0,0,+20,None,3,None,None,None,350,220,20,20,20,30,40,0
+Kjarr Daggers Spark,8,252,180,Thunder,180,None,0,15,0,None,1,None,None,Critical Element,350,220,20,20,50,20,20,0
+Kjarr Daggers Rage,8,280,200,Fire,210,None,0,5,0,None,None,None,None,Critical Element,350,80,50,50,80,90,0,0
+Kjarr Daggers Magma,8,266,190,Blast,180,None,0,5,+15,None,1,None,None,Critical Status,350,90,120,40,50,50,0,0
+Kjarr Daggers Lurk,8,224,160,Paralysis,90,None,0,10,0,None,1,None,None,Critical Status,350,100,30,60,80,40,40,0
+Kjarr Daggers Water,8,252,180,Water,210,None,0,10,0,None,1,None,None,Critical Element,350,170,70,20,20,70,0,0
+Kjarr Daggers Ice,8,252,180,Ice,210,None,0,15,0,None,1,None,None,Critical Element,350,40,50,60,120,80,0,0
+Kjarr Daggers Dragon,8,252,180,Dragon,210,None,0,20,0,Average,1,None,None,Critical Element,350,40,50,60,120,80,0,0

@@ -126,12 +126,12 @@ Grief Lance,6,483,210,Dragon,150,-25,0,High,None,None,None,None,350,60,120,80,60
 Fiendish Tower,7,529,230,Dragon,210,-25,0,High,None,None,None,None,350,50,120,80,60,40,0,0
 Fate's Spindle,12,644,280,Dragon,360,-30,0,High,None,None,None,None,350,160,30,30,60,50,20,0
 Empress Lance,7,414,180,Blast,150,0,0,None,2,1,None,None,350,110,30,60,80,40,30,0
-"Empress Lance ""Blaze""",8,414,180,Blast,180,20,0,None,2,1,None,Guts,350,110,30,60,80,40,30,0
-"Soulfire Spike ""Blaze""",12,575,250,Blast,270,20,0,None,2,1,None,Guts,350,120,30,90,30,30,50,0
-"Empress Lance ""Ruin""",8,437,190,Blast,150,0,0,None,2,2,None,Hasten Recovery,350,110,30,60,80,40,30,0
-"Soulfire Spike ""Ruin""",12,621,270,Blast,210,0,0,None,2,2,None,Hasten Recovery,350,120,30,90,30,30,50,0
-"Empress Lance ""Styx""",8,414,180,Blast,240,10,0,None,3,3,None,Razor Sharp/Spare Shot,350,110,30,60,80,40,30,0
-"Soulfire Spike ""Styx""",12,575,250,Blast,330,10,0,None,3,3,None,Razor Sharp/Spare Shot,350,120,30,90,30,30,50,0
+Empress Lance Blaze,8,414,180,Blast,180,20,0,None,2,1,None,Guts,350,110,30,60,80,40,30,0
+Soulfire Spike Blaze,12,575,250,Blast,270,20,0,None,2,1,None,Guts,350,120,30,90,30,30,50,0
+Empress Lance Ruin,8,437,190,Blast,150,0,0,None,2,2,None,Hasten Recovery,350,110,30,60,80,40,30,0
+Soulfire Spike Ruin,12,621,270,Blast,210,0,0,None,2,2,None,Hasten Recovery,350,120,30,90,30,30,50,0
+Empress Lance Styx,8,414,180,Blast,240,10,0,None,3,3,None,Razor Sharp/Spare Shot,350,110,30,60,80,40,30,0
+Soulfire Spike Styx,12,575,250,Blast,330,10,0,None,3,3,None,Razor Sharp/Spare Shot,350,120,30,90,30,30,50,0
 Shooting Star Lance,4,299,130,Paralysis,120,0,0,None,None,None,None,None,250,60,50,80,60,0,0,0
 Sapphire Star Lance,7,437,190,Paralysis,180,0,0,None,None,None,None,None,350,90,50,50,80,80,0,0
 Shining Star Lance,11,598,260,Paralysis,300,0,0,None,None,None,None,None,350,60,80,30,30,80,70,0
@@ -186,23 +186,23 @@ Claw Gold Defender,6,299,130,Hidden Fire,60,30,+20,None,None,None,None,None,350,
 Decay Gold Defender,6,322,140,Dragon,120,0,+20,Average,None,None,None,None,350,250,20,20,20,30,10,0
 King Gold Defender,6,299,130,Fire,150,0,+20,None,None,None,None,None,350,230,20,20,50,10,20,0
 Crusher Gold Defender,6,345,150,Blast,90,10,+20,None,None,None,None,None,350,90,60,80,80,40,0,0
-"Taroth Crest ""Thief""",7,391,170,Sleep,210,10,+20,None,None,None,None,None,350,90,60,60,100,40,0,0
-"Taroth Crest ""Spew""",7,414,180,Poison,540,0,+20,None,1,None,None,None,350,100,120,40,50,40,0,0
-"Taroth Crest ""Mud""",7,437,190,Paralysis,240,-20,+25,None,None,None,None,None,350,100,120,40,50,40,0,0
-"Taroth Crest ""Lurk""",7,368,160,Hidden Blast,270,10,+20,None,None,None,None,None,350,110,30,60,80,40,30,0
-"Taroth Crest ""Stream""",7,368,160,Ice,300,0,+20,None,None,None,None,None,350,230,20,20,50,10,20,0
-"Taroth Crest ""Claw""",7,437,190,Hidden Fire,90,30,+20,None,None,None,None,None,350,60,120,80,60,30,0,0
-"Taroth Crest ""Decay""",7,391,170,Dragon,270,0,+20,Average,None,None,None,None,350,250,20,20,20,30,10,0
-"Taroth Crest ""King""",7,368,160,Fire,300,0,+20,None,None,None,None,None,350,230,20,20,50,10,20,0
-"Taroth Crest ""Crusher""",7,391,170,Blast,210,10,+20,None,None,None,None,None,350,90,60,80,80,40,0,0
-"Taroth Crest ""Water""",8,437,190,Hidden Water,420,0,+20,None,3,None,None,None,350,70,50,60,120,50,0,0
-"Taroth Crest ""Thunder""",8,368,160,Hidden Thunder,600,20,+20,None,3,None,None,None,350,110,20,20,140,60,0,0
-"Taroth Crest ""Sleep""",8,414,180,Hidden Sleep,450,10,+20,None,3,None,None,None,350,90,60,60,100,40,0,0
-"Taroth Crest ""Poison""",8,460,200,Hidden Poison,630,-10,+20,None,3,None,None,None,350,100,50,50,80,70,0,0
-"Kjárr Crest ""Stream""",8,391,170,Ice,390,10,0,None,1,None,None,Critical Element,350,210,20,20,50,20,30,0
-"Kjárr Crest ""Decay""",8,391,170,Dragon,330,10,0,Average,None,None,None,Critical Element,350,230,20,20,20,30,30,0
-"Kjárr Crest ""King""",8,391,170,Fire,390,10,0,None,1,None,None,Critical Element,350,210,20,20,50,20,30,0
-"Kjárr Crest ""Crusher""",8,414,180,Blast,270,15,0,None,1,None,None,Critical Status,350,80,60,60,100,50,0,0
-"Kjárr Crest ""Water""",8,437,190,Water,300,10,0,None,None,None,None,Critical Element,350,50,50,60,120,70,0,0
-"Kjárr Crest ""Thunder""",8,414,180,Thunder,420,15,0,None,None,None,None,Critical Element,350,110,20,20,120,80,0,0
-"Kjárr Crest ""Paralysis""",8,414,180,Paralysis,210,10,0,None,None,None,None,Critical Status,350,80,50,60,120,40,0,0
+Taroth Crest Thief,7,391,170,Sleep,210,10,+20,None,None,None,None,None,350,90,60,60,100,40,0,0
+Taroth Crest Spew,7,414,180,Poison,540,0,+20,None,1,None,None,None,350,100,120,40,50,40,0,0
+Taroth Crest Mud,7,437,190,Paralysis,240,-20,+25,None,None,None,None,None,350,100,120,40,50,40,0,0
+Taroth Crest Lurk,7,368,160,Hidden Blast,270,10,+20,None,None,None,None,None,350,110,30,60,80,40,30,0
+Taroth Crest Stream,7,368,160,Ice,300,0,+20,None,None,None,None,None,350,230,20,20,50,10,20,0
+Taroth Crest Claw,7,437,190,Hidden Fire,90,30,+20,None,None,None,None,None,350,60,120,80,60,30,0,0
+Taroth Crest Decay,7,391,170,Dragon,270,0,+20,Average,None,None,None,None,350,250,20,20,20,30,10,0
+Taroth Crest King,7,368,160,Fire,300,0,+20,None,None,None,None,None,350,230,20,20,50,10,20,0
+Taroth Crest Crusher,7,391,170,Blast,210,10,+20,None,None,None,None,None,350,90,60,80,80,40,0,0
+Taroth Crest Water,8,437,190,Hidden Water,420,0,+20,None,3,None,None,None,350,70,50,60,120,50,0,0
+Taroth Crest Thunder,8,368,160,Hidden Thunder,600,20,+20,None,3,None,None,None,350,110,20,20,140,60,0,0
+Taroth Crest Sleep,8,414,180,Hidden Sleep,450,10,+20,None,3,None,None,None,350,90,60,60,100,40,0,0
+Taroth Crest Poison,8,460,200,Hidden Poison,630,-10,+20,None,3,None,None,None,350,100,50,50,80,70,0,0
+Kjarr Crest Stream,8,391,170,Ice,390,10,0,None,1,None,None,Critical Element,350,210,20,20,50,20,30,0
+Kjarr Crest Decay,8,391,170,Dragon,330,10,0,Average,None,None,None,Critical Element,350,230,20,20,20,30,30,0
+Kjarr Crest King,8,391,170,Fire,390,10,0,None,1,None,None,Critical Element,350,210,20,20,50,20,30,0
+Kjarr Crest Crusher,8,414,180,Blast,270,15,0,None,1,None,None,Critical Status,350,80,60,60,100,50,0,0
+Kjarr Crest Water,8,437,190,Water,300,10,0,None,None,None,None,Critical Element,350,50,50,60,120,70,0,0
+Kjarr Crest Thunder,8,414,180,Thunder,420,15,0,None,None,None,None,Critical Element,350,110,20,20,120,80,0,0
+Kjarr Crest Paralysis,8,414,180,Paralysis,210,10,0,None,None,None,None,Critical Status,350,80,50,60,120,40,0,0

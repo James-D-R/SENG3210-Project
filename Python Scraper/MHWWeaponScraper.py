@@ -8,7 +8,7 @@ import sys
 import os
 
 
-File_Location = 'C:\\Users\\vanbrec\\Documents\\Software Architecture\\MHWData\\'
+File_Location = 'C:\\Users\\vanbrec\\Documents\\Software Architecture\\MHWGearBuilder\\Python Scraper\\'
 
 
 def scrape_weapon(URL, Weapons_list):
@@ -34,7 +34,7 @@ def scrape_weapon(URL, Weapons_list):
         #print(columns)
         #weapon name
         #names = columns.find('a')
-        weapon_name = columns[0].find('a').text.replace('\n', '').replace('" ','"')
+        weapon_name = columns[0].find('a').text.replace('\n', '').replace('"','').replace('á', 'a')
         Weapon_Info.append(weapon_name)
 
         rarity = columns[0].find('small').text.replace('Rarity ', '')

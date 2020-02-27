@@ -123,12 +123,12 @@ Tyrannos,6,700,200,Dragon,120,-25,0,High,None,None,None,Power Phial ,None,350,60
 Terror Tyrannos,7,770,220,Dragon,180,-25,0,High,None,None,None,Power Phial ,None,350,50,120,80,60,40,0,0
 Saligia Vileaxe,12,980,280,Dragon,330,-30,0,High,None,None,None,Power Phial ,None,350,160,30,30,60,50,20,0
 Empress Axe,7,630,180,Blast,150,0,0,None,2,1,None,Power Phial ,None,350,110,30,60,80,40,30,0
-"Empress Axe ""Blaze""",8,630,180,Blast,180,20,0,None,2,1,None,Power Phial ,Guts,350,110,30,60,80,40,30,0
-"Soulfire Scourge ""Blaze""",12,875,250,Blast,270,20,0,None,2,1,None,Power Phial ,Guts,350,120,30,90,30,30,50,0
-"Empress Axe ""Ruin""",8,665,190,Blast,150,0,0,None,2,2,None,Power Phial ,Hasten Recovery,350,110,30,60,80,40,30,0
-"Soulfire Scourge ""Ruin""",12,945,270,Blast,210,0,0,None,2,2,None,Power Phial ,Hasten Recovery,350,120,30,90,30,30,50,0
-"Empress Axe ""Styx""",8,630,180,Blast,240,10,0,None,3,3,None,Power Phial ,Razor Sharp/Spare Shot,350,110,30,60,80,40,30,0
-"Soulfire Scourge ""Styx""",12,875,250,Blast,330,10,0,None,3,3,None,Power Phial ,Razor Sharp/Spare Shot,350,120,30,90,30,30,50,0
+Empress Axe Blaze,8,630,180,Blast,180,20,0,None,2,1,None,Power Phial ,Guts,350,110,30,60,80,40,30,0
+Soulfire Scourge Blaze,12,875,250,Blast,270,20,0,None,2,1,None,Power Phial ,Guts,350,120,30,90,30,30,50,0
+Empress Axe Ruin,8,665,190,Blast,150,0,0,None,2,2,None,Power Phial ,Hasten Recovery,350,110,30,60,80,40,30,0
+Soulfire Scourge Ruin,12,945,270,Blast,210,0,0,None,2,2,None,Power Phial ,Hasten Recovery,350,120,30,90,30,30,50,0
+Empress Axe Styx,8,630,180,Blast,240,10,0,None,3,3,None,Power Phial ,Razor Sharp/Spare Shot,350,110,30,60,80,40,30,0
+Soulfire Scourge Styx,12,875,250,Blast,330,10,0,None,3,3,None,Power Phial ,Razor Sharp/Spare Shot,350,120,30,90,30,30,50,0
 Defender Switch Axe I,1,455,130,Blast,180,0,0,None,None,None,None,Power Phial ,None,200,30,60,20,90,0,0,0
 Defender Switch Axe II,3,595,170,Blast,210,0,0,None,None,None,None,Power Phial ,None,250,30,60,20,140,0,0,0
 Defender Switch Axe III,5,665,190,Blast,240,0,0,None,None,None,None,Power Phial ,None,300,50,50,50,80,70,0,0
@@ -182,24 +182,24 @@ King Gold Chopper,6,490,140,Fire,90,15,+20,None,None,None,None,Power Phial ,None
 Horn Gold Chopper,6,665,190,Hidden Ice,120,-30,+25,None,None,None,None,Power Phial ,None,350,90,50,60,120,30,0,0
 Gyre Gold Chopper,6,560,160,Fire,60,10,+40,None,None,None,None,Power Phial ,None,350,80,50,80,100,40,0,0
 Bomber Gold Chopper,6,595,170,Blast,90,0,+20,None,None,None,None,Power Phial ,None,350,100,100,40,40,70,0,0
-"Taroth Axe ""Glutton""",7,665,190,Sleep,150,0,+20,None,None,None,None,Power Phial ,None,350,110,120,40,50,30,0,0
-"Taroth Axe ""Mire""",7,665,190,Water,300,0,+20,None,None,None,None,Power Element Phial ,None,350,90,120,40,50,50,0,0
-"Taroth Axe ""Mud""",7,735,210,Paralysis,180,-20,+25,None,None,None,None,Power Phial ,None,350,120,70,30,100,30,0,0
-"Taroth Axe ""Drifter""",7,595,170,Hidden Blast,420,25,+20,None,None,None,None,Power Phial ,None,350,140,100,30,30,50,0,0
-"Taroth Axe ""Stream""",7,560,160,Ice,300,10,+20,None,None,None,None,Power Element Phial ,None,350,90,100,40,40,80,0,0
-"Taroth Axe ""Decay""",7,595,170,Dragon,210,0,+20,Average,None,None,None,Power Element Phial ,None,350,250,20,20,20,30,10,0
-"Taroth Axe ""King""",7,665,190,Fire,210,15,+20,None,None,None,None,Power Phial ,None,350,90,60,80,80,40,0,0
-"Taroth Axe ""Horn""",7,805,230,Hidden Ice,240,-30,+25,None,None,None,None,Power Phial ,None,350,90,50,60,120,30,0,0
-"Taroth Axe ""Gyre""",7,735,210,Fire,120,10,+40,None,None,None,None,Power Phial ,None,350,80,50,80,100,40,0,0
-"Taroth Axe ""Bomber""",7,630,180,Blast,180,0,+20,None,None,None,None,Power Phial ,None,350,100,100,40,40,70,0,0
-"Taroth Axe ""Thunder""",8,560,160,Hidden Thunder,480,10,+20,None,3,None,None,Power Phial ,None,350,120,30,60,80,40,20,0
-"Taroth Axe ""Paralysis""",8,735,210,Hidden Paralysis,450,0,+30,None,3,None,None,Power Phial ,None,350,110,100,40,40,60,0,0
-"Taroth Axe ""Sleep""",8,665,190,Hidden Sleep,360,0,+20,None,3,None,None,Power Phial ,None,350,60,50,60,120,60,0,0
-"Taroth Axe ""Water""",8,700,200,Hidden Water,480,0,+20,None,3,None,None,Power Phial ,None,350,70,60,60,100,60,0,0
-"Kjárr Axe ""Stream""",8,595,170,Ice,330,15,0,None,None,None,None,Power Element Phial ,Critical Element,350,110,30,60,80,40,30,0
-"Kjárr Axe ""Decay""",8,595,170,Dragon,270,10,0,Average,1,None,None,Power Element Phial ,Critical Element,350,220,20,20,20,30,40,0
-"Kjárr Axe ""King""",8,665,190,Fire,300,20,0,None,1,None,None,Power Element Phial ,Critical Element,350,80,60,60,100,50,0,0
-"Kjárr Axe ""Bomber""",8,665,190,Blast,270,10,0,None,1,None,None,Power Phial ,Critical Status,350,90,100,40,40,80,0,0
-"Kjárr Axe ""Thunder""",8,595,170,Thunder,330,15,0,None,None,None,None,Power Element Phial ,Critical Element,350,100,30,60,80,40,40,0
-"Kjárr Axe ""Water""",8,665,190,Water,360,15,0,None,None,None,None,Power Element Phial ,Critical Element,350,50,50,60,120,70,0,0
-"Kjárr Axe ""Paralysis""",8,700,200,Paralysis,330,10,0,None,None,None,None,Power Phial ,Critical Status,350,80,100,40,40,90,0,0
+Taroth Axe Glutton,7,665,190,Sleep,150,0,+20,None,None,None,None,Power Phial ,None,350,110,120,40,50,30,0,0
+Taroth Axe Mire,7,665,190,Water,300,0,+20,None,None,None,None,Power Element Phial ,None,350,90,120,40,50,50,0,0
+Taroth Axe Mud,7,735,210,Paralysis,180,-20,+25,None,None,None,None,Power Phial ,None,350,120,70,30,100,30,0,0
+Taroth Axe Drifter,7,595,170,Hidden Blast,420,25,+20,None,None,None,None,Power Phial ,None,350,140,100,30,30,50,0,0
+Taroth Axe Stream,7,560,160,Ice,300,10,+20,None,None,None,None,Power Element Phial ,None,350,90,100,40,40,80,0,0
+Taroth Axe Decay,7,595,170,Dragon,210,0,+20,Average,None,None,None,Power Element Phial ,None,350,250,20,20,20,30,10,0
+Taroth Axe King,7,665,190,Fire,210,15,+20,None,None,None,None,Power Phial ,None,350,90,60,80,80,40,0,0
+Taroth Axe Horn,7,805,230,Hidden Ice,240,-30,+25,None,None,None,None,Power Phial ,None,350,90,50,60,120,30,0,0
+Taroth Axe Gyre,7,735,210,Fire,120,10,+40,None,None,None,None,Power Phial ,None,350,80,50,80,100,40,0,0
+Taroth Axe Bomber,7,630,180,Blast,180,0,+20,None,None,None,None,Power Phial ,None,350,100,100,40,40,70,0,0
+Taroth Axe Thunder,8,560,160,Hidden Thunder,480,10,+20,None,3,None,None,Power Phial ,None,350,120,30,60,80,40,20,0
+Taroth Axe Paralysis,8,735,210,Hidden Paralysis,450,0,+30,None,3,None,None,Power Phial ,None,350,110,100,40,40,60,0,0
+Taroth Axe Sleep,8,665,190,Hidden Sleep,360,0,+20,None,3,None,None,Power Phial ,None,350,60,50,60,120,60,0,0
+Taroth Axe Water,8,700,200,Hidden Water,480,0,+20,None,3,None,None,Power Phial ,None,350,70,60,60,100,60,0,0
+Kjarr Axe Stream,8,595,170,Ice,330,15,0,None,None,None,None,Power Element Phial ,Critical Element,350,110,30,60,80,40,30,0
+Kjarr Axe Decay,8,595,170,Dragon,270,10,0,Average,1,None,None,Power Element Phial ,Critical Element,350,220,20,20,20,30,40,0
+Kjarr Axe King,8,665,190,Fire,300,20,0,None,1,None,None,Power Element Phial ,Critical Element,350,80,60,60,100,50,0,0
+Kjarr Axe Bomber,8,665,190,Blast,270,10,0,None,1,None,None,Power Phial ,Critical Status,350,90,100,40,40,80,0,0
+Kjarr Axe Thunder,8,595,170,Thunder,330,15,0,None,None,None,None,Power Element Phial ,Critical Element,350,100,30,60,80,40,40,0
+Kjarr Axe Water,8,665,190,Water,360,15,0,None,None,None,None,Power Element Phial ,Critical Element,350,50,50,60,120,70,0,0
+Kjarr Axe Paralysis,8,700,200,Paralysis,330,10,0,None,None,None,None,Power Phial ,Critical Status,350,80,100,40,40,90,0,0

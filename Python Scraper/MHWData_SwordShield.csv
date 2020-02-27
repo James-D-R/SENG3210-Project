@@ -138,12 +138,12 @@ Fatal Jho,6,280,200,Dragon,150,-20,0,High,None,None,None,None,350,60,120,80,60,3
 Fatal Bite,7,308,220,Dragon,210,-20,0,High,None,None,None,None,350,50,120,80,60,40,0,0
 Fate's Shear,12,392,280,Dragon,240,-20,0,High,None,None,None,None,350,150,30,30,60,50,30,0
 Empress Edge,7,266,190,Blast,120,0,0,None,1,None,None,None,350,90,30,60,80,40,50,0
-"Empress Edge ""Blaze""",8,266,190,Blast,150,20,0,None,1,None,None,Guts,350,90,30,60,80,40,50,0
-"Soulfire Barb ""Blaze""",12,350,250,Blast,180,20,0,None,2,1,None,Guts,350,120,30,30,60,50,60,0
-"Empress Edge ""Ruin""",8,280,200,Blast,120,0,0,None,2,None,None,Hasten Recovery,350,90,30,60,80,40,50,0
-"Soulfire Barb ""Ruin""",12,378,270,Blast,150,0,0,None,2,2,None,Hasten Recovery,350,120,30,30,60,50,60,0
-"Empress Edge ""Styx""",8,266,190,Blast,210,10,0,None,3,1,None,Razor Sharp/Spare Shot,350,90,30,60,80,40,50,0
-"Soulfire Barb ""Styx""",12,350,250,Blast,240,10,0,None,3,3,None,Razor Sharp/Spare Shot,350,120,30,30,60,50,60,0
+Empress Edge Blaze,8,266,190,Blast,150,20,0,None,1,None,None,Guts,350,90,30,60,80,40,50,0
+Soulfire Barb Blaze,12,350,250,Blast,180,20,0,None,2,1,None,Guts,350,120,30,30,60,50,60,0
+Empress Edge Ruin,8,280,200,Blast,120,0,0,None,2,None,None,Hasten Recovery,350,90,30,60,80,40,50,0
+Soulfire Barb Ruin,12,378,270,Blast,150,0,0,None,2,2,None,Hasten Recovery,350,120,30,30,60,50,60,0
+Empress Edge Styx,8,266,190,Blast,210,10,0,None,3,1,None,Razor Sharp/Spare Shot,350,90,30,60,80,40,50,0
+Soulfire Barb Styx,12,350,250,Blast,240,10,0,None,3,3,None,Razor Sharp/Spare Shot,350,120,30,30,60,50,60,0
 Witcher's Silver Sword,7,252,180,Dragon,300,0,0,High,1,None,None,None,400,250,20,20,20,30,60,0
 Witcher's Silver Sword+,8,266,190,Dragon,330,0,0,High,1,None,None,None,400,240,20,20,20,30,70,0
 Witcher's Silver Sword++,12,364,260,Dragon,480,0,0,High,2,1,None,None,400,50,30,30,110,40,140,0
@@ -195,24 +195,24 @@ Stream Gold Scimitar,6,196,140,Ice,150,0,+20,None,None,None,None,None,350,110,30
 Tar Gold Scimitar,6,224,160,Sleep,120,10,+30,None,None,None,None,None,350,100,120,40,50,40,0,0
 King Gold Scimitar,6,210,150,Fire,120,30,+20,None,None,None,None,None,350,90,60,60,100,40,0,0
 Myth Gold Scimitar,6,196,140,Thunder,180,0,+20,None,None,None,None,None,350,130,100,30,30,60,0,0
-"Taroth Slicer ""Glutton""",7,266,190,Water,270,0,+20,None,None,None,None,None,350,90,120,40,50,50,0,0
-"Taroth Slicer ""Spew""",7,252,180,Poison,390,0,+20,None,1,None,None,None,350,90,120,40,50,50,0,0
-"Taroth Slicer ""Mud""",7,308,220,Hidden Paralysis,180,-10,+25,None,1,None,None,None,350,100,120,40,50,40,0,0
-"Taroth Slicer ""Rage""",7,294,210,Fire,240,-20,+20,None,None,None,None,None,350,200,70,20,20,40,0,0
-"Taroth Slicer ""Numb""",7,224,160,Paralysis,240,30,+20,None,None,None,None,None,350,50,120,80,60,40,0,0
-"Taroth Slicer ""Drifter""",7,252,180,Blast,270,0,+20,None,None,None,None,None,350,80,50,60,120,40,0,0
-"Taroth Slicer ""Stream""",7,224,160,Ice,330,0,+20,None,None,None,None,None,350,110,30,60,80,40,30,0
-"Taroth Slicer ""Tar""",7,266,190,Sleep,210,10,+30,None,None,None,None,None,350,100,120,40,50,40,0,0
-"Taroth Slicer ""King""",7,266,190,Fire,180,30,+20,None,None,None,None,None,350,90,60,60,100,40,0,0
-"Taroth Slicer ""Myth""",7,224,160,Thunder,360,0,+20,None,None,None,None,None,350,130,100,30,30,60,0,0
-"Taroth Slicer ""Water""",8,266,190,Hidden Water,420,10,+20,None,3,None,None,None,350,170,70,20,20,70,0,0
-"Taroth Slicer ""Dragon""",8,224,160,Hidden Dragon,450,0,+20,Low,3,None,None,None,350,170,70,20,20,70,0,0
-"Taroth Slicer ""Blast""",8,238,170,Hidden Blast,390,0,+20,None,3,None,None,None,350,110,30,60,80,40,30,0
-"Taroth Slicer ""Fire""",8,252,180,Hidden Fire,390,0,+20,None,3,None,None,None,350,210,20,20,20,30,50,0
-"Kjárr Slicer ""Numb""",8,252,180,Paralysis,210,10,0,None,1,None,None,Critical Status,350,40,120,80,60,50,0,0
-"Kjárr Slicer ""Stream""",8,238,170,Ice,300,10,0,None,1,None,None,Critical Element,350,100,30,60,80,40,40,0
-"Kjárr Slicer ""King""",8,266,190,Fire,240,15,0,None,1,None,None,Critical Element,350,80,60,60,100,50,0,0
-"Kjárr Slicer ""Myth""",8,238,170,Thunder,330,10,0,None,1,None,None,Critical Element,350,130,100,30,30,60,0,0
-"Kjárr Slicer ""Water""",8,252,180,Water,330,15,0,None,1,None,None,Critical Element,350,160,70,20,20,80,0,0
-"Kjárr Slicer ""Dragon""",8,238,170,Dragon,360,10,0,Low,1,None,None,Critical Element,350,160,70,20,20,80,0,0
-"Kjárr Slicer ""Blast""",8,224,160,Blast,330,10,0,None,1,None,None,Critical Status,350,100,30,60,80,40,40,0
+Taroth Slicer Glutton,7,266,190,Water,270,0,+20,None,None,None,None,None,350,90,120,40,50,50,0,0
+Taroth Slicer Spew,7,252,180,Poison,390,0,+20,None,1,None,None,None,350,90,120,40,50,50,0,0
+Taroth Slicer Mud,7,308,220,Hidden Paralysis,180,-10,+25,None,1,None,None,None,350,100,120,40,50,40,0,0
+Taroth Slicer Rage,7,294,210,Fire,240,-20,+20,None,None,None,None,None,350,200,70,20,20,40,0,0
+Taroth Slicer Numb,7,224,160,Paralysis,240,30,+20,None,None,None,None,None,350,50,120,80,60,40,0,0
+Taroth Slicer Drifter,7,252,180,Blast,270,0,+20,None,None,None,None,None,350,80,50,60,120,40,0,0
+Taroth Slicer Stream,7,224,160,Ice,330,0,+20,None,None,None,None,None,350,110,30,60,80,40,30,0
+Taroth Slicer Tar,7,266,190,Sleep,210,10,+30,None,None,None,None,None,350,100,120,40,50,40,0,0
+Taroth Slicer King,7,266,190,Fire,180,30,+20,None,None,None,None,None,350,90,60,60,100,40,0,0
+Taroth Slicer Myth,7,224,160,Thunder,360,0,+20,None,None,None,None,None,350,130,100,30,30,60,0,0
+Taroth Slicer Water,8,266,190,Hidden Water,420,10,+20,None,3,None,None,None,350,170,70,20,20,70,0,0
+Taroth Slicer Dragon,8,224,160,Hidden Dragon,450,0,+20,Low,3,None,None,None,350,170,70,20,20,70,0,0
+Taroth Slicer Blast,8,238,170,Hidden Blast,390,0,+20,None,3,None,None,None,350,110,30,60,80,40,30,0
+Taroth Slicer Fire,8,252,180,Hidden Fire,390,0,+20,None,3,None,None,None,350,210,20,20,20,30,50,0
+Kjarr Slicer Numb,8,252,180,Paralysis,210,10,0,None,1,None,None,Critical Status,350,40,120,80,60,50,0,0
+Kjarr Slicer Stream,8,238,170,Ice,300,10,0,None,1,None,None,Critical Element,350,100,30,60,80,40,40,0
+Kjarr Slicer King,8,266,190,Fire,240,15,0,None,1,None,None,Critical Element,350,80,60,60,100,50,0,0
+Kjarr Slicer Myth,8,238,170,Thunder,330,10,0,None,1,None,None,Critical Element,350,130,100,30,30,60,0,0
+Kjarr Slicer Water,8,252,180,Water,330,15,0,None,1,None,None,Critical Element,350,160,70,20,20,80,0,0
+Kjarr Slicer Dragon,8,238,170,Dragon,360,10,0,Low,1,None,None,Critical Element,350,160,70,20,20,80,0,0
+Kjarr Slicer Blast,8,224,160,Blast,330,10,0,None,1,None,None,Critical Status,350,100,30,60,80,40,40,0
