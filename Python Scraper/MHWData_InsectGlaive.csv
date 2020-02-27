@@ -51,7 +51,7 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 50,Gnashing Flammenkaefer+,9,713,230,Fire,360,-20,0,None,None,None,None,Blunt Boost,None,350,70,100,40,50,90,0,0
 51,Lohenspire,10,837,270,Fire,450,-20,0,None,None,None,None,Blunt Boost,None,350,70,100,40,50,90,0,0
 52,Nergal Reaper,7,620,200,Dragon,120,0,0,High,1,None,None,Sever Boost,None,400,110,120,40,50,80,0,0
-53,Catastrophe's Light,8,651,210,Dragon,150,0,0,High,1,None,None,Sever Boost,None,400,100,120,40,50,90,0,0
+53,Catastrophes Light,8,651,210,Dragon,150,0,0,High,1,None,None,Sever Boost,None,400,100,120,40,50,90,0,0
 54,Ruinous Catastrophe,12,899,290,Dragon,180,0,0,High,1,None,None,Sever Boost,None,400,80,30,30,110,40,110,0
 55,Luminous Blade I,3,372,120,None,0,0,0,None,None,None,None,Speed Boost,None,250,70,50,80,50,0,0,0
 56,Luminous Blade II,4,434,140,None,0,0,0,None,None,None,None,Speed Boost,None,250,60,50,80,60,0,0,0
@@ -62,7 +62,7 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 61,Diving Destroyer II,10,806,260,Hidden Thunder,390,0,0,None,3,None,None,Speed Boost,None,350,80,30,30,110,40,60,0
 62,Garon Rod I,4,403,130,None,0,10,0,None,None,None,None,Speed Boost,None,250,90,70,30,60,0,0,0
 63,Garon Rod II,5,434,140,Hidden Fire,90,10,0,None,1,None,None,Speed Boost,None,300,100,100,40,40,20,0,0
-64,Temptation's Trident,6,465,150,Hidden Fire,120,20,0,None,2,None,None,Speed Boost,None,300,90,100,40,40,30,0,0
+64,Temptations Trident,6,465,150,Hidden Fire,120,20,0,None,2,None,None,Speed Boost,None,300,90,100,40,40,30,0,0
 65,Vice,8,496,160,Hidden Fire,150,20,0,None,2,None,None,Speed Boost,None,400,200,70,20,20,50,40,0
 66,Vice+,10,682,220,Hidden Fire,210,20,0,None,2,None,None,Speed Boost,None,400,100,80,30,30,80,80,0
 67,Cruelty,10,713,230,Hidden Fire,330,35,0,None,2,None,None,Speed Boost,None,400,100,80,30,30,80,80,0
@@ -90,9 +90,9 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 89,Gama Cane II,7,527,170,Blast,150,0,0,None,2,2,None,Stamina Boost,None,350,130,110,40,40,30,0,0
 90,Gama Magus I,9,682,220,Blast,180,0,0,None,3,2,None,Stamina Upgrade & Healing,None,350,100,80,30,30,80,30,0
 91,Gama Magus II,10,744,240,Blast,210,0,0,None,3,2,None,Stamina Upgrade & Healing,None,350,140,30,30,60,50,40,0
-92,Daora's Entom,7,527,170,Ice,150,10,0,None,2,None,None,Health Boost,None,350,110,60,80,80,20,0,0
-93,Daora's Tethidine,8,558,180,Ice,180,10,0,None,2,None,None,Health Boost,None,350,90,60,80,80,40,0,0
-94,Daora's Samudra,11,806,260,Ice,240,10,0,None,2,None,None,Stamina Upgrade & Healing,None,350,130,30,30,60,50,50,0
+92,Daoras Entom,7,527,170,Ice,150,10,0,None,2,None,None,Health Boost,None,350,110,60,80,80,20,0,0
+93,Daoras Tethidine,8,558,180,Ice,180,10,0,None,2,None,None,Health Boost,None,350,90,60,80,80,40,0,0
+94,Daoras Samudra,11,806,260,Ice,240,10,0,None,2,None,None,Stamina Upgrade & Healing,None,350,130,30,30,60,50,50,0
 95,Xeno Shmaena,8,558,180,Dragon,120,15,0,Low,3,3,None,Stamina Boost,None,350,130,30,60,80,40,10,0
 96,Dragonbone Glaive I,3,310,100,Dragon,300,0,0,Low,None,None,None,Element Boost,None,250,110,70,30,40,0,0,0
 97,Dragonbone Glaive II,4,341,110,Dragon,330,0,0,Low,None,None,None,Element Boost,None,250,70,70,30,80,0,0,0
@@ -120,7 +120,7 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 119,Laguna Glaive II,10,744,240,Water,450,0,0,None,2,1,None,Element Boost,None,350,110,30,30,60,50,70,0
 120,Bad Wing,6,620,200,Dragon,150,-25,0,High,None,None,None,Health Boost,None,350,60,120,80,60,30,0,0
 121,Grunge Storm,7,682,220,Dragon,210,-25,0,High,None,None,None,Health Boost,None,350,50,120,80,60,40,0,0
-122,Fate's Wing,12,868,280,Dragon,270,-25,0,High,None,None,None,Stamina Upgrade & Healing,None,350,150,30,30,60,50,30,0
+122,Fates Wing,12,868,280,Dragon,270,-25,0,High,None,None,None,Stamina Upgrade & Healing,None,350,150,30,30,60,50,30,0
 123,Empress Cane,7,589,190,Blast,120,0,0,None,1,None,None,Speed Boost,None,350,100,30,60,80,40,40,0
 124,Empress Cane Blaze,8,589,190,Blast,150,20,0,None,1,None,None,Speed Boost,Guts,350,100,30,60,80,40,40,0
 125,Soulfire Reach Blaze,12,775,250,Blast,180,20,0,None,2,1,None,Speed Boost,Guts,350,110,30,90,30,30,60,0
@@ -147,7 +147,7 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 146,Rex Rod II,10,837,270,Hidden Blast,240,-15,0,None,1,None,None,Blunt Boost,None,350,50,30,30,110,40,90,0
 147,Donnerspitze,10,744,240,Thunder,210,5,0,None,None,None,None,Stamina Upgrade & Healing,None,350,70,100,40,50,90,0,0
 148,Donnerspitze+,10,775,250,Thunder,240,10,0,None,None,None,None,Stamina Upgrade & Healing,None,350,70,100,40,50,90,0,0
-149,Fulguration's Tower,11,806,260,Thunder,270,15,0,None,None,None,None,Stamina Upgrade & Healing,None,350,70,100,40,50,90,0,0
+149,Fulgurations Tower,11,806,260,Thunder,270,15,0,None,None,None,None,Stamina Upgrade & Healing,None,350,70,100,40,50,90,0,0
 150,Nyx Blade I,9,682,220,Sleep,270,0,0,None,2,None,None,Speed Boost,None,350,60,80,30,30,80,70,0
 151,Nyx Blade II,10,744,240,Sleep,300,0,0,None,2,None,None,Speed Boost,None,350,60,80,30,30,80,70,0
 152,Dios Rod,10,682,220,Blast,270,0,0,None,None,None,None,Blunt Boost,None,350,80,30,30,110,40,60,0
@@ -157,7 +157,7 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 156,Metalmangler,12,961,310,Thunder,90,-15,0,None,4,None,None,Blunt Boost,None,350,90,100,40,50,70,0,0
 157,Royal Bolt Scepter,10,744,240,Thunder,210,0,0,None,2,None,None,Spirit & Strength Boost,None,350,90,80,30,30,80,40,0
 158,Royal Bolt Scepter+,11,775,250,Thunder,270,0,0,None,2,None,None,Spirit & Strength Boost,None,350,120,30,90,30,30,50,0
-159,Despot's Twinbolt,12,806,260,Thunder,360,0,0,None,2,None,None,Spirit & Strength Boost,None,350,110,30,90,30,30,60,0
+159,Despots Twinbolt,12,806,260,Thunder,360,0,0,None,2,None,None,Spirit & Strength Boost,None,350,110,30,90,30,30,60,0
 160,Sulfurteinn Spiran,10,837,270,Hidden Paralysis,180,0,0,None,4,None,None,Sever Boost,None,350,160,100,30,30,30,0,0
 161,The Trickling Spiral,11,899,290,Hidden Paralysis,210,0,0,None,4,None,None,Sever Boost,None,350,60,50,110,90,40,0,0
 162,Kadachi Vipertail I,9,713,230,Paralysis,210,10,0,None,1,None,None,Speed Boost,None,350,90,30,30,110,40,50,0

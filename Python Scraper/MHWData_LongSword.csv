@@ -53,7 +53,7 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 52,Anja Direfang I,9,759,230,Fire,480,-20,0,None,None,None,None,None,350,80,100,40,50,80,0,0
 53,Anja Direfang II,10,891,270,Fire,600,-20,0,None,None,None,None,None,350,80,100,40,50,80,0,0
 54,Nergal Reaver,7,627,190,Dragon,90,0,0,High,1,None,None,None,400,120,120,40,50,70,0,0
-55,Extermination's Edge,8,693,210,Dragon,120,0,0,High,1,None,None,None,400,110,120,40,50,80,0,0
+55,Exterminations Edge,8,693,210,Dragon,120,0,0,High,1,None,None,None,400,110,120,40,50,80,0,0
 56,Ruinous Extermination,12,957,290,Dragon,180,0,0,High,1,None,None,None,400,80,30,30,110,40,110,0
 57,Wyvern Blade Leaf,3,363,110,Poison,240,10,0,None,None,None,None,None,250,90,50,80,30,0,0,0
 58,Wyvern Blade Verde,5,495,150,Poison,270,10,0,None,1,None,None,None,300,110,50,50,80,10,0,0
@@ -155,9 +155,9 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 154,Great Demon Halberd,12,1023,310,Thunder,120,-15,0,None,4,None,None,None,350,100,100,40,50,60,0,0
 155,Daito Crow,10,858,260,Poison,210,20,0,None,3,None,None,None,350,150,30,90,30,30,20,0
 156,Daito Wolf,11,891,270,Poison,240,25,0,None,3,None,None,None,350,140,30,90,30,30,30,0
-157,Usurper's Boltslicer,10,792,240,Thunder,240,0,0,None,2,None,None,None,350,100,80,30,30,80,30,0
+157,Usurpers Boltslicer,10,792,240,Thunder,240,0,0,None,2,None,None,None,350,100,80,30,30,80,30,0
 158,Usurper Boltslicer+,11,825,250,Thunder,300,0,0,None,2,None,None,None,350,130,30,90,30,30,40,0
-159,Despot's Boltbreaker,12,858,260,Thunder,450,0,0,None,2,None,None,None,350,120,30,90,30,30,50,0
+159,Despots Boltbreaker,12,858,260,Thunder,450,0,0,None,2,None,None,None,350,120,30,90,30,30,50,0
 160,Ambertooth I,10,726,220,Ice,210,20,0,None,None,None,None,None,350,110,30,30,110,40,30,0
 161,Ambertooth II,10,792,240,Ice,300,30,0,None,1,None,None,None,350,110,30,30,110,40,30,0
 162,Acid Scimitar I,10,891,270,Hidden Paralysis,360,0,0,None,4,None,None,None,350,160,100,30,30,30,0,0

@@ -52,13 +52,13 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 51,Anja Fiercemaul I,9,1196,230,Fire,480,-20,0,None,None,None,None,None,350,80,100,40,50,80,0,0
 52,Anja Fiercemaul II,10,1404,270,Fire,600,-20,0,None,None,None,None,None,350,80,100,40,50,80,0,0
 53,Nergal Crusher,7,1040,200,Dragon,90,0,0,High,1,None,None,None,400,120,120,40,50,70,0,0
-54,Obliteration's Footfall,8,1092,210,Dragon,120,0,0,High,1,None,None,None,400,110,120,40,50,80,0,0
+54,Obliterations Footfall,8,1092,210,Dragon,120,0,0,High,1,None,None,None,400,110,120,40,50,80,0,0
 55,Ruinous Obliteration,12,1508,290,Dragon,180,0,0,High,1,None,None,None,400,80,30,30,110,40,110,0
 56,Girros Hammer I,3,624,120,Paralysis,210,0,0,None,None,None,None,None,250,80,50,80,40,0,0,0
 57,Girros Hammer II,4,676,130,Paralysis,270,0,0,None,None,None,None,None,250,70,50,80,50,0,0,0
-58,Malady's Fist I,5,728,140,Paralysis,330,20,0,None,None,None,None,None,300,60,50,80,110,0,0,0
-59,Malady's Fist II,6,780,150,Paralysis,360,20,0,None,None,None,None,None,300,90,50,50,80,30,0,0
-60,Malady's Fist III,6,832,160,Paralysis,390,20,0,None,None,None,None,None,350,90,60,60,100,40,0,0
+58,Maladys Fist I,5,728,140,Paralysis,330,20,0,None,None,None,None,None,300,60,50,80,110,0,0,0
+59,Maladys Fist II,6,780,150,Paralysis,360,20,0,None,None,None,None,None,300,90,50,50,80,30,0,0
+60,Maladys Fist III,6,832,160,Paralysis,390,20,0,None,None,None,None,None,350,90,60,60,100,40,0,0
 61,Naaga Matraca I,9,1040,200,Paralysis,450,20,0,None,None,None,None,None,350,70,60,60,100,60,0,0
 62,Naaga Matraca II,10,1248,240,Paralysis,510,20,0,None,None,None,None,None,350,70,60,60,100,60,0,0
 63,Bone Spike I,3,676,130,Sleep,150,0,+15,None,None,None,None,None,250,120,70,30,30,0,0,0
@@ -69,8 +69,8 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 68,Baan Gavel I,9,1196,230,Sleep,300,0,+35,None,None,None,None,None,350,110,30,30,110,40,30,0
 69,Baan Gavel II,10,1300,250,Sleep,330,0,+35,None,None,None,None,None,350,110,30,30,110,40,30,0
 70,Hazak Vlafos,7,988,190,Dragon,210,0,0,Average,2,None,None,None,350,140,110,40,40,20,0,0
-71,Pandemonium's Root,8,1040,200,Dragon,270,0,0,Average,2,None,None,None,350,200,70,20,20,40,0,0
-72,Pandemonium's Wrath,11,1248,240,Dragon,420,0,0,Average,2,2,None,None,350,80,80,30,30,80,50,0
+71,Pandemoniums Root,8,1040,200,Dragon,270,0,0,Average,2,None,None,None,350,200,70,20,20,40,0,0
+72,Pandemoniums Wrath,11,1248,240,Dragon,420,0,0,Average,2,2,None,None,350,80,80,30,30,80,50,0
 73,Pandemonium Unleashed,12,1352,260,Dragon,510,0,0,Average,2,2,None,None,350,70,80,30,30,80,60,0
 74,Red Bludgeon,10,1144,220,Fire,270,15,0,None,1,None,None,None,350,100,100,40,50,60,0,0
 75,Huracan Hammer,10,1248,240,Fire,300,20,0,None,1,None,None,None,350,110,30,30,110,40,30,0
@@ -86,9 +86,9 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 85,Uragaan Hammer I,10,1300,250,Fire,210,0,+35,None,4,None,None,None,350,110,50,50,80,60,0,0
 86,Uragaan Hammer II,10,1508,290,Fire,240,0,+35,None,4,None,None,None,350,100,50,50,80,70,0,0
 87,Icesteel Hammer,7,988,190,Ice,120,10,0,None,2,None,None,None,350,110,60,80,80,20,0,0
-88,Daora's Colossus,8,1040,200,Ice,150,10,0,None,2,None,None,None,350,90,60,80,80,40,0,0
-89,Daora's Hyperborea,11,1352,260,Ice,210,15,0,None,2,None,None,None,350,130,30,30,60,50,50,0
-90,Xeno Maph'agarna,8,884,170,Dragon,180,15,0,Low,3,3,None,None,350,130,30,60,80,40,10,0
+88,Daoras Colossus,8,1040,200,Ice,150,10,0,None,2,None,None,None,350,90,60,80,80,40,0,0
+89,Daoras Hyperborea,11,1352,260,Ice,210,15,0,None,2,None,None,None,350,130,30,30,60,50,50,0
+90,Xeno Maphagarna,8,884,170,Dragon,180,15,0,Low,3,3,None,None,350,130,30,60,80,40,10,0
 91,Magda Floga,5,832,160,Blast,330,-20,+20,None,2,None,None,None,300,110,50,80,60,0,0,0
 92,Ragefire Magda Floga,8,1144,220,Blast,420,-20,+20,None,2,None,None,None,350,190,30,60,70,0,0,0
 93,Magda Floga Reforged,11,1456,280,Blast,450,-20,+45,None,2,None,None,None,350,140,40,40,70,60,0,0
@@ -105,9 +105,9 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 104,Lightning Bash II,6,884,170,Thunder,270,0,0,None,2,None,None,None,300,100,100,40,40,20,0,0
 105,Lightning Bash III,6,988,190,Thunder,300,0,0,None,2,None,None,None,350,150,100,30,30,40,0,0
 106,Lightning Bash IV,9,1144,220,Thunder,330,0,0,None,2,None,None,None,350,100,100,40,50,60,0,0
-107,Usurper's Thunder,10,1248,240,Thunder,390,0,0,None,2,None,None,None,350,90,80,30,30,80,40,0
-108,Usurper's Thunder+,11,1300,250,Thunder,420,0,0,None,2,None,None,None,350,130,30,90,30,30,40,0
-109,Despot's Crackle,12,1352,260,Thunder,450,0,0,None,2,None,None,None,350,120,30,90,30,30,50,0
+107,Usurpers Thunder,10,1248,240,Thunder,390,0,0,None,2,None,None,None,350,90,80,30,30,80,40,0
+108,Usurpers Thunder+,11,1300,250,Thunder,420,0,0,None,2,None,None,None,350,130,30,90,30,30,40,0
+109,Despots Crackle,12,1352,260,Thunder,450,0,0,None,2,None,None,None,350,120,30,90,30,30,50,0
 110,Aqua Hammer I,2,572,110,Water,90,0,0,None,None,None,None,None,200,80,70,30,20,0,0,0
 111,Aqua Hammer II,3,624,120,Water,120,0,0,None,None,None,None,None,250,90,50,80,30,0,0,0
 112,Aqua Hammer III,4,676,130,Water,150,0,0,None,None,None,None,None,250,80,50,80,40,0,0,0
@@ -126,8 +126,8 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 125,Cocytus+,10,1196,230,Ice,480,0,0,None,3,None,None,None,350,70,80,30,30,80,60,0
 126,Pykrete Punisher,11,1300,250,Ice,510,0,0,None,3,None,None,None,350,60,80,30,30,80,70,0
 127,Binding Coffin,11,1352,260,Paralysis,240,0,+40,None,4,None,None,None,350,60,30,30,110,40,80,0
-128,Devil's Due,6,1092,210,Dragon,150,-30,0,High,None,None,None,None,350,60,120,80,60,30,0,0
-129,Devil's Crush,7,1196,230,Dragon,210,-30,0,High,None,None,None,None,350,50,120,80,60,40,0,0
+128,Devils Due,6,1092,210,Dragon,150,-30,0,High,None,None,None,None,350,60,120,80,60,30,0,0
+129,Devils Crush,7,1196,230,Dragon,210,-30,0,High,None,None,None,None,350,50,120,80,60,40,0,0
 130,Consummate Hammer,12,1456,280,Dragon,360,-30,0,High,None,None,None,None,350,160,30,30,60,50,20,0
 131,Empress Mace,7,936,180,Blast,150,0,0,None,2,1,None,None,350,110,30,60,80,40,30,0
 132,Empress Mace Blaze,8,936,180,Blast,180,20,0,None,2,1,None,Guts,350,110,30,60,80,40,30,0
@@ -151,7 +151,7 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 150,Night Eternal,11,1248,240,Hidden Poison,450,20,0,None,None,None,None,None,350,140,20,20,70,40,30,30
 151,Scorching Isshata,10,1144,220,Fire,240,0,0,None,1,None,None,None,350,100,30,30,110,40,40,0
 152,Scorching Isshata+,10,1248,240,Fire,270,0,0,None,1,None,None,None,350,120,30,30,60,50,60,0
-153,Glavenus's Uruga,11,1352,260,Fire,330,0,0,None,1,None,None,None,350,120,30,30,60,50,60,0
+153,Glavenuss Uruga,11,1352,260,Fire,330,0,0,None,1,None,None,None,350,120,30,30,60,50,60,0
 154,Iceshaker,11,1352,260,Ice,300,0,0,None,4,None,None,None,350,150,30,30,60,50,30,0
 155,Victorious Northlein,12,1404,270,Ice,330,0,0,None,4,None,None,None,350,140,30,30,60,50,40,0
 156,Striped Striker,10,1300,250,Hidden Blast,270,-20,0,None,None,None,None,None,350,80,30,30,110,40,60,0

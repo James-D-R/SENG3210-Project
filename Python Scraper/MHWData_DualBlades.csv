@@ -163,9 +163,9 @@ Order,Name,Rarity,Attack,True Attack,Element(1),Element Stat(1),Element(2),Eleme
 162,Suzuka Otakemaru,12,434,310,Thunder,90,None,0,-10,0,None,4,None,None,None,350,80,100,40,50,80,0,0
 163,Raven Tessen,10,350,250,Poison,180,None,0,15,0,None,3,None,None,None,350,130,30,90,30,30,40,0
 164,Wolf Tessen,11,378,270,Poison,210,None,0,20,0,None,3,None,None,None,350,130,30,90,30,30,40,0
-165,Usurper's Fulgur,10,336,240,Thunder,180,None,0,0,0,None,2,None,None,None,350,90,80,30,30,80,40,0
-166,Usurper's Fulgur+,11,350,250,Thunder,210,None,0,0,0,None,2,None,None,None,350,120,30,90,30,30,50,0
-167,Despot's Blitz,12,364,260,Thunder,240,None,0,0,0,None,2,None,None,None,350,110,30,90,30,30,60,0
+165,Usurpers Fulgur,10,336,240,Thunder,180,None,0,0,0,None,2,None,None,None,350,90,80,30,30,80,40,0
+166,Usurpers Fulgur+,11,350,250,Thunder,210,None,0,0,0,None,2,None,None,None,350,120,30,90,30,30,50,0
+167,Despots Blitz,12,364,260,Thunder,240,None,0,0,0,None,2,None,None,None,350,110,30,90,30,30,60,0
 168,Sulfurteinn Ortho,10,378,270,Hidden Paralysis,180,None,0,0,0,None,4,None,None,None,350,160,100,30,30,30,0,0
 169,The Stripping Shears,11,406,290,Hidden Paralysis,210,None,0,0,0,None,4,None,None,None,350,60,50,110,90,40,0,0
 170,Crimson Viperclaws I,9,322,230,Poison,240,None,0,10,0,None,1,None,None,None,350,80,30,30,110,40,60,0

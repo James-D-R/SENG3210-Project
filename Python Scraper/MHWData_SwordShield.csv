@@ -1,7 +1,7 @@
 Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,Elderseal,Gem Slot 1(Lvl),Gem Slot 2(Lvl),Gem Slot 3(Lvl),Skill,Max Sharpness,Red Sharpness,Orange Sharpness,Yellow Sharpness,Green Sharpness,Blue Sharpness,White Sharpness,Purple Sharpness
-1,Hunter's Knife I,1,112,80,None,0,0,0,None,None,None,None,None,200,90,50,60,0,0,0,0
-2,Hunter's Knife II,1,126,90,None,0,0,0,None,None,None,None,None,200,70,70,30,30,0,0,0
-3,Hunter's Knife III,2,140,100,None,0,0,0,None,None,None,None,None,200,50,70,30,50,0,0,0
+1,Hunters Knife I,1,112,80,None,0,0,0,None,None,None,None,None,200,90,50,60,0,0,0,0
+2,Hunters Knife II,1,126,90,None,0,0,0,None,None,None,None,None,200,70,70,30,30,0,0,0
+3,Hunters Knife III,2,140,100,None,0,0,0,None,None,None,None,None,200,50,70,30,50,0,0,0
 4,Steel Knife I,3,168,120,None,0,0,0,None,None,None,None,None,250,70,50,80,50,0,0,0
 5,Steel Knife II,4,182,130,None,0,0,0,None,None,None,None,None,250,50,50,80,70,0,0,0
 6,Steel Knife III,5,196,140,Hidden Sleep,120,0,0,None,1,None,None,None,300,100,50,50,80,20,0,0
@@ -27,8 +27,8 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 26,Jagras Garotte I,5,238,170,Hidden Water,300,0,0,None,2,1,None,None,300,100,100,40,40,20,0,0
 27,Jagras Garotte II,6,252,180,Hidden Water,330,0,0,None,2,2,None,None,300,90,100,40,40,30,0,0
 28,Jagras Garotte III,6,266,190,Hidden Water,360,0,0,None,3,2,None,None,350,90,120,40,50,50,0,0
-29,Saber's Gullet I,9,322,230,Hidden Water,390,0,0,None,3,3,None,None,350,80,100,40,40,90,0,0
-30,Saber's Gullet II,10,364,260,Hidden Water,450,0,0,None,3,3,None,None,350,100,80,30,30,80,30,0
+29,Sabers Gullet I,9,322,230,Hidden Water,390,0,0,None,3,3,None,None,350,80,100,40,40,90,0,0
+30,Sabers Gullet II,10,364,260,Hidden Water,450,0,0,None,3,3,None,None,350,100,80,30,30,80,30,0
 31,Blooming Knife I,2,154,110,Poison,210,0,0,None,None,None,None,None,200,60,70,30,40,0,0,0
 32,Blooming Knife II,3,182,130,Poison,240,0,0,None,None,None,None,None,250,60,50,80,60,0,0,0
 33,Blooming Knife III,4,196,140,Poison,270,0,0,None,None,None,None,None,250,40,50,80,80,0,0,0
@@ -58,9 +58,9 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 57,Queen Rapier,5,210,150,Poison,180,10,0,None,1,None,None,None,300,110,50,50,80,10,0,0
 58,Girros Knife I,3,168,120,Paralysis,120,10,0,None,None,None,None,None,250,70,50,80,50,0,0,0
 59,Girros Knife II,4,182,130,Paralysis,150,10,0,None,None,None,None,None,250,50,50,80,70,0,0,0
-60,Malady's Tabar I,5,196,140,Paralysis,180,20,0,None,None,None,None,None,300,100,50,50,80,20,0,0
-61,Malady's Tabar II,6,210,150,Paralysis,210,20,0,None,None,None,None,None,300,90,50,50,80,30,0,0
-62,Malady's Tabar III,6,224,160,Paralysis,240,20,0,None,None,None,None,None,350,80,50,60,120,40,0,0
+60,Maladys Tabar I,5,196,140,Paralysis,180,20,0,None,None,None,None,None,300,100,50,50,80,20,0,0
+61,Maladys Tabar II,6,210,150,Paralysis,210,20,0,None,None,None,None,None,300,90,50,50,80,30,0,0
+62,Maladys Tabar III,6,224,160,Paralysis,240,20,0,None,None,None,None,None,350,80,50,60,120,40,0,0
 63,Naaga Seax I,9,280,200,Paralysis,270,20,0,None,None,None,None,None,350,90,100,40,50,70,0,0
 64,Naaga Seax II,10,336,240,Paralysis,300,20,0,None,None,None,None,None,350,90,100,40,50,70,0,0
 65,Lumu Knife I,3,168,120,None,0,0,0,None,None,None,None,None,250,70,50,80,50,0,0,0
@@ -100,9 +100,9 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 99,Royal Rose+,9,308,220,Poison,270,10,0,None,1,None,None,None,350,100,100,40,50,60,0,0
 100,Rose Highness,10,364,260,Poison,300,10,0,None,1,None,None,None,350,100,30,30,110,40,40,0
 101,Lunatic Rose,12,406,290,Poison,360,10,0,None,1,None,None,None,350,60,80,30,30,80,70,0
-102,Teostra's Spada,7,252,180,Blast,210,0,0,None,None,None,None,None,350,100,60,60,100,30,0,0
-103,Teostra's Emblem,8,266,190,Blast,240,0,0,None,None,None,None,None,350,70,50,60,120,50,0,0
-104,Teostra's Medal,11,364,260,Blast,270,15,0,None,None,None,None,None,350,100,30,30,110,40,40,0
+102,Teostras Spada,7,252,180,Blast,210,0,0,None,None,None,None,None,350,100,60,60,100,30,0,0
+103,Teostras Emblem,8,266,190,Blast,240,0,0,None,None,None,None,None,350,70,50,60,120,50,0,0
+104,Teostras Medal,11,364,260,Blast,270,15,0,None,None,None,None,None,350,100,30,30,110,40,40,0
 105,Xeno Mabura,8,238,170,Dragon,270,15,0,Low,3,3,None,None,350,130,30,60,80,40,10,0
 106,Dragonbone Sword I,3,140,100,Dragon,270,0,0,Low,None,None,None,None,250,110,70,30,40,0,0,0
 107,Dragonbone Sword II,4,154,110,Dragon,330,0,0,Low,None,None,None,None,250,70,70,30,80,0,0,0
@@ -126,9 +126,9 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 125,Lightning Nemesis II,6,252,180,Thunder,180,0,0,None,2,None,None,None,300,100,100,40,40,20,0,0
 126,Lightning Nemesis III,6,266,190,Thunder,210,0,0,None,2,None,None,None,350,100,120,40,50,40,0,0
 127,Lightning Nemesis IV,9,308,220,Thunder,240,0,0,None,2,None,None,None,350,100,100,40,50,60,0,0
-128,Usurper's Firebolt,10,336,240,Thunder,300,0,0,None,2,None,None,None,350,110,30,30,110,40,30,0
-129,Usurper's Firebolt+,11,350,250,Thunder,330,0,0,None,2,None,None,None,350,130,30,90,30,30,40,0
-130,Despot's Crookbolt,12,364,260,Thunder,360,0,0,None,2,None,None,None,350,120,30,90,30,30,50,0
+128,Usurpers Firebolt,10,336,240,Thunder,300,0,0,None,2,None,None,None,350,110,30,30,110,40,30,0
+129,Usurpers Firebolt+,11,350,250,Thunder,330,0,0,None,2,None,None,None,350,130,30,90,30,30,40,0
+130,Despots Crookbolt,12,364,260,Thunder,360,0,0,None,2,None,None,None,350,120,30,90,30,30,50,0
 131,Heavy Bang,4,210,150,None,0,0,+20,None,None,None,None,None,250,40,50,80,80,0,0,0
 132,Heavy Bang+,6,252,180,Hidden Thunder,270,0,+20,None,2,None,None,None,300,80,50,50,80,40,0,0
 133,Master Bang,7,280,200,Hidden Thunder,330,0,+20,None,3,None,None,None,350,90,120,40,50,50,0,0
@@ -136,7 +136,7 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 135,Legendary Bang,11,364,260,Hidden Thunder,450,0,+35,None,3,None,None,None,350,130,30,30,60,50,50,0
 136,Fatal Jho,6,280,200,Dragon,150,-20,0,High,None,None,None,None,350,60,120,80,60,30,0,0
 137,Fatal Bite,7,308,220,Dragon,210,-20,0,High,None,None,None,None,350,50,120,80,60,40,0,0
-138,Fate's Shear,12,392,280,Dragon,240,-20,0,High,None,None,None,None,350,150,30,30,60,50,30,0
+138,Fates Shear,12,392,280,Dragon,240,-20,0,High,None,None,None,None,350,150,30,30,60,50,30,0
 139,Empress Edge,7,266,190,Blast,120,0,0,None,1,None,None,None,350,90,30,60,80,40,50,0
 140,Empress Edge Blaze,8,266,190,Blast,150,20,0,None,1,None,None,Guts,350,90,30,60,80,40,50,0
 141,Soulfire Barb Blaze,12,350,250,Blast,180,20,0,None,2,1,None,Guts,350,120,30,30,60,50,60,0
@@ -144,9 +144,9 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 143,Soulfire Barb Ruin,12,378,270,Blast,150,0,0,None,2,2,None,Hasten Recovery,350,120,30,30,60,50,60,0
 144,Empress Edge Styx,8,266,190,Blast,210,10,0,None,3,1,None,Razor Sharp/Spare Shot,350,90,30,60,80,40,50,0
 145,Soulfire Barb Styx,12,350,250,Blast,240,10,0,None,3,3,None,Razor Sharp/Spare Shot,350,120,30,30,60,50,60,0
-146,Witcher's Silver Sword,7,252,180,Dragon,300,0,0,High,1,None,None,None,400,250,20,20,20,30,60,0
-147,Witcher's Silver Sword+,8,266,190,Dragon,330,0,0,High,1,None,None,None,400,240,20,20,20,30,70,0
-148,Witcher's Silver Sword++,12,364,260,Dragon,480,0,0,High,2,1,None,None,400,50,30,30,110,40,140,0
+146,Witchers Silver Sword,7,252,180,Dragon,300,0,0,High,1,None,None,None,400,250,20,20,20,30,60,0
+147,Witchers Silver Sword+,8,266,190,Dragon,330,0,0,High,1,None,None,None,400,240,20,20,20,30,70,0
+148,Witchers Silver Sword++,12,364,260,Dragon,480,0,0,High,2,1,None,None,400,50,30,30,110,40,140,0
 149,Defender Warhatchet I,1,182,130,Blast,150,0,0,None,None,None,None,None,200,30,60,20,90,0,0,0
 150,Defender Warhatchet II,3,238,170,Blast,180,0,0,None,None,None,None,None,250,30,60,20,140,0,0,0
 151,Defender Warhatchet III,5,266,190,Blast,210,0,0,None,None,None,None,None,300,50,50,50,80,70,0,0
@@ -164,7 +164,7 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 163,Tigrex Sword,11,392,280,Hidden Blast,300,-20,0,None,None,None,None,None,350,50,30,30,110,40,90,0
 164,Donnersieger,10,336,240,Thunder,210,5,0,None,None,None,None,None,350,70,100,40,50,90,0,0
 165,Donnersieger+,10,350,250,Thunder,240,10,0,None,None,None,None,None,350,70,100,40,50,90,0,0
-166,Fulguration's Talon,11,364,260,Thunder,270,15,0,None,None,None,None,None,350,70,100,40,50,90,0,0
+166,Fulgurations Talon,11,364,260,Thunder,270,15,0,None,None,None,None,None,350,70,100,40,50,90,0,0
 167,Nyx Tabar I,9,308,220,Sleep,270,0,0,None,2,None,None,None,350,60,80,30,30,80,70,0
 168,Nyx Tabar II,10,336,240,Sleep,330,0,0,None,2,None,None,None,350,60,80,30,30,80,70,0
 169,Dios Edge,10,322,230,Blast,300,0,0,None,None,None,None,None,350,90,100,40,50,70,0,0

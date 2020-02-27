@@ -27,8 +27,8 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 26,Jagras Raider I,5,560,160,Hidden Sleep,180,0,0,None,1,None,None,Exhaust Phial 18,None,300,110,50,50,80,10,0,0
 27,Jagras Raider II,6,630,180,Hidden Sleep,210,0,0,None,2,2,None,Exhaust Phial 18,None,300,100,50,50,80,20,0,0
 28,Jagras Raider III,6,665,190,Hidden Sleep,240,0,0,None,3,2,None,Exhaust Phial 21,None,350,110,120,40,50,30,0,0
-29,Saber's Bite I,9,805,230,Hidden Sleep,390,0,0,None,3,3,None,Exhaust Phial 24,None,350,100,50,50,80,70,0,0
-30,Saber's Bite II,10,910,260,Hidden Sleep,420,0,0,None,3,3,None,Exhaust Phial 27,None,350,110,80,30,30,80,20,0
+29,Sabers Bite I,9,805,230,Hidden Sleep,390,0,0,None,3,3,None,Exhaust Phial 24,None,350,100,50,50,80,70,0,0
+30,Sabers Bite II,10,910,260,Hidden Sleep,420,0,0,None,3,3,None,Exhaust Phial 27,None,350,110,80,30,30,80,20,0
 31,Datura Garden I,9,700,200,Poison,600,0,0,None,2,1,None,Power Phial ,None,350,70,80,30,30,80,60,0
 32,Datura Garden II,10,840,240,Poison,660,0,0,None,2,1,None,Power Phial ,None,350,120,30,30,60,50,60,0
 33,Madness Axe I,2,385,110,Water,150,0,0,None,None,None,None,Power Element Phial ,None,200,80,50,50,20,0,0,0
@@ -97,9 +97,9 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 96,Axe of Demons,8,805,230,Hidden Ice,180,-30,+15,None,1,None,None,Power Phial ,None,350,90,50,60,120,30,0,0
 97,Axe of Demons+,10,910,260,Hidden Ice,240,-30,+35,None,2,None,None,Power Phial ,None,350,100,100,40,50,60,0,0
 98,Axe of Hades,10,1015,290,Hidden Ice,270,-30,+35,None,2,None,None,Power Phial ,None,350,70,50,90,70,70,0,0
-99,Teostra's Arx,7,630,180,Blast,300,0,0,None,None,None,None,Power Phial ,None,350,110,60,80,80,20,0,0
-100,Teostra's Castle,8,665,190,Blast,300,0,0,None,None,None,None,Power Phial ,None,350,90,60,60,100,40,0,0
-101,Teostra's Hellebarde,11,910,260,Blast,360,10,0,None,None,None,None,Power Phial ,None,350,100,80,30,30,80,30,0
+99,Teostras Arx,7,630,180,Blast,300,0,0,None,None,None,None,Power Phial ,None,350,110,60,80,80,20,0,0
+100,Teostras Castle,8,665,190,Blast,300,0,0,None,None,None,None,Power Phial ,None,350,90,60,60,100,40,0,0
+101,Teostras Hellebarde,11,910,260,Blast,360,10,0,None,None,None,None,Power Phial ,None,350,100,80,30,30,80,30,0
 102,Xeno Martshu,8,595,170,Dragon,150,15,0,Low,3,3,None,Power Phial ,None,350,130,30,60,80,40,10,0
 103,Bazel Raider I,6,665,190,Blast,150,-15,0,None,1,None,None,Power Phial ,None,300,100,50,50,80,20,0,0
 104,Bazel Raider II,7,700,200,Blast,180,-15,0,None,1,None,None,Power Phial ,None,350,70,120,80,60,20,0,0
@@ -138,7 +138,7 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 137,Mammoth Halberd II,10,980,280,Hidden Ice,450,0,0,None,4,None,None,Power Phial ,None,350,90,50,50,80,80,0,0
 138,Hidden Axe,10,770,220,Hidden Poison,360,10,0,None,None,None,None,Power Phial ,None,350,80,80,30,30,80,50,0
 139,Hidden Axe+,10,805,230,Hidden Poison,450,15,0,None,None,None,None,Power Phial ,None,350,70,80,30,30,80,60,0
-140,Night's Crescent,11,840,240,Hidden Poison,540,20,0,None,None,None,None,Power Phial ,None,350,140,20,20,70,40,30,30
+140,Nights Crescent,11,840,240,Hidden Poison,540,20,0,None,None,None,None,Power Phial ,None,350,140,20,20,70,40,30,30
 141,Glavenus Smasher I,10,805,230,Fire,330,0,0,None,1,None,None,Power Phial ,None,350,110,30,30,110,40,30,0
 142,Glavenus Smasher II,10,875,250,Fire,420,0,0,None,1,1,None,Power Phial ,None,350,130,30,30,60,50,50,0
 143,Deep Lagoon I,9,770,220,Water,510,0,0,None,2,None,None,Power Element Phial ,None,350,70,80,30,30,80,60,0
@@ -149,7 +149,7 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 148,Rex Raider II,10,945,270,Hidden Blast,420,-15,0,None,1,None,None,Power Phial ,None,350,50,30,30,110,40,90,0
 149,Donnerbeil,10,840,240,Thunder,210,10,0,None,None,None,None,Power Phial ,None,350,80,100,40,50,80,0,0
 150,Donnerbeil+,10,875,250,Thunder,240,15,0,None,None,None,None,Power Phial ,None,350,80,100,40,50,80,0,0
-151,Fulguration's Bite,11,910,260,Thunder,270,20,0,None,None,None,None,Power Phial ,None,350,80,100,40,50,80,0,0
+151,Fulgurations Bite,11,910,260,Thunder,270,20,0,None,None,None,None,Power Phial ,None,350,80,100,40,50,80,0,0
 152,Nyx Smasher I,9,770,220,Sleep,360,0,0,None,2,None,None,Power Phial ,None,350,80,30,30,110,40,60,0
 153,Nyx Smasher II,10,840,240,Sleep,450,0,0,None,2,None,None,Power Phial ,None,350,80,30,30,110,40,60,0
 154,Dios Smasher I,10,840,240,Blast,360,0,0,None,None,None,None,Power Phial ,None,350,90,100,40,50,70,0,0

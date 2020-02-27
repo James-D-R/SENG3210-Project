@@ -27,8 +27,8 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 26,Glutton Gunlance I,5,345,150,Hidden Sleep,240,0,0,None,2,1,None,Normal Lv 3,None,300,130,70,30,70,0,0,0
 27,Glutton Gunlance II,6,437,190,Hidden Sleep,270,0,0,None,2,2,None,Normal Lv 3,None,300,110,50,50,80,10,0,0
 28,Glutton Gunlance III,6,437,190,Hidden Sleep,300,0,0,None,3,2,None,Normal Lv 3,None,350,90,120,40,50,50,0,0
-29,Glutton's Fang I,9,529,230,Hidden Sleep,360,0,0,None,3,3,None,Normal Lv 4,None,350,100,50,50,80,70,0,0
-30,Glutton's Fang II,10,598,260,Hidden Sleep,420,0,0,None,3,3,None,Normal Lv 6,None,350,100,80,30,30,80,30,0
+29,Gluttons Fang I,9,529,230,Hidden Sleep,360,0,0,None,3,3,None,Normal Lv 4,None,350,100,50,50,80,70,0,0
+30,Gluttons Fang II,10,598,260,Hidden Sleep,420,0,0,None,3,3,None,Normal Lv 6,None,350,100,80,30,30,80,30,0
 31,Madness Gunlance I,2,253,110,Water,210,0,0,None,None,None,None,Long Lv 1,None,200,60,70,30,40,0,0,0
 32,Madness Gunlance II,3,276,120,Water,240,0,0,None,None,None,None,Long Lv 1,None,250,70,50,80,50,0,0,0
 33,Madness Gunlance III,4,299,130,Water,270,0,0,None,None,None,None,Long Lv 1,None,250,60,50,80,60,0,0,0
@@ -87,16 +87,16 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 86,Rose Burst,6,391,170,Poison,300,15,0,None,1,None,None,Normal Lv 3,None,300,90,50,50,80,30,0,0
 87,Royal Burst,7,437,190,Poison,330,15,0,None,1,None,None,Normal Lv 4,None,350,80,60,60,100,50,0,0
 88,Royal Burst+,9,529,230,Poison,360,15,0,None,1,None,None,Normal Lv 5,None,350,90,100,40,50,70,0,0
-89,Highness's Fury,10,598,260,Poison,390,15,0,None,1,None,None,Normal Lv 5,None,350,100,30,30,110,40,40,0
-90,Queen's Panoply,12,667,290,Poison,450,15,0,None,1,None,None,Normal Lv 6,None,350,60,80,30,30,80,70,0
+89,Highnesss Fury,10,598,260,Poison,390,15,0,None,1,None,None,Normal Lv 5,None,350,100,30,30,110,40,40,0
+90,Queens Panoply,12,667,290,Poison,450,15,0,None,1,None,None,Normal Lv 6,None,350,60,80,30,30,80,70,0
 91,Blue Rook,7,414,180,Fire,210,20,0,None,1,None,None,Wide Lv 2,None,350,110,60,80,80,20,0,0
 92,Blue Chariot,8,437,190,Fire,240,20,0,None,1,None,None,Wide Lv 3,None,350,80,50,60,120,40,0,0
 93,Blue Chariot+,10,506,220,Fire,270,20,0,None,1,None,None,Wide Lv 5,None,350,100,100,40,50,60,0,0
 94,Soul Chariot,10,552,240,Fire,300,20,0,None,1,None,None,Wide Lv 5,None,350,100,30,30,110,40,40,0
 95,Chariot Gun,12,621,270,Fire,330,20,0,None,2,None,None,Wide Lv 6,None,350,120,30,30,60,50,60,0
 96,Icesteel Gunlance,7,391,170,Ice,210,10,0,None,3,None,None,Wide Lv 3,None,350,110,60,80,80,20,0,0
-97,Daora's Brigia,8,414,180,Ice,240,10,0,None,3,None,None,Wide Lv 3,None,350,90,60,80,80,40,0,0
-98,Daora's Tempest,11,598,260,Ice,270,10,0,None,3,None,None,Wide Lv 5,None,350,130,30,30,60,50,50,0
+97,Daoras Brigia,8,414,180,Ice,240,10,0,None,3,None,None,Wide Lv 3,None,350,90,60,80,80,40,0,0
+98,Daoras Tempest,11,598,260,Ice,270,10,0,None,3,None,None,Wide Lv 5,None,350,130,30,30,60,50,50,0
 99,Xeno Hemta,8,391,170,Dragon,180,15,0,Low,3,3,None,Wide Lv 3,None,350,130,30,60,80,40,10,0
 100,Bazel Buster I,6,437,190,Blast,180,-10,0,None,1,None,None,Long Lv 3,None,300,100,100,40,40,20,0,0
 101,Bazel Buster II,7,460,200,Blast,210,-10,0,None,1,None,None,Long Lv 3,None,350,60,120,80,60,30,0,0
@@ -146,9 +146,9 @@ Order,Name,Rarity,Attack,True Attack,Element,Element Stat,Affinity(%),Defense,El
 145,Great Demon Gunlance,12,655.5,285,Thunder,120,-15,0,None,4,None,None,Long Lv 6,None,350,90,100,40,50,70,0,0
 146,Blackwing Gunlance I,10,598,260,Poison,210,20,0,None,3,None,None,Wide Lv 5,None,350,140,30,90,30,30,30,0
 147,Blackwing Gunlance II,11,621,270,Poison,240,25,0,None,3,None,None,Wide Lv 6,None,350,140,30,90,30,30,30,0
-148,Usurper's Roar,10,552,240,Thunder,240,0,0,None,2,None,None,Normal Lv 6,None,350,110,30,30,110,40,30,0
-149,Usurper's Roar+,11,575,250,Thunder,300,0,0,None,2,None,None,Normal Lv 6,None,350,120,30,90,30,30,50,0
-150,Despot's Phlogiston,12,598,260,Thunder,450,0,0,None,2,None,None,Normal Lv 6,None,350,120,30,90,30,30,50,0
+148,Usurpers Roar,10,552,240,Thunder,240,0,0,None,2,None,None,Normal Lv 6,None,350,110,30,30,110,40,30,0
+149,Usurpers Roar+,11,575,250,Thunder,300,0,0,None,2,None,None,Normal Lv 6,None,350,120,30,90,30,30,50,0
+150,Despots Phlogiston,12,598,260,Thunder,450,0,0,None,2,None,None,Normal Lv 6,None,350,120,30,90,30,30,50,0
 151,Twinfang,10,506,220,Ice,210,20,0,None,None,None,None,Long Lv 4,None,350,100,30,30,110,40,40,0
 152,Twinfang+,10,529,230,Ice,270,25,0,None,None,None,None,Long Lv 5,None,350,100,30,30,110,40,40,0
 153,Ambermarch,11,575,250,Ice,330,30,0,None,None,None,None,Long Lv 5,None,350,100,30,30,110,40,40,0
