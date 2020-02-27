@@ -40,7 +40,8 @@ def main():
     result3 = db.list_armor("arms")
     result4 = db.list_armor("waist")
     result5 = db.list_armor("legs")
-    return render_template("selectArmors.htm",head = result1,chest = result2,arm = result3,waist = result4,leg = result5)
+    result6 = db.list_armor("skills")
+    return render_template("selectArmors.htm",head = result1,chest = result2,arm = result3,waist = result4,leg = result5,skill = result6)
 
 @app.route('/',methods=['POST'])
 def showTables():
@@ -50,6 +51,15 @@ def showTables():
     armName = request.form.get('armName')
     waistName = request.form.get('waistName')
     legName = request.form.get('legName')
+    skillName = request.form.get('skillName')
+
+    #Escape any single quotes
+    headName = headName.replace("'","''")
+    chestName = chestName.replace("'","''")
+    armName = armName.replace("'","''")
+    waistName = waistName.replace("'","''")
+    legName = legName.replace("'","''")
+    skillName = skillName.replace("'","''")
 
     #Specify db and query tables for dropdown boxes
     db = Database("armor")
@@ -58,6 +68,7 @@ def showTables():
     result3 = db.list_armor("arms")
     result4 = db.list_armor("waist")
     result5 = db.list_armor("legs")
+    result6 = db.list_armor("skills")
     #Select specified armor piece from each table
     details1 = db.piece_detail("head",headName)
     details2 = db.piece_detail("chest",chestName)
@@ -65,12 +76,15 @@ def showTables():
     details4 = db.piece_detail("waist",waistName)
     details5 = db.piece_detail("legs",legName)
 
+    skillLevels = db.piece_detail("skills",skillName)
+
     #skillTotal(details1)
-    print(details1)
+    #print(details1)
 
 
     return render_template("selectArmors.htm",head = result1,chest = result2,arm = result3,waist = result4,leg = result5,
-    headpiece = details1,chestpiece = details2,armpiece = details3,waistpiece = details4,legpiece = details5)
+    headpiece = details1,chestpiece = details2,armpiece = details3,waistpiece = details4,legpiece = details5,skill = result6,
+    skillLv = skillLevels)
 
 #Head pieces table
 @app.route('/head-pieces')
@@ -106,6 +120,21 @@ def showLegPieces():
     db = Database("armor")
     pieces = db.list_armor("legs")
     return render_template('legArmor.htm',result = pieces)
+
+#Charms table
+@app.route('/charms')
+def showCharms():
+    db = Database("armor")
+    charms = db.list_armor("charms")
+    return render_template('charms.htm',result = charms)
+
+#Decorations table
+@app.route('/decorations')
+def showDecorations():
+    db = Database("armor")
+    decorations = db.list_armor("decorations")
+    return render_template('decorations.htm',result = decorations)
+
 
 if __name__ == "__main__":
     app.run()

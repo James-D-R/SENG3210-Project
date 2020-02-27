@@ -29,79 +29,161 @@ h3 {
 
 p {
     font-family: Arial, Helvetica, sans-serif;
-    color:darkolivegreen;
+    color: black;
 }
+
+ul.navigation {
+    background-color: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.navigation li {
+    float: left;
+    width: 10%;
+    border-right: 1px solid #bbb;
+}
+
+ul.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+}
+
+ul.navigation li a:hover {
+    background-color: #111;
+}
+
+.container{
+    width: 90%;
+    margin:auto;
+    text-align: left;
+}
+
+.subcontainer{
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    float: left;
+}
+
+.subcontainer h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 16pt;
+    color: blueviolet;
+}
+
+.subcontainer ul{
+    border: solid blueviolet;
+    width: 90%;
+}
+
+
+
 </style>
 <head>
     <meta charset="UTF-8">
     <title>Armor Builder</title>
 </head>
 <body>
+    <nav>
+        <ul class="navigation">
+            <li><a href="/">Home</a></li>
+            <li><a href="head-pieces">Head Pieces</a></li>
+            <li><a href="chest-pieces">Chest Pieces</a></li>
+            <li><a href="arm-pieces">Arm Pieces</a></li>
+            <li><a href="waist-pieces">Waist Pieces</a></li>
+            <li><a href="leg-pieces">Leg Pieces</a></li>
+            <li><a href="charms">Charms</a></li>
+            <li><a href="decorations">Decorations</a></li>
+        </ul>
+    </nav>
     <h2>Monster Hunter World Iceborne: Armor Set Builder</h2>
     <h3>Select an armor piece to begin.</h3>
-    <a href="/">Home</a>
-    <a href="head-pieces">Head Pieces</a>
-    <a href="chest-pieces">Chest Pieces</a>
-    <a href="arm-pieces">Arm Pieces</a>
-    <a href="waist-pieces">Waist Pieces</a>
-    <a href="leg-pieces">Leg Pieces</a>
+
 
     <!--Dropdown box form-->
     <form method='post'>
-        {% if head %}
-        <p><label for="heads">Head Pieces:</label></p>
-        <select id="heads" name="headName" style="width: 15%;">
-            {% for row in head %}
-            <option value="{{row.name}}">{{row.name}}</option>
-            {% endfor %}
-        </select>
-        {% endif %}
+        <div class= "container">
+            <div class= "subcontainer">   
+                {% if head %}
+                <p><label for="heads">Head Pieces:</label></p>
+                <select id="heads" name="headName" style="width: 50%;">
+                    {% for row in head %}
+                    <option value="{{row.name}}">{{row.name}}</option>
+                    {% endfor %}
+                </select>
+                {% endif %}
 
-        {% if chest %}
-        <p><label for="chests">Chest Pieces:</label></p>
-        <select id="chests" name="chestName" style="width: 15%;">
-            {% for row in chest %}
-            <option value="{{row.name}}">{{row.name}}</option>
-            {% endfor %}
-        </select>
-        {% endif %}
+                {% if chest %}
+                <p><label for="chests">Chest Pieces:</label></p>
+                <select id="chests" name="chestName" style="width: 50%;">
+                    {% for row in chest %}
+                    <option value="{{row.name}}">{{row.name}}</option>
+                    {% endfor %}
+                </select>
+                {% endif %}
 
-        {% if arm %}
-        <p><label for="arms">Arm Pieces:</label></p>
-        <select id="arms" name="armName" style="width: 15%;">
-            {% for row in arm %}
-            <option value="{{row.name}}">{{row.name}}</option>
-            {% endfor %}
-        </select>
-        {% endif %}
+                {% if arm %}
+                <p><label for="arms">Arm Pieces:</label></p>
+                <select id="arms" name="armName" style="width: 50%;">
+                    {% for row in arm %}
+                    <option value="{{row.name}}">{{row.name}}</option>
+                    {% endfor %}
+                </select>
+                {% endif %}
 
-        {% if waist %}
-        <p><label for="waists">Waist Pieces:</label></p>
-        <select id="waists" name="waistName" style="width: 15%;">
-            {% for row in waist %}
-            <option value="{{row.name}}">{{row.name}}</option>
-            {% endfor %}
-        </select>
-        {% endif %}
+                {% if waist %}
+                <p><label for="waists">Waist Pieces:</label></p>
+                <select id="waists" name="waistName" style="width: 50%;">
+                    {% for row in waist %}
+                    <option value="{{row.name}}">{{row.name}}</option>
+                    {% endfor %}
+                </select>
+                {% endif %}
 
-        {% if leg %}
-        <p><label for="legs">Leg Pieces:</label></p>
-        <select id="legs" name="legName" style="width: 15%;">
-            {% for row in leg %}
-            <option value="{{row.name}}">{{row.name}}</option>
-            {% endfor %}
-        </select>
-        {% endif %}    
-        <input type= "submit">
+                {% if leg %}
+                <p><label for="legs">Leg Pieces:</label></p>
+                <select id="legs" name="legName" style="width: 50%;">
+                    {% for row in leg %}
+                    <option value="{{row.name}}">{{row.name}}</option>
+                    {% endfor %}
+                </select>
+                {% endif %}    
+                <input type= "submit">
+            </div> 
+            
+            <div class="subcontainer">
+                {% if skill %}
+                <p><label for="skills">Skills:</label></p>
+                <select id="skills" name="skillName">
+                    {% for row in skill %}
+                    <option value="{{row.name}}">{{row.name}}</option>
+                    {% endfor %}
+                </select>
+                <input type= "submit">
+                {% if skillLv %}
+                <h1>{{skillLv[0].name}}</h1>
+                <ul class="subcontainer">
+                    <li >Lv 1: {{skillLv[0].tier1}}</li>
+                    <li >Lv 2: {{skillLv[0].tier2}}</li>
+                    <li >Lv 3: {{skillLv[0].tier3}}</li>
+                    <li >Lv 4: {{skillLv[0].tier4}}</li>
+                    <li >Lv 5: {{skillLv[0].tier5}}</li>
+                    <li >Lv 6: {{skillLv[0].tier6}}</li>
+                    <li >Lv 7: {{skillLv[0].tier7}}</li>
+                </ul>
+                {% endif %}
+                {% endif %}
+            </div>
+        </div>
     </form>
 
-    <!--button type="button" onclick="myFunction()">Try it</button>
-    <script>
-    function myFunction() {
-    var input = document.getElementById("chests").value;
-    document.write(input);
-    }
-    </script-->
 
     <!--Always display table headings, display armors once button clicked-->
     <table id="armors" style="width:100%">
