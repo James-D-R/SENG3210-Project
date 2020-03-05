@@ -1,6 +1,16 @@
+'''
+app.py
+Authors: James Remer, Brendan VandeVoorde
+Creation Date: 2/10/20
+Last Updated: 3/4/20
+Description: 
+    Main python file ran when starting the app. Contains routes and rendering instructions for html pages. 
+    Sets up database connections.
+'''
 from flask import Flask, render_template, request
 from calculate_skills import skillTotal
 import pymysql
+import re
 
 app = Flask(__name__)
 
@@ -9,17 +19,22 @@ class Database:
     def __init__(self,data_base):
         #Credentials
         self.db = data_base
-        host = "192.168.56.117"
+        host = "192.168.56.117" #DO NOT USE THIS HOST IN PROD
         user = "remjamd"
         password = "password1"
         #Connect
         self.con = pymysql.connect(host=host, user=user, password=password, db=self.db, cursorclass=pymysql.cursors.DictCursor)
         self.cur = self.con.cursor()
-        print("connected to database")
+        #print("connected to database")
 
     #class method to query DB table
     #tables are: head, chest, arms, waist, legs
     def list_armor(self,table):
+        self.cur.execute("SELECT * FROM "+table)
+        result = self.cur.fetchall()
+        return result
+    
+    def list_Weapons(self,table):
         self.cur.execute("SELECT * FROM "+table)
         result = self.cur.fetchall()
         return result
@@ -135,6 +150,82 @@ def showDecorations():
     decorations = db.list_armor("decorations")
     return render_template('decorations.htm',result = decorations)
 
+#Great Sword table
+@app.route('/Great-Swords')
+def showGreatSwords():
+    db = Database("Weapons")
+    pieces = db.list_Weapons("Great_Swords")
+    return render_template('Weapon-Great-Sword.htm',result = pieces)
+
+#Sword & Shield table
+@app.route('/Sword-Shields')
+def showSwordShields():
+    db = Database("Weapons")
+    pieces = db.list_Weapons("Sword_Shields")
+    return render_template('Weapon-Sword-Shield.htm',result = pieces)
+
+#Dual Blades table
+@app.route('/Dual-Blades')
+def showDualBlades():
+    db = Database("Weapons")
+    pieces = db.list_Weapons("Dual_Blades")
+    return render_template('Weapon-Dual-Blade.htm',result = pieces)
+
+#Long Sword table
+@app.route('/Long-Swords')
+def showLongSwords():
+    db = Database("Weapons")
+    pieces = db.list_Weapons("Long_Swords")
+    return render_template('Weapon-Long-Sword.htm',result = pieces)
+
+#Hammer table
+@app.route('/Hammers')
+def showHammers():
+    db = Database("Weapons")
+    pieces = db.list_Weapons("Hammers")
+    return render_template('Weapon-Hammer.htm',result = pieces)
+
+#Hunting Horn table
+@app.route('/Hunting-Horns')
+def showHuntingHorns():
+    db = Database("Weapons")
+    pieces = db.list_Weapons("Hunting_Horns")
+    return render_template('Weapon-Hunting-Horn.htm',result = pieces)
+
+#Lance table
+@app.route('/Lances')
+def showLances():
+    db = Database("Weapons")
+    pieces = db.list_Weapons("Lances")
+    return render_template('Weapon-Lance.htm',result = pieces)
+
+#Gun Lance table
+@app.route('/Gun-Lances')
+def showGunLances():
+    db = Database("Weapons")
+    pieces = db.list_Weapons("Gun_Lances")
+    return render_template('Weapon-Gun-Lance.htm',result = pieces)
+
+#Switch Axe table
+@app.route('/Switch-Axes')
+def showSwitchAxes():
+    db = Database("Weapons")
+    pieces = db.list_Weapons("Switch_Axes")
+    return render_template('Weapon-Switch-Axe.htm',result = pieces)
+
+#Charge Blade table
+@app.route('/Charge-Blades')
+def showChargeBlades():
+    db = Database("Weapons")
+    pieces = db.list_Weapons("Charge_Blades")
+    return render_template('Weapon-Charge-Blade.htm',result = pieces)
+
+#Insect Glaive table
+@app.route('/Insect-Glaives')
+def showInsectGlaives():
+    db = Database("Weapons")
+    pieces = db.list_Weapons("Insect_Glaives")
+    return render_template('Weapon-Insect-Glaive.htm',result = pieces)
 
 if __name__ == "__main__":
     app.run()

@@ -1,3 +1,9 @@
+'''
+    calculate_skills.py
+    Authors: James Remer
+    Last Updated: 3/5/20
+    Description: (NOT COMPLETE) Function to take selected armor pieces and total up skills
+'''
 def skillTotal(piece):
 
     #Get skill name and number from dictionary

@@ -1,3 +1,6 @@
+'''
+Code used to scrape armor information used in databases
+'''
 import requests
 from bs4 import BeautifulSoup
 
