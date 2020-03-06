@@ -48,9 +48,56 @@
             <td> {{ row.skill1 }}</td>
             <td> {{ row.skill2 }}</td>
             <td> {{ row.defense }}</td>
-            <td> {{ row.slot1 }}</td>
-            <td> {{ row.slot2 }}</td>
-            <td> {{ row.slot3 }}</td>
+            
+            <!--Display image depending on slot level-->
+            <!--Slot 1-->
+            {% if row.slot1 == 'Level 4' %}
+            <td><img src="{{ url_for('static', filename='slot_size_4.png') }}" alt="Level 4 Slot" style="width:18px;height:18px"></td>
+            {% endif %}
+            {% if row.slot1 == 'Level 3' %}
+            <td><img src="{{ url_for('static', filename='slot_size_3.png') }}" alt="Level 3 Slot" style="width:18px;height:18px"></td>
+            {% endif %}
+            {% if row.slot1 == 'Level 2' %}
+            <td><img src="{{ url_for('static', filename='slot_size_2.png') }}" alt="Level 2 Slot" style="width:18px;height:18px"></td>
+            {% endif %}
+            {% if row.slot1 == 'Level 1' %}
+            <td><img src="{{ url_for('static', filename='slot_size_1.png') }}" alt="Level 1 Slot" style="width:18px;height:18px"></td>
+            {% endif %}
+
+            <!--Slot 2-->
+            {% if row.slot2 == 'Level 4' %}
+            <td><img src="{{ url_for('static', filename='slot_size_4.png') }}" alt="Level 4 Slot" style="width:18px;height:18px"></td>
+            {% endif %}
+            {% if row.slot2 == 'Level 3' %}
+            <td><img src="{{ url_for('static', filename='slot_size_3.png') }}" alt="Level 3 Slot" style="width:18px;height:18px"></td>
+            {% endif %}
+            {% if row.slot2 == 'Level 2' %}
+            <td><img src="{{ url_for('static', filename='slot_size_2.png') }}" alt="Level 2 Slot" style="width:18px;height:18px"></td>
+            {% endif %}
+            {% if row.slot2 == 'Level 1' %}
+            <td><img src="{{ url_for('static', filename='slot_size_1.png') }}" alt="Level 1 Slot" style="width:18px;height:18px"></td>
+            {% endif %}
+            {% if row.slot2 == 'None' %}
+            <td>{{ row.slot2 }}</td>
+            {% endif %}
+
+            <!--Slot 3-->
+            {% if row.slot3 == 'Level 4' %}
+            <td><img src="{{ url_for('static', filename='slot_size_4.png') }}" alt="Level 4 Slot" style="width:18px;height:18px"></td>
+            {% endif %}
+            {% if row.slot3 == 'Level 3' %}
+            <td><img src="{{ url_for('static', filename='slot_size_3.png') }}" alt="Level 3 Slot" style="width:18px;height:18px"></td>
+            {% endif %}
+            {% if row.slot3 == 'Level 2' %}
+            <td><img src="{{ url_for('static', filename='slot_size_2.png') }}" alt="Level 2 Slot" style="width:18px;height:18px"></td>
+            {% endif %}
+            {% if row.slot3 == 'Level 1' %}
+            <td><img src="{{ url_for('static', filename='slot_size_1.png') }}" alt="Level 1 Slot" style="width:18px;height:18px"></td>
+            {% endif %}
+            {% if row.slot3 == 'None' %}
+            <td>{{ row.slot3 }}</td>
+            {% endif %}
+
             <td> {{ row.firedef }}</td>
             <td> {{ row.waterdef }}</td>
             <td> {{ row.thunderdef }}</td>

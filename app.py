@@ -56,7 +56,9 @@ def main():
     result4 = db.list_armor("waist")
     result5 = db.list_armor("legs")
     result6 = db.list_armor("skills")
-    return render_template("selectArmors.htm",head = result1,chest = result2,arm = result3,waist = result4,leg = result5,skill = result6)
+    result7 = db.list_armor("charms")
+    return render_template("selectArmors.htm",head = result1,chest = result2,arm = result3,waist = result4,leg = result5,skill = result6,
+    charm = result7)
 
 @app.route('/',methods=['POST'])
 def showTables():
@@ -67,6 +69,7 @@ def showTables():
     waistName = request.form.get('waistName')
     legName = request.form.get('legName')
     skillName = request.form.get('skillName')
+    charmName = request.form.get('charmName')
 
     #Escape any single quotes
     headName = headName.replace("'","''")
@@ -75,6 +78,7 @@ def showTables():
     waistName = waistName.replace("'","''")
     legName = legName.replace("'","''")
     skillName = skillName.replace("'","''")
+    charmName = charmName.replace("'","''")
 
     #Specify db and query tables for dropdown boxes
     db = Database("armor")
@@ -84,22 +88,22 @@ def showTables():
     result4 = db.list_armor("waist")
     result5 = db.list_armor("legs")
     result6 = db.list_armor("skills")
+    result7 = db.list_armor("charms")
     #Select specified armor piece from each table
     details1 = db.piece_detail("head",headName)
     details2 = db.piece_detail("chest",chestName)
     details3 = db.piece_detail("arms",armName)
     details4 = db.piece_detail("waist",waistName)
     details5 = db.piece_detail("legs",legName)
+    details6 = db.piece_detail("charms",charmName)
 
     skillLevels = db.piece_detail("skills",skillName)
 
-    #skillTotal(details1)
-    #print(details1)
+    #headname1,headpoints1,headname2,headpoints2 = skillTotal(details1)
 
-
-    return render_template("selectArmors.htm",head = result1,chest = result2,arm = result3,waist = result4,leg = result5,
-    headpiece = details1,chestpiece = details2,armpiece = details3,waistpiece = details4,legpiece = details5,skill = result6,
-    skillLv = skillLevels)
+    return render_template("selectArmors.htm",head = result1,chest = result2,arm = result3,waist = result4,leg = result5,charm = result7,
+    headpiece = details1,chestpiece = details2,armpiece = details3,waistpiece = details4,legpiece = details5,charmpiece = details6,
+    skill = result6,skillLv = skillLevels)
 
 #Head pieces table
 @app.route('/head-pieces')
