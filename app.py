@@ -8,7 +8,7 @@ Description:
     Sets up database connections.
 '''
 from flask import Flask, render_template, request
-from calculate_skills import skillTotal
+from calculate_skills import skillTotal, addSkills, setTotal
 import pymysql
 import re
 
@@ -99,11 +99,11 @@ def showTables():
 
     skillLevels = db.piece_detail("skills",skillName)
 
-    #headname1,headpoints1,headname2,headpoints2 = skillTotal(details1)
+    skillnames,skillnumbers = setTotal(details1,details2,details3,details4,details5,details6)
 
     return render_template("selectArmors.htm",head = result1,chest = result2,arm = result3,waist = result4,leg = result5,charm = result7,
     headpiece = details1,chestpiece = details2,armpiece = details3,waistpiece = details4,legpiece = details5,charmpiece = details6,
-    skill = result6,skillLv = skillLevels)
+    skill = result6,skillLv = skillLevels,skillnames = skillnames, skilltotals = skillnumbers)
 
 #Head pieces table
 @app.route('/head-pieces')

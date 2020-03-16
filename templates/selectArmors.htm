@@ -552,5 +552,20 @@
         {% endif %}
     </table>
 
+    <!--Table to display skill totals after selecting armor pieces-->
+    <p>Skill Totals:</p>
+    <table id="skillTotals" style="width: 75%;">
+        <tr>
+            <th>Skill Name</th>
+            <th>Level</th>
+        </tr>
+        {% for name in skillnames %}
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ skilltotals[loop.index0] }}</td>
+        </tr>  
+        {% endfor %}      
+    </table>
+
 </body>
 </html>
