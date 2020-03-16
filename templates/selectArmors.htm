@@ -34,151 +34,9 @@
     <h3>Select an armor piece to begin.</h3>
 
 
-    <!--Dropdown box form-->
+    <!--Dropdown boxes are within the table-->
     <form method='post'>
-        <div class= "container">
-            <div class= "subcontainer">   
-                {% if head %}
-                <p><label for="heads">Head Pieces:</label></p>
-                <select id="heads" name="headName" style="width: 50%;">
-                    {% for row in head %}
-                    <option value="{{row.name}}">{{row.name}}</option>
-                    {% endfor %}
-                </select>
-
-                <!--Script to change the dropdown box value to what the user previously selected-->
-                {% if headpiece %}
-                    {% for row in headpiece %}
-                        <script>set_value("{{row.name}}","heads")</script>
-                    {% endfor %}
-                {% endif %}
-
-                {% endif %}
-
-                {% if chest %}
-                <p><label for="chests">Chest Pieces:</label></p>
-                <select id="chests" name="chestName" style="width: 50%;">
-                    {% for row in chest %}
-                    <option value="{{row.name}}">{{row.name}}</option>
-                    {% endfor %}
-                </select>
-
-                <!--Script-->
-                {% if chestpiece %}
-                    {% for row in chestpiece %}
-                        <script>set_value("{{row.name}}","chests")</script>
-                    {% endfor %}
-                {% endif %}
-
-                {% endif %}
-
-                {% if arm %}
-                <p><label for="arms">Arm Pieces:</label></p>
-                <select id="arms" name="armName" style="width: 50%;">
-                    {% for row in arm %}
-                    <option value="{{row.name}}">{{row.name}}</option>
-                    {% endfor %}
-                </select>
-
-                <!--Script-->
-                {% if armpiece %}
-                    {% for row in armpiece %}
-                        <script>set_value("{{row.name}}","arms")</script>
-                    {% endfor %}
-                {% endif %}
-
-                {% endif %}
-
-                {% if waist %}
-                <p><label for="waists">Waist Pieces:</label></p>
-                <select id="waists" name="waistName" style="width: 50%;">
-                    {% for row in waist %}
-                    <option value="{{row.name}}">{{row.name}}</option>
-                    {% endfor %}
-                </select>
-
-                <!--Script-->
-                {% if waistpiece %}
-                    {% for row in waistpiece %}
-                        <script>set_value("{{row.name}}","waists")</script>
-                    {% endfor %}
-                {% endif %}
-
-                {% endif %}
-
-                {% if leg %}
-                <p><label for="legs">Leg Pieces:</label></p>
-                <select id="legs" name="legName" style="width: 50%;">
-                    {% for row in leg %}
-                    <option value="{{row.name}}">{{row.name}}</option>
-                    {% endfor %}
-                </select>
-
-                <!--Script-->
-                {% if legpiece %}
-                    {% for row in legpiece %}
-                        <script>set_value("{{row.name}}","legs")</script>
-                    {% endfor %}
-                {% endif %}
-
-                {% endif %}
-
-                {% if charm %}
-                <p><label for="charms">Charms:</label></p>
-                <select id="charms" name="charmName" style="width: 50%;">
-                    {% for row in charm %}
-                    <option value="{{row.name}}">{{row.name}}</option>
-                    {% endfor %}
-                </select>
-
-                <!--Script-->
-                {% if charmpiece %}
-                    {% for row in charmpiece %}
-                        <script>set_value("{{row.name}}","charms")</script>
-                    {% endfor %}
-                {% endif %}   
-
-                {% endif %}
-                <input type= "submit">
-            </div> 
-            
-            <!--Skill dropdown box-->
-            <div class="subcontainer">
-                {% if skill %}
-                <p><label for="skills">Skills:</label></p>
-                <select id="skills" name="skillName">
-                    {% for row in skill %}
-                    <option value="{{row.name}}">{{row.name}}</option>
-                    {% endfor %}
-                </select>
-
-                <!--Script-->
-                {% if skillLv %}
-                    {% for row in skillLv %}
-                        <script>set_value("{{row.name}}","skills")</script>
-                    {% endfor %}
-                {% endif %}
-
-                <input type= "submit">
-
-                {% if skillLv %}
-                <h1>{{skillLv[0].name}}</h1>
-                <ul id="skillList">
-                    <li>Lv 1: {{skillLv[0].tier1}}</li>
-                    <li>Lv 2: {{skillLv[0].tier2}}</li>
-                    <li>Lv 3: {{skillLv[0].tier3}}</li>
-                    <li>Lv 4: {{skillLv[0].tier4}}</li>
-                    <li>Lv 5: {{skillLv[0].tier5}}</li>
-                    <li>Lv 6: {{skillLv[0].tier6}}</li>
-                    <li>Lv 7: {{skillLv[0].tier7}}</li>
-                </ul>
-                {% endif %}
-                {% endif %}
-            </div>
-        </div>
-    </form>
-
-
+        <input type= "submit">
     <!--Always display table headings, display armors once button clicked-->
     <table id="armors" style="width:100%">
         <tr>
@@ -196,10 +54,27 @@
             <th>Ice Def</th>
             <th>Dragon Def</th>
         </tr>
-        {% if headpiece %}
-        {% for row in headpiece %}
+        
         <tr>
-            <td> {{ row.name }}</td>
+            <td>
+                <!--Dropdown Box-->
+                {% if head %}
+                <select id="heads" name="headName" style="width: 100%;">
+                    {% for row in head %}
+                    <option value="{{row.name}}">{{row.name}}</option>
+                    {% endfor %}
+                </select>
+
+                <!--Script to change the dropdown box value to what the user previously selected-->
+                {% if headpiece %}
+                    {% for row in headpiece %}
+                        <script>set_value("{{row.name}}","heads")</script>
+                    {% endfor %}
+                {% endif %}
+
+                {% endif %}
+            </td>
+            {% for row in headpiece %}
             <td> {{ row.rarity }}</td>
             <td> {{ row.skill1 }}</td>
             <td> {{ row.skill2 }}</td>
@@ -261,12 +136,28 @@
             <td> {{ row.dragondef }}</td>
         </tr>
         {% endfor %}
-        {% endif %}
-
-        {% if chestpiece %}
-        {% for row in chestpiece %}
+       
+        
         <tr>
-            <td> {{ row.name }}</td>
+            <td>
+                <!--Dropdown Box-->
+                {% if chest %}
+                <select id="chests" name="chestName" style="width: 100%;">
+                    {% for row in chest %}
+                    <option value="{{row.name}}">{{row.name}}</option>
+                    {% endfor %}
+                </select>
+
+                <!--Script-->
+                {% if chestpiece %}
+                    {% for row in chestpiece %}
+                        <script>set_value("{{row.name}}","chests")</script>
+                    {% endfor %}
+                {% endif %}
+
+                {% endif %}
+            </td>
+            {% for row in chestpiece %}
             <td> {{ row.rarity }}</td>
             <td> {{ row.skill1 }}</td>
             <td> {{ row.skill2 }}</td>
@@ -328,12 +219,27 @@
             <td> {{ row.dragondef }}</td>
         </tr>
         {% endfor %}
-        {% endif %}
 
-        {% if armpiece %}
-        {% for row in armpiece %}
         <tr>
-            <td> {{ row.name }}</td>
+            <td>
+                <!--Dropdown Box-->
+                {% if arm %}
+                <select id="arms" name="armName" style="width: 100%;">
+                    {% for row in arm %}
+                    <option value="{{row.name}}">{{row.name}}</option>
+                    {% endfor %}
+                </select>
+
+                <!--Script-->
+                {% if armpiece %}
+                    {% for row in armpiece %}
+                        <script>set_value("{{row.name}}","arms")</script>
+                    {% endfor %}
+                {% endif %}
+                {% endif %}
+
+            </td>
+            {% for row in armpiece %}
             <td> {{ row.rarity }}</td>
             <td> {{ row.skill1 }}</td>
             <td> {{ row.skill2 }}</td>
@@ -395,12 +301,27 @@
             <td> {{ row.dragondef }}</td>
         </tr>
         {% endfor %}
-        {% endif %}
-
-        {% if waistpiece %}
-        {% for row in waistpiece %}
+        
         <tr>
-            <td> {{ row.name }}</td>
+            <td>
+                <!--Dropdown Box-->
+                {% if waist %}
+                <select id="waists" name="waistName" style="width: 100%;">
+                    {% for row in waist %}
+                    <option value="{{row.name}}">{{row.name}}</option>
+                    {% endfor %}
+                </select>
+
+                <!--Script-->
+                {% if waistpiece %}
+                    {% for row in waistpiece %}
+                        <script>set_value("{{row.name}}","waists")</script>
+                    {% endfor %}
+                {% endif %}
+
+                {% endif %}
+            </td>
+            {% for row in waistpiece %}
             <td> {{ row.rarity }}</td>
             <td> {{ row.skill1 }}</td>
             <td> {{ row.skill2 }}</td>
@@ -462,12 +383,29 @@
             <td> {{ row.dragondef }}</td>
         </tr>
         {% endfor %}
-        {% endif %}
 
-        {% if legpiece %}
-        {% for row in legpiece %}
+
+        
         <tr>
-            <td> {{ row.name }}</td>
+            <td>
+                <!--Dropdown Box-->
+                {% if leg %}
+                <select id="legs" name="legName" style="width: 100%;">
+                    {% for row in leg %}
+                    <option value="{{row.name}}">{{row.name}}</option>
+                    {% endfor %}
+                </select>
+
+                <!--Script-->
+                {% if legpiece %}
+                    {% for row in legpiece %}
+                        <script>set_value("{{row.name}}","legs")</script>
+                    {% endfor %}
+                {% endif %}
+
+                {% endif %}
+            </td>
+            {% for row in legpiece %}
             <td> {{ row.rarity }}</td>
             <td> {{ row.skill1 }}</td>
             <td> {{ row.skill2 }}</td>
@@ -529,12 +467,28 @@
             <td> {{ row.dragondef }}</td>
         </tr>
         {% endfor %}
-        {% endif %}
 
-        {% if charmpiece %}
-        {% for row in charmpiece %}
+        
         <tr>
-            <td> {{ row.name }}</td>
+            <td>
+                <!--Dropdown Box-->
+                {% if charm %}
+                <select id="charms" name="charmName" style="width: 100%;">
+                    {% for row in charm %}
+                    <option value="{{row.name}}">{{row.name}}</option>
+                    {% endfor %}
+                </select>
+
+                <!--Script-->
+                {% if charmpiece %}
+                    {% for row in charmpiece %}
+                        <script>set_value("{{row.name}}","charms")</script>
+                    {% endfor %}
+                {% endif %}   
+
+                {% endif %}
+            </td>
+            {% for row in charmpiece %}
             <td> {{ row.rarity }}</td>
             <td> {{ row.skill1 }}</td>
             <td> {{ row.skill2 }}</td>
@@ -549,12 +503,11 @@
             <td></td>
         </tr>
         {% endfor %}
-        {% endif %}
     </table>
 
     <!--Table to display skill totals after selecting armor pieces-->
     <p>Skill Totals:</p>
-    <table id="skillTotals" style="width: 75%;">
+    <table id="skillTotals" style="width: 40%;">
         <tr>
             <th>Skill Name</th>
             <th>Level</th>
@@ -567,5 +520,44 @@
         {% endfor %}      
     </table>
 
+    <div class= "container">
+        <div class= "subcontainer">   
+        </div> 
+        
+        <!--Skill dropdown box-->
+        <div class="subcontainer">
+            {% if skill %}
+            <p><label for="skills">Skills:</label></p>
+            <select id="skills" name="skillName">
+                {% for row in skill %}
+                <option value="{{row.name}}">{{row.name}}</option>
+                {% endfor %}
+            </select>
+
+            <!--Script-->
+            {% if skillLv %}
+                {% for row in skillLv %}
+                    <script>set_value("{{row.name}}","skills")</script>
+                {% endfor %}
+            {% endif %}
+
+            <input type= "submit">
+
+            {% if skillLv %}
+            <h1>{{skillLv[0].name}}</h1>
+            <ul id="skillList">
+                <li>Lv 1: {{skillLv[0].tier1}}</li>
+                <li>Lv 2: {{skillLv[0].tier2}}</li>
+                <li>Lv 3: {{skillLv[0].tier3}}</li>
+                <li>Lv 4: {{skillLv[0].tier4}}</li>
+                <li>Lv 5: {{skillLv[0].tier5}}</li>
+                <li>Lv 6: {{skillLv[0].tier6}}</li>
+                <li>Lv 7: {{skillLv[0].tier7}}</li>
+            </ul>
+            {% endif %}
+            {% endif %}
+        </div>
+    </div>
+</form>
 </body>
 </html>
