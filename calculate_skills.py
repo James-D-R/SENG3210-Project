@@ -116,8 +116,8 @@ def setTotal(head,chest,arm,waist,leg,charm):
     name1,points1,name2,points2 = skillTotal(charm)
     skillnames,skillnumbers = addSkills(skillnames,skillnumbers,name1,points1,name2,points2)   
 
-    print(skillnames)
-    print(skillnumbers)
+    #print(skillnames)
+    #print(skillnumbers)
 
     return skillnames,skillnumbers
 

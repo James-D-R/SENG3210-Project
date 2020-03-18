@@ -43,6 +43,18 @@ class Database:
         self.cur.execute("SELECT * FROM "+table+" WHERE name = '"+name+"'")
         result = self.cur.fetchall()
         return result
+    
+    def decoration_list(self):
+        self.cur.execute("SELECT * FROM decorations WHERE size = 1")
+        size1 = self.cur.fetchall()
+        self.cur.execute("SELECT * FROM decorations WHERE size = 1 OR size = 2 ORDER BY size")
+        size2 = self.cur.fetchall()
+        self.cur.execute("SELECT * FROM decorations WHERE size = 1 OR size = 2 OR size = 3 ORDER BY size")
+        size3 = self.cur.fetchall()
+        self.cur.execute("SELECT * FROM decorations ORDER BY size")
+        size4 = self.cur.fetchall()
+        return size1, size2, size3, size4
+
 
 
 #Pages
@@ -96,14 +108,18 @@ def showTables():
     details4 = db.piece_detail("waist",waistName)
     details5 = db.piece_detail("legs",legName)
     details6 = db.piece_detail("charms",charmName)
-
     skillLevels = db.piece_detail("skills",skillName)
 
+    #Calculate skill totals
     skillnames,skillnumbers = setTotal(details1,details2,details3,details4,details5,details6)
+
+    #Get all possible decorations
+    size1, size2, size3, size4 = db.decoration_list()
 
     return render_template("selectArmors.htm",head = result1,chest = result2,arm = result3,waist = result4,leg = result5,charm = result7,
     headpiece = details1,chestpiece = details2,armpiece = details3,waistpiece = details4,legpiece = details5,charmpiece = details6,
-    skill = result6,skillLv = skillLevels,skillnames = skillnames, skilltotals = skillnumbers)
+    skill = result6,skillLv = skillLevels,skillnames = skillnames, skilltotals = skillnumbers,
+    level4deco = size4, level3deco = size3, level2deco = size2, level1deco = size1)
 
 #Head pieces table
 @app.route('/head-pieces')
