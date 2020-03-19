@@ -517,113 +517,504 @@
     <table id="decorations" style="width: 70%;">
         <tr>
             <th>Which Slot?</th>
-            <th>Decoration Name</th>
+            <th>Decoration</th>
             <th>Skill 1</th>
             <th>Skill 2</th>
         </tr>
-        <tr>
-            <td>Head Slot 1</td>
-            <td>
-                 <!--Dropdown Box for displaying all possible decorations-->
-                {% if headpiece  %}
-                    {% if (headpiece[0])['slot1'] == 'Level 4' %}
-                    <input type ="text" list= "headslot1" name="headslot1" />
-                    <datalist id="headslot1">
-                        {% for row in level4deco %}
-                        <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option>
-                        {% endfor %}
+        {% if headpiece  %}
+            <tr>
+                <td>Head Slot 1</td>
+                <td>
+                    <!--Dropdown Box for displaying all possible decorations-->
+                    {% if (headpiece[0])['slot1'] != 'None' %}
+                        <select class="js-example-basic-single" id="head_slot1" name="headslot1" style="width: 100%;">
+                            {% if (headpiece[0])['slot1'] == 'Level 4' %}
+                                {% for row in level4deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (headpiece[0])['slot1'] == 'Level 3' %}
+                                {% for row in level3deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (headpiece[0])['slot1'] == 'Level 2' %}
+                                {% for row in level2deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (headpiece[0])['slot1'] == 'Level 1' %}
+                                {% for row in level1deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                        </select>
                     {% endif %}
-                    </datalist>
-                {% endif %}
-            </td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Head Slot 2</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Head Slot 3</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Chest Slot 1</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Chest Slot 2</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Chest Slot 3</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Arm Slot 1</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Arm Slot 2</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Arm Slot 3</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Waist Slot 1</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Waist Slot 2</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Waist Slot 3</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Leg Slot 1</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Leg Slot 2</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Leg Slot 3</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Head Slot 2</td>
+                <td>
+                    <!--Dropdown Box for displaying all possible decorations-->
+                    {% if (headpiece[0])['slot2'] != 'None' %}
+                        <select class="js-example-basic-single" id="head_slot2" name="headslot2" style="width: 100%;">
+                            {% if (headpiece[0])['slot2'] == 'Level 4' %}
+                                {% for row in level4deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (headpiece[0])['slot2'] == 'Level 3' %}
+                                {% for row in level3deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (headpiece[0])['slot2'] == 'Level 2' %}
+                                {% for row in level2deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (headpiece[0])['slot2'] == 'Level 1' %}
+                                {% for row in level1deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                        </select>
+                    {% endif %}
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Head Slot 3</td>
+                <td>
+                    <!--Dropdown Box for displaying all possible decorations-->
+                    {% if (headpiece[0])['slot3'] != 'None' %}
+                        <select class="js-example-basic-single" id="head_slot3" name="headslot3" style="width: 100%;">
+                            {% if (headpiece[0])['slot3'] == 'Level 4' %}
+                                {% for row in level4deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (headpiece[0])['slot3'] == 'Level 3' %}
+                                {% for row in level3deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (headpiece[0])['slot3'] == 'Level 2' %}
+                                {% for row in level2deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (headpiece[0])['slot3'] == 'Level 1' %}
+                                {% for row in level1deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                        </select>
+                    {% endif %}
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+        {% endif %}
 
+        {% if chestpiece %}
+            <tr>
+                <td>Chest Slot 1</td>
+                <td>
+                    <!--Dropdown Box for displaying all possible decorations-->
+                    {% if (chestpiece[0])['slot1'] != 'None' %}
+                        <select class="js-example-basic-single" id="chest_slot1" name="chestslot1" style="width: 100%;">
+                            {% if (chestpiece[0])['slot1'] == 'Level 4' %}
+                                {% for row in level4deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (chestpiece[0])['slot1'] == 'Level 3' %}
+                                {% for row in level3deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (chestpiece[0])['slot1'] == 'Level 2' %}
+                                {% for row in level2deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (chestpiece[0])['slot1'] == 'Level 1' %}
+                                {% for row in level1deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                        </select>
+                    {% endif %}                
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Chest Slot 2</td>
+                <td>
+                    <!--Dropdown Box for displaying all possible decorations-->
+                    {% if (chestpiece[0])['slot2'] != 'None' %}
+                        <select class="js-example-basic-single" id="chest_slot2" name="chestslot2" style="width: 100%;">
+                            {% if (chestpiece[0])['slot2'] == 'Level 4' %}
+                                {% for row in level4deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (chestpiece[0])['slot2'] == 'Level 3' %}
+                                {% for row in level3deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (chestpiece[0])['slot2'] == 'Level 2' %}
+                                {% for row in level2deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (chestpiece[0])['slot2'] == 'Level 1' %}
+                                {% for row in level1deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                        </select>
+                    {% endif %}  
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Chest Slot 3</td>
+                <td>
+                    <!--Dropdown Box for displaying all possible decorations-->
+                    {% if (chestpiece[0])['slot3'] != 'None' %}
+                        <select class="js-example-basic-single" id="chest_slot3" name="chestslot3" style="width: 100%;">
+                            {% if (chestpiece[0])['slot3'] == 'Level 4' %}
+                                {% for row in level4deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (chestpiece[0])['slot3'] == 'Level 3' %}
+                                {% for row in level3deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (chestpiece[0])['slot3'] == 'Level 2' %}
+                                {% for row in level2deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (chestpiece[0])['slot3'] == 'Level 1' %}
+                                {% for row in level1deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                        </select>
+                    {% endif %}  
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+        {% endif %}
+
+        {% if armpiece %}
+            <tr>
+                <td>Arm Slot 1</td>
+                <td>
+                    <!--Dropdown Box for displaying all possible decorations-->
+                    {% if (armpiece[0])['slot1'] != 'None' %}
+                        <select class="js-example-basic-single" id="arm_slot1" name="armslot1" style="width: 100%;">
+                            {% if (armpiece[0])['slot1'] == 'Level 4' %}
+                                {% for row in level4deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (armpiece[0])['slot1'] == 'Level 3' %}
+                                {% for row in level3deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (armpiece[0])['slot1'] == 'Level 2' %}
+                                {% for row in level2deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (armpiece[0])['slot1'] == 'Level 1' %}
+                                {% for row in level1deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                        </select>
+                    {% endif %}                
+                    </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Arm Slot 2</td>
+                <td>
+                    <!--Dropdown Box for displaying all possible decorations-->
+                    {% if (armpiece[0])['slot2'] != 'None' %}
+                    <select class="js-example-basic-single" id="arm_slot2" name="armslot2" style="width: 100%;">
+                        {% if (armpiece[0])['slot2'] == 'Level 4' %}
+                            {% for row in level4deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if (armpiece[0])['slot2'] == 'Level 3' %}
+                            {% for row in level3deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if (armpiece[0])['slot2'] == 'Level 2' %}
+                            {% for row in level2deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if (armpiece[0])['slot2'] == 'Level 1' %}
+                            {% for row in level1deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                    {% endif %}                    
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Arm Slot 3</td>
+                <td>
+                    <!--Dropdown Box for displaying all possible decorations-->
+                    {% if (armpiece[0])['slot3'] != 'None' %}
+                        <select class="js-example-basic-single" id="arm_slot3" name="armslot3" style="width: 100%;">
+                            {% if (armpiece[0])['slot3'] == 'Level 4' %}
+                                {% for row in level4deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (armpiece[0])['slot3'] == 'Level 3' %}
+                                {% for row in level3deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (armpiece[0])['slot3'] == 'Level 2' %}
+                                {% for row in level2deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (armpiece[0])['slot3'] == 'Level 1' %}
+                                {% for row in level1deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                        </select>
+                    {% endif %}
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+        {% endif %}
+
+        {% if waistpiece %}
+            <tr>
+                <td>Waist Slot 1</td>
+                <td>
+                    <!--Dropdown Box for displaying all possible decorations-->
+                    {% if (waistpiece[0])['slot1'] != 'None' %}
+                        <select class="js-example-basic-single" id="waist_slot1" name="waistslot1" style="width: 100%;">
+                            {% if (waistpiece[0])['slot1'] == 'Level 4' %}
+                                {% for row in level4deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (waistpiece[0])['slot1'] == 'Level 3' %}
+                                {% for row in level3deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (waistpiece[0])['slot1'] == 'Level 2' %}
+                                {% for row in level2deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (waistpiece[0])['slot1'] == 'Level 1' %}
+                                {% for row in level1deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                        </select>
+                    {% endif %}
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Waist Slot 2</td>
+                <td>
+                    <!--Dropdown Box for displaying all possible decorations-->
+                    {% if (waistpiece[0])['slot2'] != 'None' %}
+                        <select class="js-example-basic-single" id="waist_slot2" name="waistslot2" style="width: 100%;">
+                            {% if (waistpiece[0])['slot2'] == 'Level 4' %}
+                                {% for row in level4deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (waistpiece[0])['slot2'] == 'Level 3' %}
+                                {% for row in level3deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (waistpiece[0])['slot2'] == 'Level 2' %}
+                                {% for row in level2deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (waistpiece[0])['slot2'] == 'Level 1' %}
+                                {% for row in level1deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                        </select>
+                    {% endif %}
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Waist Slot 3</td>
+                <td>
+                    <!--Dropdown Box for displaying all possible decorations-->
+                    {% if (waistpiece[0])['slot3'] != 'None' %}
+                        <select class="js-example-basic-single" id="waist_slot3" name="waistslot3" style="width: 100%;">
+                            {% if (waistpiece[0])['slot3'] == 'Level 4' %}
+                                {% for row in level4deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (waistpiece[0])['slot3'] == 'Level 3' %}
+                                {% for row in level3deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (waistpiece[0])['slot3'] == 'Level 2' %}
+                                {% for row in level2deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                            {% if (waistpiece[0])['slot3'] == 'Level 1' %}
+                                {% for row in level1deco %}
+                                    <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                                {% endfor %}
+                            {% endif %}
+                        </select>
+                    {% endif %}
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+        {% endif %}
+
+        {% if legpiece %}
+            <tr>
+                <td>Leg Slot 1</td>
+                <td>
+                    <!--Dropdown Box for displaying all possible decorations-->
+                    {% if (legpiece[0])['slot1'] != 'None' %}
+                    <select class="js-example-basic-single" id="leg_slot1" name="legslot1" style="width: 100%;">
+                        {% if (legpiece[0])['slot1'] == 'Level 4' %}
+                            {% for row in level4deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if (legpiece[0])['slot1'] == 'Level 3' %}
+                            {% for row in level3deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if (legpiece[0])['slot1'] == 'Level 2' %}
+                            {% for row in level2deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if (legpiece[0])['slot1'] == 'Level 1' %}
+                            {% for row in level1deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                    {% endif %}
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Leg Slot 2</td>
+                <td>
+                    <!--Dropdown Box for displaying all possible decorations-->
+                    {% if (legpiece[0])['slot2'] != 'None' %}
+                    <select class="js-example-basic-single" id="leg_slot2" name="legslot2" style="width: 100%;">
+                        {% if (legpiece[0])['slot2'] == 'Level 4' %}
+                            {% for row in level4deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if (legpiece[0])['slot2'] == 'Level 3' %}
+                            {% for row in level3deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if (legpiece[0])['slot2'] == 'Level 2' %}
+                            {% for row in level2deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if (legpiece[0])['slot2'] == 'Level 1' %}
+                            {% for row in level1deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                    {% endif %}
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Leg Slot 3</td>
+                <td>
+                    <!--Dropdown Box for displaying all possible decorations-->
+                    {% if (legpiece[0])['slot3'] != 'None' %}
+                    <select class="js-example-basic-single" id="leg_slot3" name="legslot3" style="width: 100%;">
+                        {% if (legpiece[0])['slot3'] == 'Level 4' %}
+                            {% for row in level4deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if (legpiece[0])['slot3'] == 'Level 3' %}
+                            {% for row in level3deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if (legpiece[0])['slot3'] == 'Level 2' %}
+                            {% for row in level2deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if (legpiece[0])['slot3'] == 'Level 1' %}
+                            {% for row in level1deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                    {% endif %}
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+        {% endif %}
     </table>
 
     <!--Table to display skill totals after selecting armor pieces-->
@@ -634,10 +1025,10 @@
             <th>Level</th>
         </tr>
         {% for name in skillnames %}
-        <tr>
-            <td>{{ name }}</td>
-            <td>{{ skilltotals[loop.index0] }}</td>
-        </tr>  
+            <tr>
+                <td>{{ name }}</td>
+                <td>{{ skilltotals[loop.index0] }}</td>
+            </tr>  
         {% endfor %}      
     </table>
 
@@ -648,34 +1039,34 @@
         <!--Skill dropdown box-->
         <div class="subcontainer">
             {% if skill %}
-            <p><label for="skills">Skills:</label></p>
-            <select id="skills" name="skillName">
-                {% for row in skill %}
-                <option value="{{row.name}}">{{row.name}}</option>
-                {% endfor %}
-            </select>
+                <p><label for="skills">Skills:</label></p>
+                <select id="skills" name="skillName">
+                    {% for row in skill %}
+                        <option value="{{row.name}}">{{row.name}}</option>
+                    {% endfor %}
+                </select>
 
-            <!--Script-->
-            {% if skillLv %}
-                {% for row in skillLv %}
-                    <script>set_value("{{row.name}}","skills")</script>
-                {% endfor %}
-            {% endif %}
+                <!--Script-->
+                {% if skillLv %}
+                    {% for row in skillLv %}
+                        <script>set_value("{{row.name}}","skills")</script>
+                    {% endfor %}
+                {% endif %}
 
-            <input type= "submit">
+                <input type= "submit">
 
-            {% if skillLv %}
-            <h1>{{skillLv[0].name}}</h1>
-            <ul id="skillList">
-                <li>Lv 1: {{skillLv[0].tier1}}</li>
-                <li>Lv 2: {{skillLv[0].tier2}}</li>
-                <li>Lv 3: {{skillLv[0].tier3}}</li>
-                <li>Lv 4: {{skillLv[0].tier4}}</li>
-                <li>Lv 5: {{skillLv[0].tier5}}</li>
-                <li>Lv 6: {{skillLv[0].tier6}}</li>
-                <li>Lv 7: {{skillLv[0].tier7}}</li>
-            </ul>
-            {% endif %}
+                {% if skillLv %}
+                    <h1>{{skillLv[0].name}}</h1>
+                    <ul id="skillList">
+                        <li>Lv 1: {{skillLv[0].tier1}}</li>
+                        <li>Lv 2: {{skillLv[0].tier2}}</li>
+                        <li>Lv 3: {{skillLv[0].tier3}}</li>
+                        <li>Lv 4: {{skillLv[0].tier4}}</li>
+                        <li>Lv 5: {{skillLv[0].tier5}}</li>
+                        <li>Lv 6: {{skillLv[0].tier6}}</li>
+                        <li>Lv 7: {{skillLv[0].tier7}}</li>
+                    </ul>
+                {% endif %}
             {% endif %}
         </div>
     </div>
