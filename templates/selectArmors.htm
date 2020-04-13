@@ -513,14 +513,157 @@
         {% endfor %}
     </table>
 
+    <!--Dropdowns for selecting type of weapon slots-->
+    <p>Select Weapons Slots:</p>
+    <label for="weapon_slotsize1">Slot 1: </label>
+    <select id="weapon_slotsize1" name="weaponslotsize1" style="width: 15%;">
+        <option value="None">None</option>
+        <option value="Level 4">Level 4</option>
+        <option value="Level 3">Level 3</option>
+        <option value="Level 2">Level 2</option>
+        <option value="Level 1">Level 1</option>
+    </select>
+    {% if wepslotsize1 %}
+        <script>set_value("{{wepslotsize1}}","weapon_slotsize1")</script>
+    {% endif %}
+
+    <label for="weapon_slotsize2">Slot 2: </label>
+    <select id="weapon_slotsize2" name="weaponslotsize2" style="width: 15%;">
+        <option value="None">None</option>
+        <option value="Level 4">Level 4</option>
+        <option value="Level 3">Level 3</option>
+        <option value="Level 2">Level 2</option>
+        <option value="Level 1">Level 1</option>
+    </select>
+    {% if wepslotsize2 %}
+        <script>set_value("{{wepslotsize2}}","weapon_slotsize2")</script>
+    {% endif %}
+
+    <label for="weapon_slotsize3">Slot 3: </label>
+    <select id="weapon_slotsize3" name="weaponslotsize3" style="width: 15%;">
+        <option value="None">None</option>
+        <option value="Level 4">Level 4</option>
+        <option value="Level 3">Level 3</option>
+        <option value="Level 2">Level 2</option>
+        <option value="Level 1">Level 1</option>
+    </select>
+    {% if wepslotsize3 %}
+        <script>set_value("{{wepslotsize3}}","weapon_slotsize3")</script>
+    {% endif %}
+
+
     <p>Select Decorations:</p>
     <table id="decorations" style="width: 70%;">
         <tr>
             <th>Which Slot?</th>
             <th>Decoration</th>
-            <th>Skill 1</th>
-            <th>Skill 2</th>
         </tr>
+        <tr>
+            <td>Weapon Slot 1</td>
+            <td>
+                {% if wepslotsize1 %}
+                    <!--Dropdown Box for displaying all possible decorations-->
+                    {% if wepslotsize1 != 'None' %}
+                    <select class="js-example-basic-single" id="weapon_slot1" name="weaponslot1" style="width: 100%;">
+                        {% if wepslotsize1 == 'Level 4' %}
+                            {% for row in level4deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if wepslotsize1 == 'Level 3' %}
+                            {% for row in level3deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if wepslotsize1 == 'Level 2' %}
+                            {% for row in level2deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if wepslotsize1 == 'Level 1' %}
+                            {% for row in level1deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                    {% endif %}
+                {% endif %}
+                {% if wepslot1skills %}
+                        <script>set_value("{{(wepslot1skills[0])['name']}}","weapon_slot1")</script>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td>Weapon Slot 2</td>
+            <td>
+                {% if wepslotsize2 %}
+                    <!--Dropdown Box for displaying all possible decorations-->
+                    {% if wepslotsize2 != 'None' %}
+                    <select class="js-example-basic-single" id="weapon_slot2" name="weaponslot2" style="width: 100%;">
+                        {% if wepslotsize2 == 'Level 4' %}
+                            {% for row in level4deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if wepslotsize2 == 'Level 3' %}
+                            {% for row in level3deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if wepslotsize2 == 'Level 2' %}
+                            {% for row in level2deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if wepslotsize2 == 'Level 1' %}
+                            {% for row in level1deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                    {% endif %}
+                {% endif %}
+                {% if wepslot2skills %}
+                        <script>set_value("{{(wepslot2skills[0])['name']}}","weapon_slot2")</script>
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <td>Weapon Slot 3</td>
+            <td>
+                {% if wepslotsize3 %}
+                    <!--Dropdown Box for displaying all possible decorations-->
+                    {% if wepslotsize3 != 'None' %}
+                    <select class="js-example-basic-single" id="weapon_slot3" name="weaponslot3" style="width: 100%;">
+                        {% if wepslotsize3 == 'Level 4' %}
+                            {% for row in level4deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if wepslotsize3 == 'Level 3' %}
+                            {% for row in level3deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if wepslotsize3 == 'Level 2' %}
+                            {% for row in level2deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                        {% if wepslotsize3 == 'Level 1' %}
+                            {% for row in level1deco %}
+                                <optgroup label= "{{row.name}}"> <option value="{{row.name}}">{{row.skill1}} / {{row.skill2}}</option></optgroup>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                    {% endif %}
+                {% endif %}
+                {% if wepslot3skills %}
+                        <script>set_value("{{(wepslot3skills[0])['name']}}","weapon_slot3")</script>
+                {% endif %}
+            </td>
+        </tr>
+
         {% if headpiece  %}
             <tr>
                 <td>Head Slot 1</td>
@@ -550,9 +693,11 @@
                             {% endif %}
                         </select>
                     {% endif %}
+                   <!--Script to change the dropdown box value to what the user previously selected-->
+                    {% if headslot1skills %}
+                        <script>set_value("{{(headslot1skills[0])['name']}}","head_slot1")</script>
+                    {% endif %}
                 </td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td>Head Slot 2</td>
@@ -582,9 +727,11 @@
                             {% endif %}
                         </select>
                     {% endif %}
+                    <!--Script to change the dropdown box value to what the user previously selected-->
+                    {% if headslot2skills %}
+                        <script>set_value("{{(headslot2skills[0])['name']}}","head_slot2")</script>
+                    {% endif %}
                 </td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td>Head Slot 3</td>
@@ -614,9 +761,11 @@
                             {% endif %}
                         </select>
                     {% endif %}
+                    <!--Script to change the dropdown box value to what the user previously selected-->
+                    {% if headslot3skills %}
+                        <script>set_value("{{(headslot3skills[0])['name']}}","head_slot3")</script>
+                    {% endif %}
                 </td>
-                <td></td>
-                <td></td>
             </tr>
         {% endif %}
 
@@ -648,10 +797,11 @@
                                 {% endfor %}
                             {% endif %}
                         </select>
-                    {% endif %}                
+                    {% endif %}  
+                    {% if chestslot1skills %}
+                        <script>set_value("{{(chestslot1skills[0])['name']}}","chest_slot1")</script>
+                    {% endif %}              
                 </td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td>Chest Slot 2</td>
@@ -681,9 +831,10 @@
                             {% endif %}
                         </select>
                     {% endif %}  
+                    {% if chestslot2skills %}
+                        <script>set_value("{{(chestslot2skills[0])['name']}}","chest_slot2")</script>
+                    {% endif %}  
                 </td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td>Chest Slot 3</td>
@@ -713,9 +864,10 @@
                             {% endif %}
                         </select>
                     {% endif %}  
+                    {% if chestslot3skills %}
+                        <script>set_value("{{(chestslot3skills[0])['name']}}","chest_slot3")</script>
+                    {% endif %} 
                 </td>
-                <td></td>
-                <td></td>
             </tr>
         {% endif %}
 
@@ -747,10 +899,11 @@
                                 {% endfor %}
                             {% endif %}
                         </select>
-                    {% endif %}                
+                    {% endif %}   
+                    {% if armslot1skills %}
+                        <script>set_value("{{(armslot1skills[0])['name']}}","arm_slot1")</script>
+                    {% endif %}             
                     </td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td>Arm Slot 2</td>
@@ -779,10 +932,11 @@
                             {% endfor %}
                         {% endif %}
                     </select>
+                    {% endif %} 
+                    {% if armslot2skills %}
+                        <script>set_value("{{(armslot2skills[0])['name']}}","arm_slot2")</script>
                     {% endif %}                    
                 </td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td>Arm Slot 3</td>
@@ -812,9 +966,10 @@
                             {% endif %}
                         </select>
                     {% endif %}
+                    {% if armslot3skills %}
+                        <script>set_value("{{(armslot3skills[0])['name']}}","arm_slot3")</script>
+                    {% endif %} 
                 </td>
-                <td></td>
-                <td></td>
             </tr>
         {% endif %}
 
@@ -847,9 +1002,10 @@
                             {% endif %}
                         </select>
                     {% endif %}
+                    {% if waistslot1skills %}
+                        <script>set_value("{{(waistslot1skills[0])['name']}}","waist_slot1")</script>
+                    {% endif %} 
                 </td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td>Waist Slot 2</td>
@@ -879,9 +1035,10 @@
                             {% endif %}
                         </select>
                     {% endif %}
+                    {% if waistslot2skills %}
+                        <script>set_value("{{(waistslot2skills[0])['name']}}","waist_slot2")</script>
+                    {% endif %}
                 </td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td>Waist Slot 3</td>
@@ -911,9 +1068,10 @@
                             {% endif %}
                         </select>
                     {% endif %}
+                    {% if waistslot3skills %}
+                        <script>set_value("{{(waistslot3skills[0])['name']}}","waist_slot3")</script>
+                    {% endif %}
                 </td>
-                <td></td>
-                <td></td>
             </tr>
         {% endif %}
 
@@ -946,9 +1104,10 @@
                         {% endif %}
                     </select>
                     {% endif %}
+                    {% if legslot1skills %}
+                        <script>set_value("{{(legslot1skills[0])['name']}}","leg_slot1")</script>
+                    {% endif %} 
                 </td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td>Leg Slot 2</td>
@@ -978,9 +1137,10 @@
                         {% endif %}
                     </select>
                     {% endif %}
+                    {% if legslot2skills %}
+                        <script>set_value("{{(legslot2skills[0])['name']}}","leg_slot2")</script>
+                    {% endif %}
                 </td>
-                <td></td>
-                <td></td>
             </tr>
             <tr>
                 <td>Leg Slot 3</td>
@@ -1010,9 +1170,10 @@
                         {% endif %}
                     </select>
                     {% endif %}
+                    {% if legslot3skills %}
+                        <script>set_value("{{(legslot3skills[0])['name']}}","leg_slot3")</script>
+                    {% endif %}
                 </td>
-                <td></td>
-                <td></td>
             </tr>
         {% endif %}
     </table>

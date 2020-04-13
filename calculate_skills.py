@@ -1,8 +1,8 @@
 '''
     calculate_skills.py
     Authors: James Remer
-    Last Updated: 3/5/20
-    Description: (NOT COMPLETE) Function to take selected armor pieces and total up skills
+    Last Updated: 4/12/20
+    Description: Functions which take armor pieces as input, then returns formatted skill totals 
 '''
 
 #Function to return skill name and number as seperate values
@@ -83,7 +83,7 @@ def addSkills(skillnames,skillnumbers,name1,points1,name2,points2):
 
 
 #Take values returned from 'skillTotal' function and add up totals 
-def setTotal(head,chest,arm,waist,leg,charm):
+def setTotal(head,chest,arm,waist,leg,charm,slotinfo):
 
     skillnames = []
     skillnumbers = []
@@ -114,25 +114,15 @@ def setTotal(head,chest,arm,waist,leg,charm):
 
     #Charm
     name1,points1,name2,points2 = skillTotal(charm)
-    skillnames,skillnumbers = addSkills(skillnames,skillnumbers,name1,points1,name2,points2)   
+    skillnames,skillnumbers = addSkills(skillnames,skillnumbers,name1,points1,name2,points2) 
 
-    #print(skillnames)
-    #print(skillnumbers)
-
+    #Decorations
+    #SQL will return an empty tuple if a query yeilds no results. Check each variable to ensure it isn't empty
+    for query in slotinfo:
+        if len(query) > 0:
+            name1,points1,name2,points2 = skillTotal(query)
+            skillnames,skillnumbers = addSkills(skillnames,skillnumbers,name1,points1,name2,points2) 
+    
     return skillnames,skillnumbers
 
-
-dict1 = [{"name":"head","skill1":"Weakness Exploit 2","skill2": "Attack Boost 3"}]
-dict2 = [{"name":"chest","skill1":"Weakness Exploit 2","skill2": "Critical Eye 2"}]
-dict3 = [{"name":"arms","skill1":"Critical Boost 1","skill2": ""}]
-dict4 = [{"name":"waist","skill1":"Attack Boost 2","skill2": "Critical Eye 4"}]
-dict5 = [{"name":"legs","skill1":"Handicraft 2","skill2": ""}]
-dict6 = [{"name":"charm","skill1":"Defense Boost 3","skill2":"None"}]
-list1,list2 = setTotal(dict1,dict2,dict3,dict4,dict5,dict6)
-
-#print(list1)
-#print(list2)
-#print(skillTotal(dict6))
-#print(skillTotal(dict5))
-#print(skillTotal(dict1))
 
