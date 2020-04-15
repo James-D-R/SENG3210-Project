@@ -73,7 +73,7 @@ def main():
     charm = result7)
 
 @app.route('/',methods=['POST'])
-def showTables():
+def calculateSkills():
     #Get current value of each armor dropdown box
     headName = request.form.get('headName')
     chestName = request.form.get('chestName')
@@ -225,6 +225,15 @@ def showTables():
     legslot1skills = leg1skills, legslot2skills = leg2skills, legslot3skills = leg3skills,
     wepslotsize1 = weaponsize1, wepslotsize2 = weaponsize2, wepslotsize3 = weaponsize3,
     wepslot1skills = wep1skills, wepslot2skills = wep2skills, wepslot3skills = wep3skills)
+
+#
+@app.route('/showSignUp')
+def showSignUpPage():
+    return render_template("signup.htm")
+
+@app.route('/signUp')
+def signUp():
+    return
 
 #Head pieces table
 @app.route('/head-pieces')

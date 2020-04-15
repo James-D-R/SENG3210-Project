@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{ url_for('static', filename='css/signup.css') }}" rel="stylesheet"/>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="sub-header">
+            <h1>New User Sign Up</h1>
+        </div>
+        <div class="sub-header">
+            <button onclick="window.location.href = '/';">Home</button>
+            <button onclick="window.location.href = 'login';">Login</button>
+        </div>
+    </div>
+    <div class="container">
+        <form class="form-signup" method="POST">
+            <label for="inputEmail">Email:</label><br>
+            <input type="text" name="inputEmail" id="email" placeholder="example@website.com" size="50"><br><br>
+            <label for="inputName">Name:</label><br>
+            <input type="text" name="inputName" id="userName" placeholder="username" size="50"><br><br>
+            <label for="inputPassword">Password:</label><br>
+            <input type="password" name="inputPassword" id="password" placeholder="password" size="50"><br><br>
+            <input type="submit" value="Sign Up">
+            <!--<button id="btnSignUp" class="signUpBtn" type="button">Sign Up</button>-->
+        </form>
+    </div>
+</body>
+</html>
