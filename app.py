@@ -2,10 +2,11 @@
 app.py
 Authors: James Remer, Brendan VandeVoorde
 Creation Date: 2/10/20
-Last Updated: 4/12/20
+Last Updated: 4/14/20
 Description: 
     Main python file ran when starting the app. Contains routes and rendering instructions for html pages. 
     Sets up database connections.
+    Processes information coming in from webpages
 '''
 from flask import Flask, render_template, request
 from calculate_skills import skillTotal, addSkills, setTotal
@@ -27,13 +28,13 @@ class Database:
         self.cur = self.con.cursor()
         #print("connected to database")
 
-    #class method to query DB table
-    #tables are: head, chest, arms, waist, legs
+    #class methods to query DB table
+    #tables for Armor are: head, chest, arms, waist, legs
     def list_armor(self,table):
         self.cur.execute("SELECT * FROM "+table)
         result = self.cur.fetchall()
         return result
-    
+    #tables for Weapons are: Great_Swords, Long_Swords, Sword_Shields, Dual_Blades, Lances, Gun_Lances, Hammers, Hunting_Horns, Switch_Axes, Charge_Blades, Insect_Glaives                      
     def list_Weapons(self,table):
         self.cur.execute("SELECT * FROM "+table)
         result = self.cur.fetchall()
@@ -43,7 +44,19 @@ class Database:
         self.cur.execute("SELECT * FROM "+table+" WHERE name = '"+name+"'")
         result = self.cur.fetchall()
         return result
+
+    #fields for the users table are: user_id, username, password, email
+    def users_query(self,field,data):
+        self.cur.execute("SELECT "+field+" FROM users WHERE "+field+" = '"+data+"'")
+        result = self.cur.fetchall()
+        return result
+
+    def add_user(self,username,password,email):
+        self.cur.execute("INSERT INTO users (username, password, email) VALUES ('"+username+"', '"+password+"', '"+email+"')")
+        self.con.commit()
+        return
     
+    #query to create multple different lists of decorations, which will be sent to the webpage
     def decoration_list(self):
         self.cur.execute("SELECT * FROM decorations WHERE size = 1")
         size1 = self.cur.fetchall()
@@ -226,15 +239,48 @@ def calculateSkills():
     wepslotsize1 = weaponsize1, wepslotsize2 = weaponsize2, wepslotsize3 = weaponsize3,
     wepslot1skills = wep1skills, wepslot2skills = wep2skills, wepslot3skills = wep3skills)
 
-#
-@app.route('/showSignUp')
+#Route to render the sign up page
+@app.route('/signup')
 def showSignUpPage():
     return render_template("signup.htm")
 
-@app.route('/signUp')
+@app.route('/signup',methods=['POST'])
 def signUp():
-    return
+    #Get values from the username, password, and email text entry boxes
+    username = request.form.get('inputName')
+    password = request.form.get('inputPassword')
+    email = request.form.get('inputEmail')
+    #Escape single quotes
+    username = username.replace("'","''")
+    password = password.replace("'","''")
+    email = email.replace("'","''")
 
+    #return the signup page with an error message if one of the fields is empty
+    if username == "" or password == "" or email == "":
+        return render_template("signup.htm", errorMessage1 = "*Please fill out all fields")
+
+    #Check if the user inputed username and email already exist in the db
+    nameExist = "False"
+    emailExist = "False"
+    db = Database("app_users")
+    check = db.users_query("username",username)
+    if len(check) > 0:
+        nameExist = "True"
+    check = db.users_query("email",email)
+    if len(check) > 0:
+        emailExist = "True"
+    #if the entered username or email already exist, return the signup page
+    if nameExist == "True" or emailExist == "True":
+        return render_template("signup.htm", nameCheck = nameExist,emailCheck = emailExist)
+    
+    #Create a new user only if the entered username and email do not already exist
+    if nameExist != "True" and emailExist != "True":
+        db.add_user(username,password,email)
+        return ("User Created Successfully")
+    
+
+
+#Individual pages for specific types of armor and weapons
 #Head pieces table
 @app.route('/head-pieces')
 def showHeadPieces():

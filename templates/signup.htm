@@ -17,14 +17,35 @@
         </div>
     </div>
     <div class="container">
-        <form class="form-signup" method="POST">
+        <form class="form-signup" method="post">
             <label for="inputEmail">Email:</label><br>
-            <input type="text" name="inputEmail" id="email" placeholder="example@website.com" size="50"><br><br>
-            <label for="inputName">Name:</label><br>
-            <input type="text" name="inputName" id="userName" placeholder="username" size="50"><br><br>
+            <input type="text" name="inputEmail" id="email" placeholder="example@website.com" size="50"><br>
+            <!--Display message if the entered field already exists within the db-->
+            {% if emailCheck %}
+                {% if emailCheck == "True" %}
+                    <h2>*Entered email already exists</h2>
+                {% endif %}
+            {% endif %}
+            <br>
+
+            <label for="inputName">Username:</label><br>
+            <input type="text" name="inputName" id="userName" placeholder="username" size="50"><br>
+            <!--Display message if the entered field already exists within the db-->
+            {% if nameCheck %}
+                {% if nameCheck == "True" %}
+                    <h2>*Entered username already exists</h2>
+                {% endif %}
+            {% endif %}
+            <br>
+
             <label for="inputPassword">Password:</label><br>
             <input type="password" name="inputPassword" id="password" placeholder="password" size="50"><br><br>
             <input type="submit" value="Sign Up">
+
+            <!--Display message if user clicks submit before entering data into all 3 fields-->
+            {% if errorMessage1 %}
+                <h2>{{ errorMessage1 }}</h2>
+            {% endif %}
             <!--<button id="btnSignUp" class="signUpBtn" type="button">Sign Up</button>-->
         </form>
     </div>
