@@ -23,7 +23,15 @@
     <title>Armor Builder</title>
 </head>
 <body>
-    <button onclick="window.location.href = 'signup';">Sign Up</button>
+    {% if confirmation %}
+        <h4>{{ confirmation }}</h4>
+        <button onclick="window.location.href = 'logout';">Logout</button>
+    {% endif %}
+    {% if not confirmation %}
+        <button onclick="window.location.href = 'login';">Login</button>
+        <button onclick="window.location.href = 'signup';">Sign Up</button>
+    {% endif %}
+    
     <br><br>
     <!--Navigation Bar-->
     <nav>
@@ -33,12 +41,17 @@
             <li><a href="charms">Charms</a></li>
             <li><a href="decorations">Decorations</a></li>
             <li><a href="Great-Swords">Weapons</a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
         </ul>
     </nav>
     <!--Page Header-->
     
     <h2>Monster Hunter World Iceborne: Armor Set Builder</h2>
-    <h3>Select an armor piece to begin.</h3>
+    <h3>Select an armor piece to begin</h3>
 
 
     <!--Dropdown boxes are within the table-->

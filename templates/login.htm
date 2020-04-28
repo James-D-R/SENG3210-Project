@@ -9,33 +9,26 @@
 <body>
     <div class="header">
         <div class="sub-header">
-            <h1>New User Sign Up</h1>
+            <h1>Login</h1>
         </div>
         <div class="sub-header">
             <button onclick="window.location.href = '/';">Home</button>
-            <button onclick="window.location.href = 'login';">Login</button>
+            <button onclick="window.location.href = 'signup';">Signup</button>
         </div>
     </div>
     <div class="container">
-        <form class="form-signup" method="post" action="/signup">
+        <form class="form-signup" method="post" action="/login">
             <label for="email">Email:</label><br>
-            <input type="text" name="email" placeholder="example@website.com" size="50"><br>
-            <!--Display message if the entered field already exists within the db-->
-            {% with messages = get_flashed_messages() %}
-                {% if messages %}
-                    <h2>{{ messages[0] }}</h2>
-                {% endif %}
-            {% endwith %} 
-            <br>
-
-            <label for="name">Username:</label><br>
-            <input type="text" name="name" placeholder="username" size="50"><br>
-            <br>
+            <input type="text" name="email" placeholder="example@website.com" size="50"><br><br>
 
             <label for="password">Password:</label><br>
-            <input type="password" name="password"  placeholder="password" size="50"><br><br>
-            <input type="submit" value="Sign Up">
-
+            <input type="password" name="password" placeholder="password" size="50"><br><br>
+            <input type="submit" value="Log In">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                <h2>{{ messages[0] }}</h2>
+                {% endif %}
+            {% endwith %}
             <!--Display message if user clicks submit before entering data into all 3 fields-->
             {% if errorMessage1 %}
                 <h2>{{ errorMessage1 }}</h2>

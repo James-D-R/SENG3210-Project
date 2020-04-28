@@ -10,7 +10,7 @@ ul.navigation {
 ul.navigation li {
     float: left;
     width: 10%;
-    border-right: 1px solid #bbb;
+    /*border-right: 1px solid #bbb;*/
 }
 
 ul.navigation li a {
