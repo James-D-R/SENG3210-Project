@@ -208,3 +208,188 @@ def calculateSkills():
     legslot1skills = leg1skills, legslot2skills = leg2skills, legslot3skills = leg3skills,
     wepslotsize1 = weaponsize1, wepslotsize2 = weaponsize2, wepslotsize3 = weaponsize3,
     wepslot1skills = wep1skills, wepslot2skills = wep2skills, wepslot3skills = wep3skills)
+
+
+#Individual pages for specific types of armor and weapons
+#Head pieces table
+@main.route('/head-pieces')
+def showHeadPieces():
+    dbPy = Database("armor")
+    pieces = dbPy.list_armor("head")
+    return render_template('headArmor.htm',result = pieces)
+
+#Chest pieces table
+@main.route('/chest-pieces')
+def showChestPieces():
+    dbPy = Database("armor")
+    pieces = dbPy.list_armor("chest")
+    return render_template('chestArmor.htm',result = pieces)
+
+#Arm pieces table
+@main.route('/arm-pieces')
+def showArmPieces():
+    dbPy = Database("armor")
+    pieces = dbPy.list_armor("arms")
+    return render_template('armArmor.htm',result = pieces)
+
+#Waist pieces table
+@main.route('/waist-pieces')
+def showWaistPieces():
+    dbPy = Database("armor")
+    pieces = dbPy.list_armor("waist")
+    return render_template('waistArmor.htm',result = pieces)
+
+#Leg pieces table
+@main.route('/leg-pieces')
+def showLegPieces():
+    dbPy = Database("armor")
+    pieces = dbPy.list_armor("legs")
+    return render_template('legArmor.htm',result = pieces)
+
+#Charms table
+@main.route('/charms')
+def showCharms():
+    dbPy = Database("armor")
+    charms = dbPy.list_armor("charms")
+    return render_template('charms.htm',result = charms)
+
+#Decorations table
+@main.route('/decorations')
+def showDecorations():
+    dbPy = Database("armor")
+    decorations = dbPy.list_armor("decorations")
+    return render_template('decorations.htm',result = decorations)
+
+#Great Sword table
+@main.route('/Great-Swords')
+def showGreatSwords():
+    dbPy = Database("Weapons")
+    pieces = dbPy.list_Weapons("Great_Swords")
+    return render_template('Weapon-Great-Sword.htm',result = pieces)
+
+@main.route('/Great-Swords',methods=['POST'])
+def GSDamage():
+
+    TrueDamage = request.form.get('TD')
+
+    #print("True Damage is: " + TrueDamage)
+
+    Sharpness = request.form.get('Sharp')
+
+    #print("Sharpness Color is: " + Sharpness)
+
+    AttackValue = request.form.get('AV')
+
+    #print("Attack Value is: " + AttackValue)
+
+    MonsterArmor = request.form.get('MA')
+
+    #print("Monster Armor is: " + MonsterArmor)
+
+    if Sharpness == "Red":
+
+        Sharpness = 0.5
+
+    elif Sharpness == "Orange":
+
+        Sharpness = 0.75
+
+    elif Sharpness == "Yellow":
+
+        Sharpness = 1
+
+    elif Sharpness == "Green":
+
+        Sharpness = 1.05
+
+    elif Sharpness == "Blue":
+
+        Sharpness = 1.2
+
+    elif Sharpness == "White":
+
+        Sharpness = 1.32
+
+    elif Sharpness == "Purple":
+
+        Sharpness = 1.39
+
+    CalculatedDamage = round(int(TrueDamage)*Sharpness*(int(AttackValue)/100)*(int(MonsterArmor)/100))
+
+    print("Calculated Damage: ", CalculatedDamage)
+
+    dbPy = Database("Weapons")
+
+    pieces = dbPy.list_Weapons("Great_Swords")
+
+    return render_template('Weapon-Great-Sword.htm',result = pieces,DR = CalculatedDamage)
+
+#Sword & Shield table
+@main.route('/Sword-Shields')
+def showSwordShields():
+    dbPy = Database("Weapons")
+    pieces = dbPy.list_Weapons("Sword_Shields")
+    return render_template('Weapon-Sword-Shield.htm',result = pieces)
+
+#Dual Blades table
+@main.route('/Dual-Blades')
+def showDualBlades():
+    dbPy = Database("Weapons")
+    pieces = dbPy.list_Weapons("Dual_Blades")
+    return render_template('Weapon-Dual-Blade.htm',result = pieces)
+
+#Long Sword table
+@main.route('/Long-Swords')
+def showLongSwords():
+    dbPy = Database("Weapons")
+    pieces = dbPy.list_Weapons("Long_Swords")
+    return render_template('Weapon-Long-Sword.htm',result = pieces)
+
+#Hammer table
+@main.route('/Hammers')
+def showHammers():
+    dbPy = Database("Weapons")
+    pieces = dbPy.list_Weapons("Hammers")
+    return render_template('Weapon-Hammer.htm',result = pieces)
+
+#Hunting Horn table
+@main.route('/Hunting-Horns')
+def showHuntingHorns():
+    dbPy = Database("Weapons")
+    pieces = dbPy.list_Weapons("Hunting_Horns")
+    return render_template('Weapon-Hunting-Horn.htm',result = pieces)
+
+#Lance table
+@main.route('/Lances')
+def showLances():
+    dbPy = Database("Weapons")
+    pieces = dbPy.list_Weapons("Lances")
+    return render_template('Weapon-Lance.htm',result = pieces)
+
+#Gun Lance table
+@main.route('/Gun-Lances')
+def showGunLances():
+    dbPy = Database("Weapons")
+    pieces = dbPy.list_Weapons("Gun_Lances")
+    return render_template('Weapon-Gun-Lance.htm',result = pieces)
+
+#Switch Axe table
+@main.route('/Switch-Axes')
+def showSwitchAxes():
+    dbPy = Database("Weapons")
+    pieces = dbPy.list_Weapons("Switch_Axes")
+    return render_template('Weapon-Switch-Axe.htm',result = pieces)
+
+#Charge Blade table
+@main.route('/Charge-Blades')
+def showChargeBlades():
+    dbPy = Database("Weapons")
+    pieces = dbPy.list_Weapons("Charge_Blades")
+    return render_template('Weapon-Charge-Blade.htm',result = pieces)
+
+#Insect Glaive table
+@main.route('/Insect-Glaives')
+def showInsectGlaives():
+    dbPy = Database("Weapons")
+    pieces = dbPy.list_Weapons("Insect_Glaives")
+    return render_template('Weapon-Insect-Glaive.htm',result = pieces)
