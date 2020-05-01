@@ -26,7 +26,7 @@ def login_post():
 
     # if the above check passes, then the user has the right credentials
     login_user(user, remember=remember)
-    print(user.get_id())
+    #print(user.get_id())
     return redirect(url_for('main.index'))
 
 @auth.route('/logout')

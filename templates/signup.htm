@@ -19,7 +19,7 @@
     <div class="container">
         <form class="form-signup" method="post" action="/signup">
             <label for="email">Email:</label><br>
-            <input type="text" name="email" placeholder="example@website.com" size="50"><br>
+            <input type="text" name="email" placeholder="example@website.com" size="50" maxlength="50"><br>
             <!--Display message if the entered field already exists within the db-->
             {% with messages = get_flashed_messages() %}
                 {% if messages %}
@@ -29,11 +29,11 @@
             <br>
 
             <label for="name">Username:</label><br>
-            <input type="text" name="name" placeholder="username" size="50"><br>
+            <input type="text" name="name" placeholder="username" size="50" maxlength="50"><br>
             <br>
 
             <label for="password">Password:</label><br>
-            <input type="password" name="password"  placeholder="password" size="50"><br><br>
+            <input type="password" name="password"  placeholder="password" size="50" maxlength="50"><br><br>
             <input type="submit" value="Sign Up">
 
             <!--Display message if user clicks submit before entering data into all 3 fields-->

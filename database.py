@@ -30,6 +30,38 @@ class Database:
         result = self.cur.fetchall()
         return result
 
+    #query to create multple different lists of decorations, which will be sent to the webpage
+    def decoration_list(self):
+        self.cur.execute("SELECT * FROM decorations WHERE size = 1")
+        size1 = self.cur.fetchall()
+        self.cur.execute("SELECT * FROM decorations WHERE size = 1 OR size = 2 ORDER BY size")
+        size2 = self.cur.fetchall()
+        self.cur.execute("SELECT * FROM decorations WHERE size = 1 OR size = 2 OR size = 3 ORDER BY size")
+        size3 = self.cur.fetchall()
+        self.cur.execute("SELECT * FROM decorations ORDER BY size")
+        size4 = self.cur.fetchall()
+        return size1, size2, size3, size4
+
+    def save_set(self,user_id,set_name,head,chest,arm,waist,leg,charm,weapon_size1,weapon_size2,weapon_size3,
+    weapon_slot1,weapon_slot2,weapon_slot3,head_slot1,head_slot2,head_slot3,chest_slot1,chest_slot2,chest_slot3,
+    arm_slot1, arm_slot2, arm_slot3, waist_slot1, waist_slot2, waist_slot3, leg_slot1, leg_slot2, leg_slot3):
+
+        query = ("INSERT INTO saved_sets (user_id, set_name, head, chest, arm, waist, leg, charm, weapon_size1, weapon_size2,"
+        +"weapon_size3, weapon_slot1, weapon_slot2, weapon_slot3, head_slot1, head_slot2, head_slot3, chest_slot1, chest_slot2,"
+        +"chest_slot3, arm_slot1, arm_slot2, arm_slot3, waist_slot1, waist_slot2, waist_slot3, leg_slot1, leg_slot2, leg_slot3) "
+        +"VALUES ("
+        +"'"+str(user_id)+"', '"+set_name+"', '"+head+"', '"+chest+"', '"+arm+"', '"+waist+"', '"+leg+"', '"+charm
+        +"', '"+weapon_size1+"', '"+weapon_size2+"', '"+weapon_size3+"', '"+weapon_slot1+"', '"+weapon_slot2+"', '"+weapon_slot3
+        +"', '"+head_slot1+"', '"+head_slot2+"', '"+head_slot3+"', '"+chest_slot1+"', '"+chest_slot2+"', '"+chest_slot3
+        +"', '"+arm_slot1+"', '"+arm_slot2+"', '"+arm_slot3+"', '"+waist_slot1+"', '"+waist_slot2+"', '"+waist_slot3
+        +"', '"+leg_slot1+"', '"+leg_slot2+"', '"+leg_slot3+"')")
+
+        self.cur.execute(query)
+        self.con.commit()
+        return
+
+
+'''
     #fields for the users table are: user_id, username, password, email
     def users_query(self,field,data):
         self.cur.execute("SELECT "+field+" FROM users WHERE "+field+" = '"+data+"'")
@@ -45,15 +77,4 @@ class Database:
         self.cur.execute("SELECT * FROM users WHERE email = '"+email+"'")
         result = self.cur.fetchall()
         return result
-    
-    #query to create multple different lists of decorations, which will be sent to the webpage
-    def decoration_list(self):
-        self.cur.execute("SELECT * FROM decorations WHERE size = 1")
-        size1 = self.cur.fetchall()
-        self.cur.execute("SELECT * FROM decorations WHERE size = 1 OR size = 2 ORDER BY size")
-        size2 = self.cur.fetchall()
-        self.cur.execute("SELECT * FROM decorations WHERE size = 1 OR size = 2 OR size = 3 ORDER BY size")
-        size3 = self.cur.fetchall()
-        self.cur.execute("SELECT * FROM decorations ORDER BY size")
-        size4 = self.cur.fetchall()
-        return size1, size2, size3, size4
+    '''

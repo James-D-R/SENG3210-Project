@@ -6,7 +6,7 @@ Description:
     *Utilizes the example from https://www.digitalocean.com/community/tutorials/how-to-add-authentication-to-your-app-with-flask-login
 '''
 
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request, flash, redirect, url_for
 from flask_login import login_required, current_user
 from .database import Database
 from .calculate_skills import skillTotal, addSkills, setTotal
@@ -44,7 +44,7 @@ def calculateSkills():
     armName = request.form.get('armName')
     waistName = request.form.get('waistName')
     legName = request.form.get('legName')
-    skillName = request.form.get('skillName')
+    #skillName = request.form.get('skillName')
     charmName = request.form.get('charmName')
 
     #Get current value of each decoration dropdown box
@@ -82,7 +82,7 @@ def calculateSkills():
     armName = armName.replace("'","''")
     waistName = waistName.replace("'","''")
     legName = legName.replace("'","''")
-    skillName = skillName.replace("'","''")
+    #skillName = skillName.replace("'","''")
     charmName = charmName.replace("'","''")
     headslot1 = str(headslot1).replace("'","''")
     headslot2 = str(headslot2).replace("'","''")
@@ -110,7 +110,7 @@ def calculateSkills():
     result3 = dbPy.list_armor("arms")
     result4 = dbPy.list_armor("waist")
     result5 = dbPy.list_armor("legs")
-    result6 = dbPy.list_armor("skills")
+    #result6 = dbPy.list_armor("skills")
     result7 = dbPy.list_armor("charms")
     #Select specified armor piece from each table
     details1 = dbPy.piece_detail("head",headName)
@@ -119,7 +119,7 @@ def calculateSkills():
     details4 = dbPy.piece_detail("waist",waistName)
     details5 = dbPy.piece_detail("legs",legName)
     details6 = dbPy.piece_detail("charms",charmName)
-    skillLevels = dbPy.piece_detail("skills",skillName)
+    #skillLevels = dbPy.piece_detail("skills",skillName)
 
     #Placeholder
     head1skills = ''
@@ -168,6 +168,11 @@ def calculateSkills():
         wep2skills = dbPy.piece_detail("decorations",weaponslot2)
     if weaponslot3 != 'None':
         wep3skills = dbPy.piece_detail("decorations",weaponslot3)
+    
+    #If all the slot input return 'None', then it is the first time the user has clicked 'calculate skills'
+    if headslot1 == 'None' and chestslot1 == 'None' and  armslot1 == 'None' and waistslot1 == 'None' and legslot1 == 'None':
+        flash('Please select decorations, then click "update"')#flash a message informing the user to select their decorations
+
 
     #Put the queried decoration information in a list, so setTotal() can loop through them easier
     slotinfo = [head1skills,head2skills,head3skills,chest1skills,chest2skills,chest3skills,arm1skills,arm2skills,arm3skills,waist1skills,waist2skills,waist3skills,leg1skills,leg2skills,leg3skills,wep1skills,wep2skills,wep3skills]
@@ -183,9 +188,10 @@ def calculateSkills():
     x = current_user.is_authenticated
     if x == True:
         message = "Welcome, " + current_user.name
+        showSave = True
         return render_template("selectArmors.htm",head = result1,chest = result2,arm = result3,waist = result4,leg = result5,charm = result7,
         headpiece = details1,chestpiece = details2,armpiece = details3,waistpiece = details4,legpiece = details5,charmpiece = details6,
-        skill = result6,skillLv = skillLevels,skillnames = skillnames, skilltotals = skillnumbers,
+        skillnames = skillnames, skilltotals = skillnumbers,
         level4deco = size4, level3deco = size3, level2deco = size2, level1deco = size1,
         headslot1skills = head1skills, headslot2skills = head2skills, headslot3skills = head3skills,
         chestslot1skills = chest1skills, chestslot2skills = chest2skills, chestslot3skills = chest3skills,
@@ -194,12 +200,12 @@ def calculateSkills():
         legslot1skills = leg1skills, legslot2skills = leg2skills, legslot3skills = leg3skills,
         wepslotsize1 = weaponsize1, wepslotsize2 = weaponsize2, wepslotsize3 = weaponsize3,
         wepslot1skills = wep1skills, wepslot2skills = wep2skills, wepslot3skills = wep3skills,
-        confirmation = message)
+        confirmation = message, showSave = showSave)
 
     #Render template without welcome message if user is not logged in
     return render_template("selectArmors.htm",head = result1,chest = result2,arm = result3,waist = result4,leg = result5,charm = result7,
     headpiece = details1,chestpiece = details2,armpiece = details3,waistpiece = details4,legpiece = details5,charmpiece = details6,
-    skill = result6,skillLv = skillLevels,skillnames = skillnames, skilltotals = skillnumbers,
+    skillnames = skillnames, skilltotals = skillnumbers,
     level4deco = size4, level3deco = size3, level2deco = size2, level1deco = size1,
     headslot1skills = head1skills, headslot2skills = head2skills, headslot3skills = head3skills,
     chestslot1skills = chest1skills, chestslot2skills = chest2skills, chestslot3skills = chest3skills,
@@ -208,6 +214,91 @@ def calculateSkills():
     legslot1skills = leg1skills, legslot2skills = leg2skills, legslot3skills = leg3skills,
     wepslotsize1 = weaponsize1, wepslotsize2 = weaponsize2, wepslotsize3 = weaponsize3,
     wepslot1skills = wep1skills, wepslot2skills = wep2skills, wepslot3skills = wep3skills)
+
+
+@main.route('/save',methods=['POST'])
+def saveSet():
+#Grab the most recently update values from the form
+    #armor pieces
+    head = request.form.get('save_head')
+    chest = request.form.get('save_chest')
+    arm = request.form.get('save_arm')
+    waist = request.form.get('save_waist')
+    leg = request.form.get('save_leg')
+    charm = request.form.get('save_charm')
+    #weapon decoration slot sizes
+    slotsize1 = request.form.get('save_wepsize1')
+    slotsize2 = request.form.get('save_wepsize2')
+    slotsize3 = request.form.get('save_wepsize3')
+    #Decorations
+    #weapon
+    weaponslot1 = request.form.get('save_weaponslot1')
+    weaponslot2 = request.form.get('save_weaponslot2')
+    weaponslot3 = request.form.get('save_weaponslot3')
+    #head
+    headslot1 = request.form.get('save_headslot1')
+    headslot2 = request.form.get('save_headslot2')
+    headslot3 = request.form.get('save_headslot3')
+    #chest
+    chestslot1 = request.form.get('save_chestslot1')
+    chestslot2 = request.form.get('save_chestslot2')
+    chestslot3 = request.form.get('save_chestslot3')
+    #arm
+    armslot1 = request.form.get('save_armslot1')
+    armslot2 = request.form.get('save_armslot2')
+    armslot3 = request.form.get('save_armslot3')
+    #waist
+    waistslot1 = request.form.get('save_waistslot1')
+    waistslot2 = request.form.get('save_waistslot2')
+    waistslot3 = request.form.get('save_waistslot3')
+    #leg
+    legslot1 = request.form.get('save_legslot1')
+    legslot2 = request.form.get('save_legslot2')
+    legslot3 = request.form.get('save_legslot3')
+
+    #get the entered name for the set
+    setname = request.form.get('set_name')
+    setname = setname.replace("'","''")
+    user_id = current_user.id
+    print(head)
+    print(chest)
+    print(arm)
+    print(waist)
+    print(leg)
+    print(charm)
+    print(slotsize1)
+    print(slotsize2)
+    print(slotsize3)
+    print(weaponslot1)
+    print(weaponslot2)
+    print(weaponslot3)
+    print(headslot1)
+    print(headslot2)
+    print(headslot3)
+    print(chestslot1)
+    print(chestslot2)
+    print(chestslot3)
+    print(armslot1)
+    print(armslot2)
+    print(armslot3)
+    print(waistslot1)
+    print(waistslot2)
+    print(waistslot3)
+    print(legslot1)
+    print(legslot2)
+    print(legslot3)
+    print(setname)
+    print(user_id)
+
+    #if setname == '':
+        #flash('Please enter a name for your armor set!')
+        #return redirect(url_for('main.index'))
+
+    dbPy = Database("app_users")
+    dbPy.save_set(user_id,setname,head,chest,arm,waist,leg,charm,slotsize1,slotsize2,slotsize3,weaponslot1,weaponslot2,weaponslot3,
+    headslot1,headslot2,headslot3,chestslot1,chestslot2,chestslot3,armslot1,armslot2,armslot3,waistslot1,waistslot2,waistslot3,legslot1,
+    legslot2,legslot3)
+    return redirect(url_for('main.index'))
 
 
 #Individual pages for specific types of armor and weapons

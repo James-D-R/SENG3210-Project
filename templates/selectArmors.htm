@@ -12,6 +12,7 @@
     <link href="{{ url_for('static', filename='css/header.css') }}" rel="stylesheet"/>
     <!--JavaScript-->
     <script type="text/javascript" src="{{ url_for('static', filename='js/set_value.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/change_value.js') }}"></script>
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--select2-->
@@ -49,14 +50,24 @@
         </ul>
     </nav>
     <!--Page Header-->
-    
     <h2>Monster Hunter World Iceborne: Armor Set Builder</h2>
-    <h3>Select an armor piece to begin</h3>
-
+    {% with messages = get_flashed_messages() %}
+        {% if not messages %}
+            <h3>Select an armor piece to begin</h3>
+        {% endif %}
+        {% if messages %}
+            <h5>{{ messages[0] }}</h5>
+        {% endif %}
+    {% endwith %} 
 
     <!--Dropdown boxes are within the table-->
     <form method='post'>
-        <input type= "submit">
+        {% if not showSave %}
+            <input type= "submit" value="Calculate Skills">
+        {% endif %}
+        {% if showSave %}
+        <input type= "submit" value="Update">
+        {% endif %}
     <!--Always display table headings, display armors once button clicked-->
     <table id="armors" style="width:100%">
         <tr>
@@ -562,6 +573,8 @@
     {% if wepslotsize3 %}
         <script>set_value("{{wepslotsize3}}","weapon_slotsize3")</script>
     {% endif %}
+
+
 
 
     <div class="decoration">
@@ -1209,9 +1222,118 @@
             </table>
         </div>
     </div>
+    </form>
+    <!--Form to save armor set-->
+    <form method="post" action="/save">
+    <!--The following hidden text boxes of this form will copy the value in the corresponding dropdown box above-->
+        <!--Armor pieces-->
+        <input hidden type="text" id="hidden_head" name="save_head"> 
+        <script>change_value("heads","hidden_head")</script>
 
+        <input hidden type="text" id="hidden_chest" name="save_chest"> 
+        <script>change_value("chests","hidden_chest")</script>
+
+        <input hidden type="text" id="hidden_arm" name="save_arm"> 
+        <script>change_value("arms","hidden_arm")</script>
+
+        <input hidden type="text" id="hidden_waist" name="save_waist"> 
+        <script>change_value("waists","hidden_waist")</script>
+
+        <input hidden type="text" id="hidden_leg" name="save_leg"> 
+        <script>change_value("legs","hidden_leg")</script>
+
+        <input hidden type="text" id="hidden_charm" name="save_charm"> 
+        <script>change_value("charms","hidden_charm")</script>
+
+        <!--Weapon Decoration Slot Sizes-->
+        <input hidden type="text" id="hidden_wepsize1" name="save_wepsize1"> 
+        <script>change_value("weapon_slotsize1","hidden_wepsize1")</script>
+
+        <input hidden type="text" id="hidden_wepsize2" name="save_wepsize2"> 
+        <script>change_value("weapon_slotsize2","hidden_wepsize2")</script>
+
+        <input hidden type="text" id="hidden_wepsize3" name="save_wepsize3"> 
+        <script>change_value("weapon_slotsize3","hidden_wepsize3")</script>
+
+    <!--Decorations-->
+        <!--weapon-->
+        <input hidden type="text" id="hidden_weaponslot1" name="save_weaponslot1"> 
+        <script>change_value("weapon_slot1","hidden_weaponslot1")</script>
+
+        <input hidden type="text" id="hidden_weaponslot1" name="save_weaponslot1"> 
+        <script>change_value("weapon_slot1","hidden_weaponslot1")</script>
+
+        <input hidden type="text" id="hidden_weaponslot2" name="save_weaponslot2"> 
+        <script>change_value("weapon_slot2","hidden_weaponslot2")</script>
+
+        <input hidden type="text" id="hidden_weaponslot3" name="save_weaponslot3"> 
+        <script>change_value("weapon_slot3","hidden_weaponslot3")</script>
+
+        <!--head-->
+        <input hidden type="text" id="hidden_headslot1" name="save_headslot1"> 
+        <script>change_value("head_slot1","hidden_headslot1")</script>
+
+        <input hidden type="text" id="hidden_headslot2" name="save_headslot2"> 
+        <script>change_value("head_slot2","hidden_headslot2")</script>
+
+        <input hidden type="text" id="hidden_headslot3" name="save_headslot3"> 
+        <script>change_value("head_slot3","hidden_headslot3")</script>
+
+        <!--chest-->
+        <input hidden type="text" id="hidden_chestslot1" name="save_chestslot1"> 
+        <script>change_value("chest_slot1","hidden_chestslot1")</script>
+
+        <input hidden type="text" id="hidden_chestslot2" name="save_chestslot2"> 
+        <script>change_value("chest_slot2","hidden_chestslot2")</script>
+
+        <input hidden type="text" id="hidden_chestslot3" name="save_chestslot3"> 
+        <script>change_value("chest_slot3","hidden_chestslot3")</script>
+
+        <!--arm-->
+        <input hidden type="text" id="hidden_armslot1" name="save_armslot1"> 
+        <script>change_value("arm_slot1","hidden_armslot1")</script>
+
+        <input hidden type="text" id="hidden_armslot2" name="save_armslot2"> 
+        <script>change_value("arm_slot2","hidden_armslot2")</script>
+
+        <input hidden type="text" id="hidden_armslot3" name="save_armslot3"> 
+        <script>change_value("arm_slot3","hidden_armslot3")</script>
+
+        <!--waist-->
+        <input hidden type="text" id="hidden_waistslot1" name="save_waistslot1"> 
+        <script>change_value("waist_slot1","hidden_waistslot1")</script>
+
+        <input hidden type="text" id="hidden_waistslot2" name="save_waistslot2"> 
+        <script>change_value("waist_slot2","hidden_waistslot2")</script>
+
+        <input hidden type="text" id="hidden_waistslot3" name="save_waistslot3"> 
+        <script>change_value("waist_slot3","hidden_waistslot3")</script>
+
+        <!--leg-->
+        <input hidden type="text" id="hidden_legslot1" name="save_legslot1"> 
+        <script>change_value("leg_slot1","hidden_legslot1")</script>
+
+        <input hidden type="text" id="hidden_legslot2" name="save_legslot2"> 
+        <script>change_value("leg_slot2","hidden_legslot2")</script>
+
+        <input hidden type="text" id="hidden_legslot3" name="save_legslot3"> 
+        <script>change_value("leg_slot3","hidden_legslot3")</script>
+
+        {% if showSave %}
+        <input type="text" name="set_name" placeholder="set name" maxlength="50">
+        <input type="submit" value="Save Set">
+        {% endif %}
+    </form>
+
+    <form method="post" action="/load">
+    <select name="load_set" style="width: 20%;">
+        <option value="item1">1. Londsword- Master's Touch Safi Blast</option>
+    </select>
+    </form>
+
+<!--  
     <div class= "container">
-        <!--Skill dropdown box-->
+        Skill dropdown box
         <div class="subcontainer">
             {% if skill %}
                 <p><label for="skills">What does this skill do?</label></p>
@@ -1221,7 +1343,7 @@
                     {% endfor %}
                 </select>
 
-                <!--Script-->
+                Script
                 {% if skillLv %}
                     {% for row in skillLv %}
                         <script>set_value("{{row.name}}","skills")</script>
@@ -1245,6 +1367,6 @@
             {% endif %}
         </div>
     </div>
-</form>
+-->
 </body>
 </html>

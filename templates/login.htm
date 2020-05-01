@@ -19,10 +19,10 @@
     <div class="container">
         <form class="form-signup" method="post" action="/login">
             <label for="email">Email:</label><br>
-            <input type="text" name="email" placeholder="example@website.com" size="50"><br><br>
+            <input type="text" name="email" placeholder="example@website.com" size="50" maxlength="50"><br><br>
 
             <label for="password">Password:</label><br>
-            <input type="password" name="password" placeholder="password" size="50"><br><br>
+            <input type="password" name="password" placeholder="password" size="50" maxlength="50"><br><br>
             <input type="submit" value="Log In">
             {% with messages = get_flashed_messages() %}
                 {% if messages %}
