@@ -60,6 +60,15 @@ class Database:
         self.con.commit()
         return
 
+    def get_sets(self,user_id):
+        self.cur.execute("SELECT set_id, set_name FROM saved_sets WHERE user_id = "+str(user_id))
+        result = self.cur.fetchall()
+        return result
+
+    def load_set(self,set_id):
+        self.cur.execute("SELECT * FROM saved_sets WHERE set_id = "+str(set_id))
+        result = self.cur.fetchall()
+        return result
 
 '''
     #fields for the users table are: user_id, username, password, email

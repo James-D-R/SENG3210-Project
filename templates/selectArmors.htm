@@ -61,7 +61,7 @@
     {% endwith %} 
 
     <!--Dropdown boxes are within the table-->
-    <form method='post'>
+    <form method='post' action='/'>
         {% if not showSave %}
             <input type= "submit" value="Calculate Skills">
         {% endif %}
@@ -1220,10 +1220,10 @@
                     </tr>  
                 {% endfor %}      
             </table>
-        </div>
-    </div>
+        
     </form>
     <!--Form to save armor set-->
+    <br>
     <form method="post" action="/save">
     <!--The following hidden text boxes of this form will copy the value in the corresponding dropdown box above-->
         <!--Armor pieces-->
@@ -1320,16 +1320,23 @@
         <script>change_value("leg_slot3","hidden_legslot3")</script>
 
         {% if showSave %}
-        <input type="text" name="set_name" placeholder="set name" maxlength="50">
+        <input type="text" name="set_name" placeholder="set name" maxlength="50" style="width: 40%;">
         <input type="submit" value="Save Set">
         {% endif %}
     </form>
-
+    <br><br>
+    {% if sets %}
     <form method="post" action="/load">
-    <select name="load_set" style="width: 20%;">
-        <option value="item1">1. Londsword- Master's Touch Safi Blast</option>
-    </select>
+        <select name="load_set" style="width: 40%;">
+            {% for i in range(sets|length) %}
+            <option value="{{ (sets[i])['set_id'] }}">{{i + 1}}. {{ (sets[i])['set_name'] }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Load Set">
     </form>
+    {% endif %}
+</div>
+</div>
 
 <!--  
     <div class= "container">
