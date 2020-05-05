@@ -22,5 +22,5 @@ ul.navigation li a {
 }
 
 ul.navigation li a:hover {
-    background-color: lightblue;
+    background-color: rgb(48, 48, 48);
 }

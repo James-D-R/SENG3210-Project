@@ -25,6 +25,11 @@ class Database:
         result = self.cur.fetchall()
         return result
 
+    def attack_power(self,table,Name):
+        self.cur.execute("SELECT Power FROM "+table+" WHERE Move = '"+Name+"'")
+        result = self.cur.fetchall()
+        return result
+
     def piece_detail(self,table,name):
         self.cur.execute("SELECT * FROM "+table+" WHERE name = '"+name+"'")
         result = self.cur.fetchall()
